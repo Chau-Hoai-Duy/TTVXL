@@ -1,0 +1,10 @@
+#DEFINE BOARD 501
+#include<tv_boards.c>
+void main()
+{
+   system_init();
+   while(true)
+   {
+     
+   }
+}

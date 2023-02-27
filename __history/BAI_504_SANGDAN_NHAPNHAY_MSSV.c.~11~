@@ -1,0 +1,28 @@
+#DEFINE BOARD D501
+#include<tv_boards.c>
+unsigned int8 mssv[8]={2, 0, 1, 4, 2, 1, 5, 7};
+unsigned int1 tt=0;
+signed int8 i,n;
+void kt_nutnhan()
+{
+   if(inputcd(on)==0) tt=1;
+   if(inputcd(off)==0) tt=0;
+}
+void main()
+{
+   system_init();
+   tt=0;
+   while(true)
+   {
+      kt_nutnhan();
+      if(tt==1)
+      {
+         for(i=7;i>=0;i--)
+         {
+            s7seg.led[i]=s7seg.led[i-1];
+            s7seg.led[0]=m7d[mssv[7-i]];
+            for(n=-100;n<100;n++) s7seg_display();
+         }
+      }
+   }
+}

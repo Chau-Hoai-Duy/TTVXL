@@ -1,0 +1,61 @@
+
+ROM used:   1522/32768 (5%)
+            1522/32768 (5%) including unused fragments
+
+            0.4 Average locations per line
+            2.5 Average locations per statement
+
+RAM used:   50/2048 (2%) at main() level
+            65/2048 (3%) worst case
+
+Stack used: 4 worst case (4 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  118    93  15  BAI_310_TONGHOP_32LED.c
+   26     0   0  tv_boards.c
+  239   186  30  TV_D501_TH.C
+  135     0   0  TV_D501_TH.h
+  876     0   0  ..\..\..\Program Files (x86)\PICC\Devices\18f4550.h
+ 2228   258  42  ..\..\..\Program Files (x86)\PICC\Drivers\math.h
+  179    80  13  TV_LOWLEVER.C
+    7     0   0  TV_LOWLEVER.H
+----- -----
+ 3808   617 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     38   1    1             @delay_ms1
+0     38   1    0    221  2.6  led32_display
+0     40   1    0    221  2.6  d7seg_display
+0     86   3    3    355  6.1  s7seg_display
+0     38   1    0    172  2.1  private_write_glcd_lcd
+0     22   1    2    120  3.4  write_lcd20x4
+0     22   1    2    120  3.4  write_glcd128x64
+0     72   2   10    362  3.3  write_ledmatrix
+0     28   1    0    151  2.5  private_write_buzzer_relay
+0    110   4    0    561  3.8  system_init
+0    146   5    1   1186  3.3  SSPI_WRITE
+0    878  29    5   4287  6.9  MAIN
+ Inline         0    183  4.9  @cinit1
+
+Program metrics:
+    Functions               12
+    Statements              617
+    Comments                429
+    Volume (V)              11266
+    Difficulty (D)          46.7
+    Effort to implement (E) 526639
+    Time to implement (T)   8 hours, 8 minutes
+    Est Delivered Bugs (B)  2
+    Cyclomatic Complexity   26
+    Maintainability (MI)    79
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  1518  31246  
+
+
+

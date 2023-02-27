@@ -1,0 +1,171 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016     @INTERRUPT_AREA
+017     @INTERRUPT_AREA
+018     @INTERRUPT_AREA
+019     @INTERRUPT_AREA
+01A     @INTERRUPT_AREA
+01B-01E delay
+01F-022 led32
+023-02A d7seg
+02B-032 s7seg
+033-034 inputcd.oldpin
+035-036 inputcd.t
+037     inputcd.step
+038     gio
+039     phut
+03A     giay
+03B     bdn
+03C     cdo
+03D     i
+03E-041 atan2.y
+03E     s7seg_display.n
+03E-041 @SPI_XFER_1_32.P1
+03E.0   CHECK_MODULE.tt
+03E-03F inputcd.pin
+03E     kt_nutnhan.@SCRATCH1
+03E     MAIN.@SCRATCH1
+03F     @DIV88.P1
+03F     CHECK_MODULE.n
+03F     s7seg_display.@SCRATCH1
+040     @DIV88.P1
+040     @WRITEBITA.P2
+040     @READBITA.P3
+040     @delay_ms1.P4
+040-041 delay_stop.t
+040     CHECK_MODULE.@SCRATCH1
+040     inputcd.@SCRATCH1
+041-042 @READBITA.P1
+041     @WRITEBITA.P2
+041     CHECK_MODULE.@SCRATCH2
+041     inputcd.@SCRATCH2
+041     @DIV88.@SCRATCH1
+042-043 @WRITEBITA.P1
+042-045 atan2.x
+042-043 delay_stop.tam
+044-047 @DIV3232.P1
+044     delay_stop.@SCRATCH1
+045     delay_stop.@SCRATCH2
+046-049 atan2.z
+048-04B @DIV3232.P1
+04A.0   atan2.sign
+04B     atan2.quad
+04C     @DIV3232.@SCRATCH1
+04D     @DIV3232.@SCRATCH2
+04E     @DIV3232.@SCRATCH3
+04F     @DIV3232.@SCRATCH4
+050     @DIV3232.@SCRATCH5
+F71     CCP_5_LOW
+F71     CCP_5
+F72     CCP_5_HIGH
+F74     CCP_4
+F74     CCP_4_LOW
+F75     CCP_4_HIGH
+F83     PSP_DATA
+FA1.1   TIM3IF
+FB4.6   C1OUT
+FB4.7   C2OUT
+FB8     CCP_3_LOW
+FB8     CCP_3
+FB9     CCP_3_HIGH
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P3
+FE9-FEA @READ_PACKED_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+0000BE  m7d.call
+0000D2  m7d.data
+0000E2  ngat_timer1
+0000F4  @delay_ms1
+00011A  CHECK_MODULE
+000174  led32_display
+0001AC  d7seg_display
+000212  s7seg_display
+000272  buzzer_off
+00027E  triac_2_off
+00028A  system_init
+0002C8  @WRITEBITA
+000306  @READBITA
+000338  @DIV3232
+0003C6  delay_start
+000418  delay_stop
+0004AA  inputcd
+000638  @goto26187
+000660  kt_nutnhan
+0006CA  @DIV88
+0006F2  @cinit1
+0006F2  MAIN
+00071E  @cinit2
+
+Project Directory:
+    C:\TTVXL\TTVXL\Thuc Hanh\
+
+Project Files:
+    BAI_517_GIO_PHUT_GIAY_KEY_CAITIEN_NHAPNHAY.c            [26-Feb-23 21:59  CRC=5C211EBB]
+    tv_boards.c                                             [25-Aug-22 14:39  CRC=BADBB360]
+    TV_MOPHONG.C                                            [13-Jan-23 10:01  CRC=BC0C87F3]
+    TV_MOPHONG.h                                            [25-Aug-22 14:03  CRC=D88B226F]
+    ..\..\..\Program Files (x86)\PICC\Devices\18f6722.h     [21-Jan-21 11:39  CRC=97E248DF]
+    ..\..\..\Program Files (x86)\PICC\Drivers\math.h        [05-May-20 12:57  CRC=02232397]
+    TV_LOWLEVER.C                                           [12-Oct-22 15:49  CRC=97B0DA2C]
+    TV_LOWLEVER.H                                           [19-Nov-22 07:33  CRC=D872A938]
+
+Source signature=8E30158F
+Program memory checksum=0000
+Hex file CRC=8459
+
+Units:
+    C:\TTVXL\TTVXL\Thuc Hanh\BAI_517_GIO_PHUT_GIAY_KEY_CAITIEN_NHAPNHAY (main)
+
+Compiler Settings:
+    Processor:      PIC18F6722
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   BAI_517_GIO_PHUT_GIAY_KEY_CAITIEN_NHAPNHAY.xsym
+    Errors:      BAI_517_GIO_PHUT_GIAY_KEY_CAITIEN_NHAPNHAY.err
+    Ext Symbols: BAI_517_GIO_PHUT_GIAY_KEY_CAITIEN_NHAPNHAY.esym
+    INHX32:      BAI_517_GIO_PHUT_GIAY_KEY_CAITIEN_NHAPNHAY.hex
+    Symbols:     BAI_517_GIO_PHUT_GIAY_KEY_CAITIEN_NHAPNHAY.sym
+    List:        BAI_517_GIO_PHUT_GIAY_KEY_CAITIEN_NHAPNHAY.lst
+    Debug/COFF:  BAI_517_GIO_PHUT_GIAY_KEY_CAITIEN_NHAPNHAY.cof
+    Project:     BAI_517_GIO_PHUT_GIAY_KEY_CAITIEN_NHAPNHAY.ccspjt
+    Call Tree:   BAI_517_GIO_PHUT_GIAY_KEY_CAITIEN_NHAPNHAY.tre
+    Statistics:  BAI_517_GIO_PHUT_GIAY_KEY_CAITIEN_NHAPNHAY.STA

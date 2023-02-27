@@ -1,0 +1,178 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004-007 delay
+008-00B led32
+00C-013 d7seg
+014-01B s7seg
+01C-01D inputcd.oldpin
+01E-01F inputcd.t
+020     inputcd.step
+021     i
+022     j
+023     cdo
+024     cdocu
+025     cho
+026     chocu
+027.0   cdoi
+028     k
+029.0   CHECK_MODULE.tt
+029-02A inputcd.pin
+029-02C @SPI_XFER_1_32.P1
+029-02C atan2.y
+029     s7seg_display.n
+029     kt_nut_nhan.@SCRATCH1
+029     chop_tat_led_don.@SCRATCH1
+029     sang_tat_dan_pst.@SCRATCH1
+029     sang_tat_dan_tsp.@SCRATCH1
+029     sang_dich_pst.@SCRATCH1
+029     sang_dich_tsp.@SCRATCH1
+029     sang_tat_dan_tu_trong_ra.@SCRATCH1
+029     sang_tat_dan_tu_ngoai_vao.@SCRATCH1
+029     sang_don_pst.@SCRATCH1
+02A     CHECK_MODULE.n
+02A     s7seg_display.@SCRATCH1
+02A     chop_tat_led_don.@SCRATCH2
+02A     sang_tat_dan_pst.@SCRATCH2
+02A     sang_tat_dan_tsp.@SCRATCH2
+02A     sang_tat_dan_tu_trong_ra.@SCRATCH2
+02A     sang_tat_dan_tu_ngoai_vao.@SCRATCH2
+02A     sang_don_pst.@SCRATCH2
+02B     @delay_ms1.P1
+02B-02C delay_stop.t
+02B     @WRITEBITA.P1
+02B     @READBITA.P2
+02B     CHECK_MODULE.@SCRATCH1
+02B     inputcd.@SCRATCH1
+02B     chop_tat_led_don.@SCRATCH3
+02B     sang_tat_dan_pst.@SCRATCH3
+02B     sang_tat_dan_tsp.@SCRATCH3
+02B     sang_don_pst.@SCRATCH3
+02C     @WRITEBITA.P1
+02C-02D @READBITA.P2
+02C     CHECK_MODULE.@SCRATCH2
+02C     inputcd.@SCRATCH2
+02C     chop_tat_led_don.@SCRATCH4
+02C     sang_tat_dan_pst.@SCRATCH4
+02C     sang_tat_dan_tsp.@SCRATCH4
+02C     sang_don_pst.@SCRATCH4
+02D-02E delay_stop.tam
+02D-030 atan2.x
+02D-02E @WRITEBITA.P1
+02D     sang_tat_dan_pst.@SCRATCH5
+02D     sang_tat_dan_tsp.@SCRATCH5
+02D     sang_don_pst.@SCRATCH5
+02E     sang_don_pst.@SCRATCH6
+02F-032 @DIV3232.P1
+02F     delay_stop.@SCRATCH1
+030     delay_stop.@SCRATCH2
+031-034 atan2.z
+033-036 @DIV3232.P1
+035.0   atan2.sign
+036     atan2.quad
+037     @DIV3232.@SCRATCH1
+038     @DIV3232.@SCRATCH2
+039     @DIV3232.@SCRATCH3
+03A     @DIV3232.@SCRATCH4
+03B     @DIV3232.@SCRATCH5
+F71     CCP_5
+F71     CCP_5_LOW
+F72     CCP_5_HIGH
+F74     CCP_4_LOW
+F74     CCP_4
+F75     CCP_4_HIGH
+F83     PSP_DATA
+FA1.1   TIM3IF
+FB4.6   C1OUT
+FB4.7   C2OUT
+FB8     CCP_3
+FB8     CCP_3_LOW
+FB9     CCP_3_HIGH
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P3
+FE9-FEA @READ_PACKED_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  @delay_ms1
+00002E  CHECK_MODULE
+000088  led32_display
+0000BE  d7seg_display
+000124  s7seg_display
+000186  buzzer_off
+000192  triac_2_off
+00019E  system_init
+0001DC  @WRITEBITA
+00021A  @READBITA
+00024C  @DIV3232
+0002DA  delay_start
+00032C  delay_stop
+0003BE  inputcd
+00054C  @goto59220
+000574  kt_nut_nhan
+000620  chop_tat_led_don
+00066C  sang_tat_dan_pst
+0006E2  sang_tat_dan_tsp
+000754  sang_dich_pst
+000792  sang_dich_tsp
+0007D0  sang_tat_dan_tu_trong_ra
+000840  sang_tat_dan_tu_ngoai_vao
+0008B6  sang_dich_tu_ngoai_vao
+000904  sang_dich_tu_trong_ra
+000952  sang_don_pst
+0009FE  MAIN
+0009FE  @cinit1
+000A2A  @cinit2
+
+Project Directory:
+    C:\TTVXL\TTVXL\Thuc Hanh\
+
+Project Files:
+    CLIP2_NUT_NHAN_DON.c                                    [12-Feb-23 09:19  CRC=D7975C1B]
+    tv_boards.c                                             [25-Aug-22 14:39  CRC=BADBB360]
+    TV_MOPHONG.C                                            [13-Jan-23 10:01  CRC=BC0C87F3]
+    TV_MOPHONG.h                                            [25-Aug-22 14:03  CRC=D88B226F]
+    ..\..\..\Program Files (x86)\PICC\Devices\18f6722.h     [21-Jan-21 11:39  CRC=97E248DF]
+    ..\..\..\Program Files (x86)\PICC\Drivers\math.h        [05-May-20 12:57  CRC=02232397]
+    TV_LOWLEVER.C                                           [12-Oct-22 15:49  CRC=97B0DA2C]
+    TV_LOWLEVER.H                                           [19-Nov-22 07:33  CRC=D872A938]
+
+Source signature=09A652EF
+Program memory checksum=0000
+Hex file CRC=1B5E
+
+Units:
+    C:\TTVXL\TTVXL\Thuc Hanh\CLIP2_NUT_NHAN_DON (main)
+
+Compiler Settings:
+    Processor:      PIC18F6722
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   CLIP2_NUT_NHAN_DON.xsym
+    Errors:      CLIP2_NUT_NHAN_DON.err
+    Ext Symbols: CLIP2_NUT_NHAN_DON.esym
+    INHX32:      CLIP2_NUT_NHAN_DON.hex
+    Symbols:     CLIP2_NUT_NHAN_DON.sym
+    List:        CLIP2_NUT_NHAN_DON.lst
+    Debug/COFF:  CLIP2_NUT_NHAN_DON.cof
+    Project:     CLIP2_NUT_NHAN_DON.ccspjt
+    Call Tree:   CLIP2_NUT_NHAN_DON.tre
+    Statistics:  CLIP2_NUT_NHAN_DON.STA

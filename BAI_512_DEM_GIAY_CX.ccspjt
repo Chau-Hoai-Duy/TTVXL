@@ -1,0 +1,29 @@
+[PROJECT]
+Target=BAI_512_DEM_GIAY_CX.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=BAI_512_DEM_GIAY_CX.c
+[BAI_512_DEM_GIAY_CX.c]
+Type=4
+[mru-list]
+1=BAI_512_DEM_GIAY_CX.c
+
+[defines]
+buildcount=2
+
+[ProjectLog]
+Days=1
+D1=21-02-2023
+D1_L=2
+D1_L1=[56661]Started Editing.
+D1_L2=[56818]Project Closed.
+
+[Opened Files]
+1=BAI_512_DEM_GIAY_CX.c
+t1=1
+Count=1
+[Units]
+Count=1
+1=BAI_512_DEM_GIAY_CX (main)

@@ -1,0 +1,46 @@
+[PROJECT]
+Target=BAI_424_KEY_4X4_4LED_DICH_UNDO4.hex
+Processor_Text=PIC18F6722
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=BAI_424_KEY_4X4_4LED_DICH_UNDO4.c
+[BAI_424_KEY_4X4_4LED_DICH_UNDO4.c]
+Type=4
+[mru-list]
+1=BAI_424_KEY_4X4_4LED_DICH_UNDO4.c
+
+[defines]
+buildcount=10
+
+[Opened Files]
+1=CLIP4.c
+t1=42
+2=BAI_424_KEY_4X4_4LED_DICH_UNDO4.c
+t2=42
+Count=2
+
+[ProjectLog]
+Days=2
+D1=14-02-2023
+D1_L=2
+D1_L1=[60646]Stopped Editing.
+TotalEdit=34
+TotalDebug=0
+D1_E=31
+D1_D=0
+D1_L2=[60646]Project Closed.
+D2=18-02-2023
+D2_L=4
+D2_L1=[39631]Project Opened.
+D2_L2=[39687]Started Editing.
+D2_L3=[39811]Stopped Editing.
+D2_E=3
+D2_D=0
+D2_L4=[39811]Project Closed.
+
+[fileformats]
+forcecoff=0
+[Units]
+Count=1
+1=BAI_424_KEY_4X4_4LED_DICH_UNDO4 (main)

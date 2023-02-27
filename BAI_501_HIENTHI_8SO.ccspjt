@@ -1,0 +1,36 @@
+[PROJECT]
+Target=BAI_501_HIENTHI_8SO.hex
+Processor_Text=PIC18F6722
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=BAI_501_HIENTHI_8SO.c
+[BAI_501_HIENTHI_8SO.c]
+Type=4
+[mru-list]
+1=BAI_501_HIENTHI_8SO.c
+
+[defines]
+buildcount=4
+
+[ProjectLog]
+Days=1
+D1=26-02-2023
+D1_L=3
+D1_L1=[71248]Started Editing.
+D1_L2=[71910]Stopped Editing.
+TotalEdit=12
+TotalDebug=0
+D1_E=12
+D1_D=0
+D1_L3=[71910]Project Closed.
+
+[Opened Files]
+1=BAI_501_HIENTHI_8SO.c
+t1=5
+Count=2
+2=BAI_504_SANGDAN_NHAPNHAY_MSSV.c
+t2=5
+[Units]
+Count=1
+1=BAI_501_HIENTHI_8SO (main)

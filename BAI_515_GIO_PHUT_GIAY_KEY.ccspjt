@@ -1,0 +1,52 @@
+[PROJECT]
+Target=BAI_515_GIO_PHUT_GIAY_KEY.hex
+Processor_Text=PIC18F6722
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=BAI_515_GIO_PHUT_GIAY_KEY.c
+[BAI_515_GIO_PHUT_GIAY_KEY.c]
+Type=4
+[mru-list]
+1=BAI_515_GIO_PHUT_GIAY_KEY.c
+
+[defines]
+buildcount=16
+
+[ProjectLog]
+Days=2
+D1=21-02-2023
+D1_L=7
+D1_L1=[58261]Started Editing.
+D1_L2=[59017]Stopped Editing.
+D1_L3=[59351]Started Editing.
+D1_L4=[60493]Project Closed.
+D1_L5=[60561]Project Opened.
+D1_L6=[60569]Started Editing.
+D1_L7=[60598]Project Closed.
+D2=26-02-2023
+D2_L=5
+D2_L1=[78224]Project Opened.
+D2_L2=[78315]Started Editing.
+D2_L3=[78330]Stopped Editing.
+TotalEdit=1
+TotalDebug=0
+D2_E=1
+D2_D=0
+D2_L4=[78337]Started Editing.
+D2_L5=[79026]Project Closed.
+
+[Opened Files]
+1=BAI_514_DEM_GIO_PHUT_GIAY.c
+t1=24
+Count=3
+2=BAI_515_GIO_PHUT_GIAY_KEY.c
+t2=24
+3=BAI_517_GIO_PHUT_GIAY_KEY_CAITIEN_NHAPNHAY.c
+t3=3
+
+[fileformats]
+forcecoff=0
+[Units]
+Count=1
+1=BAI_515_GIO_PHUT_GIAY_KEY (main)

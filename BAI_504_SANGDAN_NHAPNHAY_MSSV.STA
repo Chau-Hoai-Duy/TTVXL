@@ -1,0 +1,68 @@
+
+ROM used:   1822/131072 (1%)
+            1822/131072 (1%) including unused fragments
+
+            0.5 Average locations per line
+            3.5 Average locations per statement
+
+RAM used:   47/3936 (1%) at main() level
+            65/3936 (2%) worst case
+
+Stack used: 0 worst case (0 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   84    63  12  BAI_504_SANGDAN_NHAPNHAY_MSSV.c
+   26     0   0  tv_boards.c
+  137   121  23  TV_MOPHONG.C
+  104     0   0  TV_MOPHONG.h
+  952     0   0  ..\..\..\Program Files (x86)\PICC\Devices\18f6722.h
+ 2228   258  49  ..\..\..\Program Files (x86)\PICC\Drivers\math.h
+  179    86  16  TV_LOWLEVER.C
+    7     0   0  TV_LOWLEVER.H
+----- -----
+ 3717   528 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     38   1    1             @delay_ms1
+0     36   1    0             @const949
+0     56   2    0    221  2.6  led32_display
+0    102   3    0    452  2.8  d7seg_display
+0     96   3    2    301  5.1  s7seg_display
+0     12   0    0     30  1.0  buzzer_off
+0     12   0    0     30  1.0  triac_2_off
+0     62   2    0    394  3.2  system_init
+0     90   2    4    431  6.2  CHECK_MODULE
+0     82   2    0    153  3.9  delay_start
+0    142   4   13             @DIV3232
+0    146   4    6    318  6.3  delay_stop
+0    398  11    4   1119  7.4  inputcd
+0     62   2    6             @WRITEBITA
+0     50   1    5             @READBITA
+0     40   1    0             @goto4074
+0     34   1    1    115  2.9  kt_nutnhan
+0    360  10    2   2866  7.9  MAIN
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               12
+    Statements              528
+    Comments                442
+    Volume (V)              9435
+    Difficulty (D)          51.9
+    Effort to implement (E) 490058
+    Time to implement (T)   7 hours, 34 minutes
+    Est Delivered Bugs (B)  2
+    Cyclomatic Complexity   28
+    Maintainability (MI)    76
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-0FFFE  1818  63714  
+10000-1FFFE     0  65536  
+
+
+

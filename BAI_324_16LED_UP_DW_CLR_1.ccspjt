@@ -1,0 +1,29 @@
+[PROJECT]
+Target=BAI_324_16LED_UP_DW_CLR_1.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=BAI_324_16LED_UP_DW_CLR_1.c
+[BAI_324_16LED_UP_DW_CLR_1.c]
+Type=4
+[mru-list]
+1=BAI_324_16LED_UP_DW_CLR_1.c
+
+[defines]
+buildcount=14
+
+[ProjectLog]
+Days=1
+D1=07-02-2023
+D1_L=2
+D1_L1=[47431]Started Editing.
+D1_L2=[49136]Project Closed.
+
+[Opened Files]
+1=BAI_324_16LED_UP_DW_CLR_1.c
+t1=5
+Count=1
+[Units]
+Count=1
+1=BAI_324_16LED_UP_DW_CLR_1 (main)

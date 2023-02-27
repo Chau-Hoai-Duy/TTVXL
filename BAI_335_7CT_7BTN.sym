@@ -1,0 +1,180 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004-009 system_var
+00A-00D delay
+00E-011 led32
+012-015 d7seg
+016-01D s7seg
+01E-01F inputcd.oldpin
+020-021 inputcd.t
+022     inputcd.step
+023     key4x4
+024     key4x4_read.step
+025-026 key4x4_read.t
+027     cd
+028     i
+029-02A j
+02B-02C k
+02D-02E write_ledmatrix.mahang
+02D     KEYREAD.cot
+02D     @READBITA.P1
+02D-02E inputcd.pin
+02D     write_glcd128x64.glcd_signal
+02D     s7seg_display.i
+02D     @WRITEBITA.P1
+02D     write_lcd20x4.lcd_signal
+02D-02E delay_stop.t
+02D-030 atan2.y
+02D     key4x4_read.@SCRATCH1
+02D     kiemtra_xuli_nutnhan.@SCRATCH1
+02D     sang_tat_dan_pst.@SCRATCH1
+02D     sang_tat_dan_tsp.@SCRATCH1
+02D     sang_tat_dan_ngoai_vao.@SCRATCH1
+02D     sang_tat_dan_trong_ra.@SCRATCH1
+02D     sang_don_pst.@SCRATCH1
+02D     sang_don_tsp.@SCRATCH1
+02E     s7seg_display.n
+02E-02F @READBITA.P1
+02E     write_glcd128x64.glcd_ins_hthi
+02E     @WRITEBITA.P1
+02E     write_lcd20x4.lcd_ins_hthi
+02E     key4x4_read.@SCRATCH2
+02E     sang_tat_dan_pst.@SCRATCH2
+02E     sang_tat_dan_tsp.@SCRATCH2
+02E     sang_tat_dan_ngoai_vao.@SCRATCH2
+02E     sang_tat_dan_trong_ra.@SCRATCH2
+02E     sang_don_pst.@SCRATCH2
+02E     sang_don_tsp.@SCRATCH2
+02F     @delay_ms1.P1
+02F-030 write_ledmatrix.macot1
+02F-030 delay_stop.tam
+02F-030 @WRITEBITA.P1
+02F     s7seg_display.@SCRATCH1
+02F     sang_tat_dan_pst.@SCRATCH3
+02F     sang_tat_dan_tsp.@SCRATCH3
+02F     sang_don_pst.@SCRATCH3
+02F     sang_don_tsp.@SCRATCH3
+030     sang_tat_dan_pst.@SCRATCH4
+030     sang_tat_dan_tsp.@SCRATCH4
+030     sang_don_pst.@SCRATCH4
+030     sang_don_tsp.@SCRATCH4
+031-034 atan2.x
+031-034 @DIV3232.P1
+031-032 write_ledmatrix.macot2
+031     delay_stop.@SCRATCH1
+031     sang_tat_dan_pst.@SCRATCH5
+031     sang_tat_dan_tsp.@SCRATCH5
+031     sang_don_pst.@SCRATCH5
+031     sang_don_tsp.@SCRATCH5
+032     delay_stop.@SCRATCH2
+032     sang_don_pst.@SCRATCH6
+032     sang_don_tsp.@SCRATCH6
+033-034 write_ledmatrix.macot3
+035-038 atan2.z
+035-038 @DIV3232.P1
+035     write_ledmatrix.@SCRATCH1
+036     write_ledmatrix.@SCRATCH2
+037     SSPI_WRITE.x
+039.0   atan2.sign
+039     @DIV3232.@SCRATCH1
+03A     atan2.quad
+03A     @DIV3232.@SCRATCH2
+03B     @DIV3232.@SCRATCH3
+03C     @DIV3232.@SCRATCH4
+03D     @DIV3232.@SCRATCH5
+F83     PSP_DATA
+F84.0   SSCK
+F84.2   SSDO
+FA1.1   TIM3IF
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P3
+FE9-FEA @WRITE_PACKED_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  SSPI_WRITE
+000096  private_write_buzzer_relay
+0000B2  led32_display
+0000D8  d7seg_display
+000100  @delay_ms1
+000126  s7seg_display
+00017C  private_write_glcd_lcd
+0001A2  write_lcd20x4
+0001B8  write_glcd128x64
+0001CE  write_ledmatrix
+000216  system_init
+000284  KEYREAD
+0002FC  @DIV3232
+00038A  delay_start
+0003DC  delay_stop
+00046E  key4x4_read
+000548  @goto20189
+00056A  kiemtra_xuli_nutnhan
+00058C  chop_tat_led
+0005B6  sang_tat_dan_pst
+00060A  sang_tat_dan_tsp
+00065A  sang_tat_dan_ngoai_vao
+0006B0  sang_tat_dan_trong_ra
+000706  sang_don_pst
+0007A4  sang_don_tsp
+000842  MAIN
+000842  @cinit1
+000868  @cinit2
+
+Project Directory:
+    C:\TTVXL\TTVXL\Thuc Hanh\
+
+Project Files:
+    BAI_335_7CT_7BTN.c                                      [07-Feb-23 16:40  CRC=FEF5F401]
+    tv_boards.c                                             [25-Aug-22 14:39  CRC=BADBB360]
+    TV_D501_TH.C                                            [25-Aug-22 14:04  CRC=1FD863A8]
+    TV_D501_TH.h                                            [25-Aug-22 14:02  CRC=79282120]
+    ..\..\..\Program Files (x86)\PICC\Devices\18f4550.h     [21-Jan-21 11:37  CRC=71B7866C]
+    ..\..\..\Program Files (x86)\PICC\Drivers\math.h        [05-May-20 12:57  CRC=02232397]
+    TV_LOWLEVER.C                                           [12-Oct-22 15:49  CRC=97B0DA2C]
+    TV_LOWLEVER.H                                           [19-Nov-22 07:33  CRC=D872A938]
+    tv_key4x4.c                                             [07-Jun-22 20:08  CRC=53A906E2]
+    tv_key4x4.h                                             [29-Apr-22 14:10  CRC=D872A938]
+
+Source signature=3B5EB2E2
+Program memory checksum=0000
+Hex file CRC=5000
+
+Units:
+    C:\TTVXL\TTVXL\Thuc Hanh\BAI_335_7CT_7BTN (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   BAI_335_7CT_7BTN.xsym
+    Errors:      BAI_335_7CT_7BTN.err
+    Ext Symbols: BAI_335_7CT_7BTN.esym
+    INHX32:      BAI_335_7CT_7BTN.hex
+    Symbols:     BAI_335_7CT_7BTN.sym
+    List:        BAI_335_7CT_7BTN.lst
+    Debug/COFF:  BAI_335_7CT_7BTN.cof
+    Project:     BAI_335_7CT_7BTN.ccspjt
+    Call Tree:   BAI_335_7CT_7BTN.tre
+    Statistics:  BAI_335_7CT_7BTN.STA

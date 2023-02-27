@@ -1,0 +1,108 @@
+ÀÄCLIP_5
+   ÃÄMAIN  0/942  Ram=1
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄ@cinit2  (Inline)  Ram=0
+   ³  ÃÄsystem_init  0/62  Ram=0
+   ³  ³  ÃÄCHECK_MODULE  0/90  Ram=4
+   ³  ³  ³  ÃÄ@delay_ms1  0/38  Ram=1
+   ³  ³  ³  ÀÄ@delay_ms1  0/38  Ram=1
+   ³  ³  ÃÄled32_display  0/56  Ram=0
+   ³  ³  ÃÄd7seg_display  0/102  Ram=0
+   ³  ³  ³  ÀÄ@delay_ms1  0/38  Ram=1
+   ³  ³  ÃÄs7seg_display  0/96  Ram=2
+   ³  ³  ³  ÀÄ@delay_ms1  0/38  Ram=1
+   ³  ³  ÃÄbuzzer_off  0/12  Ram=0
+   ³  ³  ÀÄtriac_2_off  0/12  Ram=0
+   ³  ÃÄkt_nutnhan  0/104  Ram=1
+   ³  ³  ÀÄkey4x4_read  0/218  Ram=2
+   ³  ³     ÃÄKEYREAD  0/168  Ram=2
+   ³  ³     ³  ÃÄ@const970  0/24  Ram=0
+   ³  ³     ³  ÃÄ@const970  0/24  Ram=0
+   ³  ³     ³  ÃÄ@const970  0/24  Ram=0
+   ³  ³     ³  ÀÄ@const970  0/24  Ram=0
+   ³  ³     ÃÄ@goto47353  0/40  Ram=0
+   ³  ³     ÃÄdelay_start  0/82  Ram=0
+   ³  ³     ³  ÀÄ@DIV3232  0/142  Ram=13
+   ³  ³     ÃÄdelay_stop  0/146  Ram=6
+   ³  ³     ³  ÀÄ@DIV3232  0/142  Ram=13
+   ³  ³     ÃÄdelay_start  0/82  Ram=0
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÃÄdelay_stop  0/146  Ram=6
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÃÄdelay_start  0/82  Ram=0
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÃÄdelay_stop  0/146  Ram=6
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÀÄdelay_start  0/82  Ram=0
+   ³  ³        ÀÄ*
+   ³  ÃÄs7seg_display  0/96  Ram=2
+   ³  ³  ÀÄ*
+   ³  ÃÄ@DIVS88  0/72  Ram=4
+   ³  ÃÄ@const949  0/36  Ram=0
+   ³  ÃÄs7seg_display  0/96  Ram=2
+   ³  ³  ÀÄ*
+   ³  ÃÄ@DIVS88  0/72  Ram=4
+   ³  ÃÄ@const949  0/36  Ram=0
+   ³  ÃÄ@DIVS88  0/72  Ram=4
+   ³  ÃÄ@const949  0/36  Ram=0
+   ³  ÃÄ@DIVS88  0/72  Ram=4
+   ³  ÃÄ@DIVS88  0/72  Ram=4
+   ³  ÃÄ@const949  0/36  Ram=0
+   ³  ÃÄ@DIVS88  0/72  Ram=4
+   ³  ÃÄ@DIVS88  0/72  Ram=4
+   ³  ÃÄ@const949  0/36  Ram=0
+   ³  ÃÄs7seg_display  0/96  Ram=2
+   ³  ³  ÀÄ*
+   ³  ÃÄ@DIV88  0/40  Ram=3
+   ³  ÃÄ@const949  0/36  Ram=0
+   ³  ÃÄ@DIV88  0/40  Ram=3
+   ³  ÃÄ@DIV88  0/40  Ram=3
+   ³  ÃÄ@const949  0/36  Ram=0
+   ³  ÃÄ@DIV88  0/40  Ram=3
+   ³  ÃÄ@const949  0/36  Ram=0
+   ³  ÃÄ@DIV88  0/40  Ram=3
+   ³  ÃÄ@DIV88  0/40  Ram=3
+   ³  ÃÄ@const949  0/36  Ram=0
+   ³  ÃÄ@DIV88  0/40  Ram=3
+   ³  ÃÄ@const949  0/36  Ram=0
+   ³  ÃÄ@DIV88  0/40  Ram=3
+   ³  ÃÄ@DIV88  0/40  Ram=3
+   ³  ÃÄ@const949  0/36  Ram=0
+   ³  ÃÄs7seg_display  0/96  Ram=2
+   ³  ³  ÀÄ*
+   ³  ÃÄkt_nutnhan  0/104  Ram=1
+   ³  ³  ÀÄ*
+   ³  ÃÄ@DIV88  0/40  Ram=3
+   ³  ÃÄ@const949  0/36  Ram=0
+   ³  ÃÄ@DIV88  0/40  Ram=3
+   ³  ÃÄ@DIV88  0/40  Ram=3
+   ³  ÃÄ@const949  0/36  Ram=0
+   ³  ÃÄs7seg_display  0/96  Ram=2
+   ³  ³  ÀÄ*
+   ³  ÃÄs7seg_display  0/96  Ram=2
+   ³  ³  ÀÄ*
+   ³  ÃÄkt_nutnhan  0/104  Ram=1
+   ³  ³  ÀÄ*
+   ³  ÃÄ@DIV88  0/40  Ram=3
+   ³  ÃÄ@const949  0/36  Ram=0
+   ³  ÃÄ@DIV88  0/40  Ram=3
+   ³  ÃÄ@DIV88  0/40  Ram=3
+   ³  ÃÄ@const949  0/36  Ram=0
+   ³  ÃÄs7seg_display  0/96  Ram=2
+   ³  ³  ÀÄ*
+   ³  ÃÄs7seg_display  0/96  Ram=2
+   ³  ³  ÀÄ*
+   ³  ÃÄkt_nutnhan  0/104  Ram=1
+   ³  ³  ÀÄ*
+   ³  ÃÄ@DIV88  0/40  Ram=3
+   ³  ÃÄ@const949  0/36  Ram=0
+   ³  ÃÄ@DIV88  0/40  Ram=3
+   ³  ÃÄ@DIV88  0/40  Ram=3
+   ³  ÃÄ@const949  0/36  Ram=0
+   ³  ÃÄs7seg_display  0/96  Ram=2
+   ³  ³  ÀÄ*
+   ³  ÃÄkt_nutnhan  0/104  Ram=1
+   ³  ³  ÀÄ*
+   ³  ÀÄs7seg_display  0/96  Ram=2
+   ³     ÀÄ*
+   ÀÄngat_timer1  0/18  Ram=0

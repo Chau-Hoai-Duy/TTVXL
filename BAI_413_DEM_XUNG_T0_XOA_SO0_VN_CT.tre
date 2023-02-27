@@ -1,0 +1,47 @@
+ÀÄBAI_413_DEM_XUNG_T0_XOA_SO0_VN_CT
+   ÀÄMAIN  0/138  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄ@cinit2  (Inline)  Ram=0
+      ÃÄsystem_init  0/110  Ram=0
+      ³  ÃÄprivate_write_buzzer_relay  0/28  Ram=0
+      ³  ³  ÃÄSSPI_WRITE  0/114  Ram=1
+      ³  ³  ÀÄSSPI_WRITE  0/114  Ram=1
+      ³  ÃÄled32_display  0/40  Ram=0
+      ³  ³  ÃÄSSPI_WRITE  0/114  Ram=1
+      ³  ³  ÃÄSSPI_WRITE  0/114  Ram=1
+      ³  ³  ÃÄSSPI_WRITE  0/114  Ram=1
+      ³  ³  ÀÄSSPI_WRITE  0/114  Ram=1
+      ³  ÃÄd7seg_display  0/38  Ram=0
+      ³  ³  ÃÄSSPI_WRITE  0/114  Ram=1
+      ³  ³  ÃÄSSPI_WRITE  0/114  Ram=1
+      ³  ³  ÃÄSSPI_WRITE  0/114  Ram=1
+      ³  ³  ÀÄSSPI_WRITE  0/114  Ram=1
+      ³  ÃÄs7seg_display  0/86  Ram=3
+      ³  ³  ÃÄSSPI_WRITE  0/114  Ram=1
+      ³  ³  ÃÄSSPI_WRITE  0/114  Ram=1
+      ³  ³  ÃÄ@delay_ms1  0/40  Ram=1
+      ³  ³  ÀÄSSPI_WRITE  0/114  Ram=1
+      ³  ÃÄwrite_lcd20x4  0/22  Ram=2
+      ³  ³  ÀÄprivate_write_glcd_lcd  0/38  Ram=0
+      ³  ³     ÃÄSSPI_WRITE  0/114  Ram=1
+      ³  ³     ÃÄSSPI_WRITE  0/114  Ram=1
+      ³  ³     ÃÄSSPI_WRITE  0/114  Ram=1
+      ³  ³     ÀÄSSPI_WRITE  0/114  Ram=1
+      ³  ÃÄwrite_glcd128x64  0/22  Ram=2
+      ³  ³  ÀÄprivate_write_glcd_lcd  0/38  Ram=0
+      ³  ³     ÀÄ*
+      ³  ÀÄwrite_ledmatrix  0/72  Ram=10
+      ³     ÃÄSSPI_WRITE  0/114  Ram=1
+      ³     ÃÄSSPI_WRITE  0/114  Ram=1
+      ³     ÃÄSSPI_WRITE  0/114  Ram=1
+      ³     ÃÄSSPI_WRITE  0/114  Ram=1
+      ³     ÃÄSSPI_WRITE  0/114  Ram=1
+      ³     ÃÄSSPI_WRITE  0/114  Ram=1
+      ³     ÃÄSSPI_WRITE  0/114  Ram=1
+      ³     ÀÄSSPI_WRITE  0/114  Ram=1
+      ÀÄd7seg_xoa0VN  0/116  Ram=7
+         ÃÄ@DIV1616  0/66  Ram=5
+         ÃÄ@const929  0/32  Ram=0
+         ÃÄ@DIV1616  0/66  Ram=5
+         ÀÄd7seg_display  0/38  Ram=0
+            ÀÄ*

@@ -1,0 +1,64 @@
+ÀÄBAI_314_TONGHOP_32LED
+   ÀÄMAIN  0/290  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄ@cinit2  (Inline)  Ram=0
+      ÃÄsystem_init  0/62  Ram=0
+      ³  ÃÄCHECK_MODULE  0/90  Ram=4
+      ³  ³  ÃÄ@delay_ms1  0/42  Ram=1
+      ³  ³  ÀÄ@delay_ms1  0/42  Ram=1
+      ³  ÃÄled32_display  0/54  Ram=0
+      ³  ÃÄd7seg_display  0/102  Ram=0
+      ³  ³  ÀÄ@delay_ms1  0/42  Ram=1
+      ³  ÃÄs7seg_display  0/98  Ram=2
+      ³  ³  ÀÄ@delay_ms1  0/42  Ram=1
+      ³  ÃÄbuzzer_off  0/12  Ram=0
+      ³  ÀÄtriac_2_off  0/12  Ram=0
+      ÃÄchop_tat_5_lan  0/40  Ram=1
+      ³  ÃÄled32_display  0/54  Ram=0
+      ³  ÀÄ@delay_ms1  0/42  Ram=1
+      ÃÄsang_dan_pst  0/76  Ram=1
+      ³  ÃÄled32_display  0/54  Ram=0
+      ³  ÀÄ@delay_ms1  0/42  Ram=1
+      ÃÄtat_dan_pst  0/52  Ram=1
+      ³  ÃÄled32_display  0/54  Ram=0
+      ³  ÀÄ@delay_ms1  0/42  Ram=1
+      ÃÄsang_dan_pst  0/76  Ram=1
+      ³  ÀÄ*
+      ÃÄtat_dan_pst  0/52  Ram=1
+      ³  ÀÄ*
+      ÃÄchop_tat_5_lan  0/40  Ram=1
+      ³  ÀÄ*
+      ÃÄsang_dan_tsp  0/76  Ram=1
+      ³  ÃÄled32_display  0/54  Ram=0
+      ³  ÀÄ@delay_ms1  0/42  Ram=1
+      ÃÄtat_dan_tsp  0/52  Ram=1
+      ³  ÃÄled32_display  0/54  Ram=0
+      ³  ÀÄ@delay_ms1  0/42  Ram=1
+      ÃÄsang_dan_tsp  0/76  Ram=1
+      ³  ÀÄ*
+      ÃÄtat_dan_tsp  0/52  Ram=1
+      ³  ÀÄ*
+      ÃÄchop_tat_5_lan  0/40  Ram=1
+      ³  ÀÄ*
+      ÃÄsang_dan_ngoai_vao  0/88  Ram=0
+      ³  ÃÄled32_display  0/54  Ram=0
+      ³  ÀÄ@delay_ms1  0/42  Ram=1
+      ÃÄtat_dan_ngoai_vao  0/64  Ram=0
+      ³  ÃÄled32_display  0/54  Ram=0
+      ³  ÀÄ@delay_ms1  0/42  Ram=1
+      ÃÄsang_dan_ngoai_vao  0/88  Ram=0
+      ³  ÀÄ*
+      ÃÄtat_dan_ngoai_vao  0/64  Ram=0
+      ³  ÀÄ*
+      ÃÄchop_tat_5_lan  0/40  Ram=1
+      ³  ÀÄ*
+      ÃÄsang_dan_trong_ra  0/88  Ram=0
+      ³  ÃÄled32_display  0/54  Ram=0
+      ³  ÀÄ@delay_ms1  0/42  Ram=1
+      ÃÄtat_dan_trong_ra  0/64  Ram=0
+      ³  ÃÄled32_display  0/54  Ram=0
+      ³  ÀÄ@delay_ms1  0/42  Ram=1
+      ÃÄsang_dan_trong_ra  0/88  Ram=0
+      ³  ÀÄ*
+      ÀÄtat_dan_trong_ra  0/64  Ram=0
+         ÀÄ*

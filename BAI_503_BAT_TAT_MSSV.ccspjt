@@ -1,0 +1,29 @@
+[PROJECT]
+Target=BAI_503_BAT_TAT_MSSV.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=BAI_503_BAT_TAT_MSSV.c
+[BAI_503_BAT_TAT_MSSV.c]
+Type=4
+[mru-list]
+1=BAI_503_BAT_TAT_MSSV.c
+
+[defines]
+buildcount=3
+
+[Opened Files]
+1=BAI_503_BAT_TAT_MSSV.c
+t1=21
+Count=1
+
+[ProjectLog]
+Days=1
+D1=21-02-2023
+D1_L=2
+D1_L1=[47827]Started Editing.
+D1_L2=[47885]Project Closed.
+[Units]
+Count=1
+1=BAI_503_BAT_TAT_MSSV (main)

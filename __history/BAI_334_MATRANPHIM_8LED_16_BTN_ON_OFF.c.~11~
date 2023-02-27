@@ -1,0 +1,35 @@
+#DEFINE BOARD D501
+#include <tv_boards.c>
+#include <tv_key4x4.c>
+void kt_keypad()
+{
+   if(key4x4_read()==ok)
+   {
+      if(key4x4.key==0) led32.ledx8[0]=led32.ledx8[0]|0x01;
+      if(key4x4.key==1) led32.ledx8[0]=led32.ledx8[0]|0x02;
+      if(key4x4.key==2) led32.ledx8[0]=led32.ledx8[0]|0x04;
+      if(key4x4.key==3) led32.ledx8[0]=led32.ledx8[0]|0x08;
+      if(key4x4.key==4) led32.ledx8[0]=led32.ledx8[0]|0x10;
+      if(key4x4.key==5) led32.ledx8[0]=led32.ledx8[0]|0x20;
+      if(key4x4.key==6) led32.ledx8[0]=led32.ledx8[0]|0x40;
+      if(key4x4.key==7) led32.ledx8[0]=led32.ledx8[0]|0x80;
+      if(key4x4.key==8) led32.ledx8[0]=led32.ledx8[0]&(~0x01);
+      if(key4x4.key==9) led32.ledx8[0]=led32.ledx8[0]&(~0x02);
+      if(key4x4.key==10) led32.ledx8[0]=led32.ledx8[0]&(~0x04);
+      if(key4x4.key==11) led32.ledx8[0]=led32.ledx8[0]&(~0x08);
+      if(key4x4.key==12) led32.ledx8[0]=led32.ledx8[0]&(~0x10);
+      if(key4x4.key==13) led32.ledx8[0]=led32.ledx8[0]&(~0x20);
+      if(key4x4.key==14) led32.ledx8[0]=led32.ledx8[0]&(~0x40);
+      if(key4x4.key==15) led32.ledx8[0]=led32.ledx8[0]&(~0x80);
+   }
+}
+void main()
+{
+   system_init();
+   while(true)
+   {
+      kt_keypad();
+      led32_display();
+   }
+}
+

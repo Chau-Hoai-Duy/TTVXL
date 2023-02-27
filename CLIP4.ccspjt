@@ -1,0 +1,104 @@
+[PROJECT]
+Target=CLIP4.hex
+Processor_Text=PIC18F6722
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=CLIP4.c
+[CLIP4.c]
+Type=4
+[mru-list]
+1=CLIP4.c
+
+[defines]
+buildcount=68
+
+[ProjectLog]
+Days=4
+D1=17-02-2023
+D1_L=15
+D1_L1=[58313]Started Editing.
+D1_L2=[61581]Stopped Editing.
+D1_L3=[61682]Started Editing.
+D1_L4=[62356]Stopped Editing.
+D1_L5=[62639]Started Editing.
+D1_L6=[63877]Stopped Editing.
+D1_L7=[64436]Started Editing.
+D1_L8=[64446]Stopped Editing.
+TotalEdit=192
+TotalDebug=0
+D1_E=75
+D1_D=0
+D1_L9=[64542]Started Editing.
+D1_L10=[64659]Stopped Editing.
+D1_L11=[64659]Project Closed.
+D1_L12=[81201]Project Opened.
+D1_L13=[81282]Started Editing.
+D1_L14=[81337]Stopped Editing.
+D1_L15=[81337]Project Closed.
+D2=18-02-2023
+D2_L=16
+D2_L1=[31948]Project Opened.
+D2_L2=[31948]Project Closed.
+D2_L3=[31949]Project Opened.
+D2_L4=[32085]Started Editing.
+D2_L5=[34217]Stopped Editing.
+D2_L6=[34312]Started Editing.
+D2_L7=[34753]Stopped Editing.
+D2_L8=[35079]Started Editing.
+D2_L9=[36147]Stopped Editing.
+D2_L10=[36706]Started Editing.
+D2_L11=[38660]Stopped Editing.
+D2_E=83
+D2_D=0
+D2_L12=[39384]Project Closed.
+D2_L13=[39425]Project Opened.
+D2_L14=[39448]Started Editing.
+D2_L15=[39631]Stopped Editing.
+D2_L16=[39631]Project Closed.
+D3=22-02-2023
+D3_L=14
+D3_L1=[60945]Project Opened.
+D3_L2=[60962]Started Editing.
+D3_L3=[61481]Stopped Editing.
+D3_E=26
+D3_D=0
+D3_L4=[68620]Project Closed.
+D3_L5=[77348]Project Opened.
+D3_L6=[77348]Project Closed.
+D3_L7=[77349]Project Opened.
+D3_L8=[77420]Started Editing.
+D3_L9=[78329]Stopped Editing.
+D3_L10=[80817]Started Editing.
+D3_L11=[81586]Stopped Editing.
+D3_L12=[82819]Started Editing.
+D3_L13=[83010]Stopped Editing.
+D3_L14=[83010]Project Closed.
+D4=23-02-2023
+D4_L=7
+D4_L1=[30252]Project Opened.
+D4_L2=[30253]Project Closed.
+D4_L3=[30253]Project Opened.
+D4_L4=[30266]Started Editing.
+D4_L5=[30719]Stopped Editing.
+D4_E=8
+D4_D=0
+D4_L6=[30754]Started Editing.
+D4_L7=[31200]Project Closed.
+
+[Opened Files]
+1=BAI_517_GIO_PHUT_GIAY_KEY_CAITIEN_NHAPNHAY.c
+t1=8
+2=BAI_515_GIO_PHUT_GIAY_KEY.c
+t2=26
+Count=4
+3=CLIP4.c
+t3=26
+4=CLIP_5.c
+t4=70
+
+[fileformats]
+forcecoff=0
+[Units]
+Count=1
+1=CLIP4 (main)

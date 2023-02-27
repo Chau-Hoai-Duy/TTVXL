@@ -1,0 +1,41 @@
+[PROJECT]
+Target=BAI_401_HIENTHI_4SO.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=BAI_401_HIENTHI_4SO.c
+[BAI_401_HIENTHI_4SO.c]
+Type=4
+[mru-list]
+1=BAI_401_HIENTHI_4SO.c
+
+[defines]
+buildcount=2
+
+[Opened Files]
+1=BAI_401_HIENTHI_4SO.c
+t1=1
+Count=1
+
+[ProjectLog]
+Days=2
+D1=13-02-2023
+D1_L=1
+D1_L1=[76860]Project Closed.
+D2=14-02-2023
+D2_L=4
+D2_L1=[48334]Project Opened.
+D2_L2=[48338]Started Editing.
+D2_L3=[48434]Stopped Editing.
+TotalEdit=2
+TotalDebug=0
+D2_E=2
+D2_D=0
+D2_L4=[48477]Project Closed.
+
+[fileformats]
+forcecoff=0
+[Units]
+Count=1
+1=BAI_401_HIENTHI_4SO (main)

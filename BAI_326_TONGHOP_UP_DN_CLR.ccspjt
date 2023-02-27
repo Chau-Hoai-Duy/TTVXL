@@ -1,0 +1,63 @@
+[PROJECT]
+Target=BAI_326_TONGHOP_UP_DN_CLR.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=BAI_326_TONGHOP_UP_DN_CLR.c
+[BAI_326_TONGHOP_UP_DN_CLR.c]
+Type=4
+[mru-list]
+1=BAI_326_TONGHOP_UP_DN_CLR.c
+
+[defines]
+buildcount=33
+
+[ProjectLog]
+Days=3
+D1=07-02-2023
+D1_L=13
+D1_L1=[51218]Started Editing.
+D1_L2=[52746]Stopped Editing.
+TotalEdit=42
+TotalDebug=0
+D1_E=32
+D1_D=0
+D1_L3=[52796]Started Editing.
+D1_L4=[54615]Stopped Editing.
+D1_L5=[54668]Started Editing.
+D1_L6=[57763]Project Closed.
+D1_L7=[57809]Project Opened.
+D1_L8=[57833]Started Editing.
+D1_L9=[57918]Project Closed.
+D1_L10=[60297]Project Opened.
+D1_L11=[60302]Started Editing.
+D1_L12=[60628]Stopped Editing.
+D1_L13=[60628]Project Closed.
+D2=17-02-2023
+D2_L=6
+D2_L1=[71858]Project Opened.
+D2_L2=[72002]Project Closed.
+D2_L3=[80526]Project Opened.
+D2_L4=[80625]Started Editing.
+D2_L5=[81201]Stopped Editing.
+D2_E=10
+D2_D=0
+D2_L6=[81201]Project Closed.
+D3=18-02-2023
+D3_L=2
+D3_L1=[31948]Project Opened.
+D3_L2=[31949]Project Closed.
+
+[Opened Files]
+1=BAI_326_TONGHOP_UP_DN_CLR.c
+t1=1
+Count=2
+2=CLIP4.c
+t2=1
+
+[fileformats]
+forcecoff=0
+[Units]
+Count=1
+1=BAI_326_TONGHOP_UP_DN_CLR (main)

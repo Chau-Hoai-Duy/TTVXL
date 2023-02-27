@@ -1,0 +1,44 @@
+#include<tv_boards.c>
+#include<tv_key4x4.c>
+signed int8 i=0, gtcaibd=0, dem=0, gtcaisau=0;
+unsigned int1 cdo=0;
+void kt_nutnhan()
+{
+   if(key4x4_read()==ok)
+   {
+      if((key4x4.key<=9)&&(key4x4.key!=13))
+      {
+         if(i==0)
+         {
+            gtcaibd=key4x4.key*10;
+            d7seg.led[3]=m7d[key4x4.key];
+         }
+         if(i==1)
+         {
+            gtcaibd=gtcaibd+key4x4.key;
+            d7seg.led[2]=m7d[key4x4.key];
+            dem=0;
+            gtcaisau=gtcaibd;
+         }
+         i++;
+         if(i>=2) i=0;
+      }
+      else if(key4x4.key==13) cdo=~cdo;
+      else;
+   }
+   d7seg_display();
+}
+void main()
+{
+   system_init();
+   setup_timer_0(T0_EXT_L_TO_H| T0_DIV_1);
+   set_timer0(0);
+   d7seg.led[0]=m7d[0];
+   d7seg.led[1]=m7d[0];
+   d7seg.led[2]=m7d[0];
+   d7seg.led[3]=m7d[0];
+   while(true)
+   {
+      
+   }
+}

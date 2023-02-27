@@ -1,0 +1,147 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016     @INTERRUPT_AREA
+017     @INTERRUPT_AREA
+018     @INTERRUPT_AREA
+019-01E system_var
+01F-022 delay
+023-026 led32
+027-02A d7seg
+02B-032 s7seg
+033-034 inputcd.oldpin
+035-036 inputcd.t
+037     inputcd.step
+038     giay
+039     bdn
+03A     s7seg_display.i
+03A     @READBITA.P1
+03A     write_lcd20x4.lcd_signal
+03A-03D atan2.y
+03A-03B write_ledmatrix.mahang
+03A     @WRITEBITA.P1
+03A     write_glcd128x64.glcd_signal
+03A-03B inputcd.pin
+03A     MAIN.@SCRATCH1
+03B     @DIV88.P1
+03B     write_lcd20x4.lcd_ins_hthi
+03B     @WRITEBITA.P1
+03B     write_glcd128x64.glcd_ins_hthi
+03B     s7seg_display.n
+03B-03C @READBITA.P1
+03C     @delay_ms1.P1
+03C     @DIV88.P2
+03C-03D write_ledmatrix.macot1
+03C-03D @WRITEBITA.P1
+03C     s7seg_display.@SCRATCH1
+03D     @DIV88.@SCRATCH1
+03E-041 atan2.x
+03E-03F write_ledmatrix.macot2
+040-041 write_ledmatrix.macot3
+042-045 atan2.z
+042     write_ledmatrix.@SCRATCH1
+043     write_ledmatrix.@SCRATCH2
+044     SSPI_WRITE.x
+046.0   atan2.sign
+047     atan2.quad
+F83     PSP_DATA
+F84.0   SSCK
+F84.2   SSDO
+FA1.1   TIM3IF
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P3
+FE9-FEA @READ_PACKED_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+0000AE  m7d.call
+0000BE  m7d.data
+0000CE  ngat_timer1
+0000E0  SSPI_WRITE
+000152  private_write_buzzer_relay
+00016E  led32_display
+000196  d7seg_display
+0001BE  @delay_ms1
+0001E6  s7seg_display
+00023A  private_write_glcd_lcd
+000260  write_lcd20x4
+000276  write_glcd128x64
+00028C  write_ledmatrix
+0002D4  system_init
+000342  @DIV88
+00036A  MAIN
+00036A  @cinit1
+00038E  @cinit2
+
+Project Directory:
+    C:\TTVXL\TTVXL\Thuc Hanh\
+
+Project Files:
+    BAI_512_DEM_GIAY_CX.c                                   [21-Feb-23 15:44  CRC=4E70FFA7]
+    tv_boards.c                                             [25-Aug-22 14:39  CRC=BADBB360]
+    TV_D501_TH.C                                            [25-Aug-22 14:04  CRC=1FD863A8]
+    TV_D501_TH.h                                            [25-Aug-22 14:02  CRC=79282120]
+    ..\..\..\Program Files (x86)\PICC\Devices\18f4550.h     [21-Jan-21 11:37  CRC=71B7866C]
+    ..\..\..\Program Files (x86)\PICC\Drivers\math.h        [05-May-20 12:57  CRC=02232397]
+    TV_LOWLEVER.C                                           [12-Oct-22 15:49  CRC=97B0DA2C]
+    TV_LOWLEVER.H                                           [19-Nov-22 07:33  CRC=D872A938]
+
+Source signature=5EBE0E6E
+Program memory checksum=0000
+Hex file CRC=50B5
+
+Units:
+    C:\TTVXL\TTVXL\Thuc Hanh\BAI_512_DEM_GIAY_CX (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   BAI_512_DEM_GIAY_CX.xsym
+    Errors:      BAI_512_DEM_GIAY_CX.err
+    Ext Symbols: BAI_512_DEM_GIAY_CX.esym
+    INHX32:      BAI_512_DEM_GIAY_CX.hex
+    Symbols:     BAI_512_DEM_GIAY_CX.sym
+    List:        BAI_512_DEM_GIAY_CX.lst
+    Debug/COFF:  BAI_512_DEM_GIAY_CX.cof
+    Project:     BAI_512_DEM_GIAY_CX.ccspjt
+    Call Tree:   BAI_512_DEM_GIAY_CX.tre
+    Statistics:  BAI_512_DEM_GIAY_CX.STA

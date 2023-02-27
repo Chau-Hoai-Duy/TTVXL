@@ -1,0 +1,29 @@
+[PROJECT]
+Target=BAI_407_DEM_000_999.hex
+Processor_Text=PIC18F6722
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=BAI_407_DEM_000_999.c
+[BAI_407_DEM_000_999.c]
+Type=4
+[mru-list]
+1=BAI_407_DEM_000_999.c
+[Units]
+Count=1
+1=BAI_407_DEM_000_999 (main)
+
+[defines]
+buildcount=1
+
+[Opened Files]
+1=BAI_407_DEM_000_999.c
+t1=1
+Count=1
+
+[ProjectLog]
+Days=1
+D1=13-02-2023
+D1_L=2
+D1_L1=[77875]Stopped Editing.
+D1_L2=[78565]Project Closed.

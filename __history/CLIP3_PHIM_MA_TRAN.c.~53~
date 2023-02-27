@@ -1,0 +1,199 @@
+#include<tv_boards.c>
+#include<tv_key4x4.c>
+unsigned int8 i,j,cd=1,cdcu=1;
+unsigned int1 cdoi=0;
+unsigned int16 k,cho=200,chocu=200;
+void kt_nut_nhan()
+{
+   if(key4x4_read()==ok)
+   {
+      if(key4x4.key==15) cdoi=~cdoi;
+      if((cdoi==0)&&(key4x4.key!=15))
+      {   
+         cd=key4x4.key+1;
+         if(cd>=11) cd=10;
+      }
+      if((cdoi==1)&&(key4x4.key!=15)) cho=(key4x4.key+1)*300;
+      if(cd!=cdcu) 
+      {
+            cdcu=cd;
+            i=0;
+            j=4;
+            led32.ledx32=0;
+            break;
+      }
+      if(cho!=chocu) 
+      {
+            chocu=cho;
+            break;
+      }
+   }
+   if(cdoi==1)
+   {
+      led32.ledx1[0]=1;
+      led32_display();
+   }
+   if(cdoi==0)
+   {
+      led32.ledx1[0]=0;
+      led32_display();
+   }
+}
+void chop_tat_led_don()
+{
+   if(i<=2)
+   {
+      led32.ledx32=(~led32.ledx32)&0x0ffffff0;
+      led32_display();
+      i++;
+      for(k=0;k<=cho;k++) kt_nut_nhan();
+   }
+   else i=0;
+}
+void sang_tat_dan_pst()
+{
+   if(i<48)
+   {
+      if(i<24) led32.ledx32=((led32.ledx32<<1)|(0x00000010))&0x0ffffff0;
+      else     led32.ledx32=(led32.ledx32<<1)&0x0ffffff0;
+      i++;
+      led32_display();
+      for(k=0;k<=cho;k++) kt_nut_nhan();
+   }
+   else i=0;
+}
+void sang_tat_dan_tsp()
+{
+   if(i<48)
+   {
+      if(i<24) led32.ledx32=((led32.ledx32>>1)|0x08000000)&0x0ffffff0;
+      else     led32.ledx32=(led32.ledx32>>1)&0x0ffffff0;
+      led32_display();
+      i++;
+      for(k=0;k<=cho;k++) kt_nut_nhan();
+   }
+   else i=0;
+}
+void sang_dich_pst()
+{
+   if(i<24)
+   {
+      led32.ledx32=0x00000010<<i;
+      led32_display();
+      i++;
+      for(k=0;k<=cho;k++) kt_nut_nhan();
+   }
+   else i=0;
+}
+void sang_dich_tsp()
+{
+   if(i<24)
+   {
+      led32.ledx32=0x08000000>>i;
+      led32_display();
+      i++;
+      for(k=0;k<=cho;k++) kt_nut_nhan();
+   }
+   else i=0;
+}
+void sang_tat_dan_trong_ra()
+{
+   if(i<24)
+   {
+      if(i<12)
+      {
+         led32.ledx16[0]=(led32.ledx16[0]>>1)|0x8000;
+         led32.ledx16[1]=(led32.ledx16[1]<<1)|0x0001;
+      }
+      else
+      {
+         led32.ledx16[0]=(led32.ledx16[0]>>1)&0xfff0;
+         led32.ledx16[1]=(led32.ledx16[1]<<1)&0x0fff;
+      }
+      led32_display();
+      i++;
+      for(k=0;k<=cho;k++) kt_nut_nhan();
+   }
+   else i=0;
+}
+void sang_tat_dan_ngoai_vao()
+{
+   if(i<24)
+   {
+      if(i<12)
+      {
+         led32.ledx16[0]=(led32.ledx16[0]<<1)|0x0010;
+         led32.ledx16[1]=(led32.ledx16[1]>>1)|0x0800;
+      }
+      else
+      {
+         led32.ledx16[0]=led32.ledx16[0]<<1;
+         led32.ledx16[1]=led32.ledx16[1]>>1;
+      }
+      led32_display();
+      i++;
+      for(k=0;k<=cho;k++) kt_nut_nhan();
+   }
+   else i=0;
+}
+void sang_dich_ngoai_vao()
+{
+   if(i<12)
+   {
+      led32.ledx16[0]=0x0010<<i;
+      led32.ledx16[1]=0x0800>>i;
+      led32_display();
+      i++;
+      for(k=0;k<=cho;k++) kt_nut_nhan();
+   }
+   else i=0;
+}
+void sang_dich_trong_ra()
+{
+   if(i<12)
+   {
+      led32.ledx16[0]=0x8000>>i;
+      led32.ledx16[1]=0x0001<<i;
+      led32_display();
+      i++;
+      for(k=0;k<=cho;k++) kt_nut_nhan();
+   }
+   else i=0;
+}
+void sang_don_pst()
+{
+   if(i<24)
+   {
+      if(j<28-i)
+      {
+         led32.ledx32=(~(0x0fffffff>>i)|((int32)1<<j))&0x0ffffff0;
+         led32_display();
+         j++;
+         for(k=0;k<=cho;k++) kt_nut_nhan();
+      }
+      else 
+      {
+         j=4;
+         i++;
+      }
+   }
+   else i=0;
+}
+
+void main()
+{
+   system_init();
+   while(true)
+   {
+      if(cd==1) chop_tat_led_don();
+      if(cd==2) sang_tat_dan_pst();
+      if(cd==3) sang_tat_dan_tsp();
+      if(cd==4) sang_dich_pst();
+      if(cd==5) sang_dich_tsp();
+      if(cd==6) sang_tat_dan_trong_ra();
+      if(cd==7) sang_tat_dan_ngoai_vao();
+      if(cd==8) sang_dich_ngoai_vao();
+      if(cd==9) sang_dich_trong_ra();
+      if(cd==10) sang_don_pst();
+   }
+}

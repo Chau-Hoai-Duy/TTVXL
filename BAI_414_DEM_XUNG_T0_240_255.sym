@@ -1,0 +1,124 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004-009 system_var
+00A-00D delay
+00E-011 led32
+012-015 d7seg
+016-01D s7seg
+01E-01F inputcd.oldpin
+020-021 inputcd.t
+022     inputcd.step
+023     T0
+024     s7seg_display.i
+024     @WRITEBITA.P1
+024     write_lcd20x4.lcd_signal
+024-027 atan2.y
+024     @READBITA.P1
+024-025 write_ledmatrix.mahang
+024-025 inputcd.pin
+024     write_glcd128x64.glcd_signal
+024     MAIN.@SCRATCH1
+025     write_glcd128x64.glcd_ins_hthi
+025-026 @READBITA.P1
+025     @WRITEBITA.P2
+025     @DIV88.P3
+025     s7seg_display.n
+025     write_lcd20x4.lcd_ins_hthi
+026-027 write_ledmatrix.macot1
+026-027 @WRITEBITA.P1
+026     @DIV88.P2
+026     @delay_ms1.P3
+026     s7seg_display.@SCRATCH1
+027     @DIV88.@SCRATCH1
+028-029 write_ledmatrix.macot2
+028-02B atan2.x
+02A-02B write_ledmatrix.macot3
+02C-02F atan2.z
+02C     write_ledmatrix.@SCRATCH1
+02D     write_ledmatrix.@SCRATCH2
+02E     SSPI_WRITE.x
+030.0   atan2.sign
+031     atan2.quad
+F83     PSP_DATA
+F84.0   SSCK
+F84.2   SSDO
+FA1.1   TIM3IF
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P1
+FE9-FEA @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P3
+FE9-FEA @READ_PROGRAM_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  m7d.call
+000014  m7d.data
+000024  SSPI_WRITE
+000096  private_write_buzzer_relay
+0000B2  led32_display
+0000DA  d7seg_display
+000100  @delay_ms1
+000128  s7seg_display
+00017E  private_write_glcd_lcd
+0001A4  write_lcd20x4
+0001BA  write_glcd128x64
+0001D0  write_ledmatrix
+000218  system_init
+000286  @DIV88
+0002AE  @cinit1
+0002AE  MAIN
+0002D0  @cinit2
+
+Project Directory:
+    C:\TTVXL\TTVXL\Thuc Hanh\
+
+Project Files:
+    BAI_414_DEM_XUNG_T0_240_255.c                           [14-Feb-23 14:38  CRC=775F5DB1]
+    tv_boards.c                                             [25-Aug-22 14:39  CRC=BADBB360]
+    TV_D501_TH.C                                            [25-Aug-22 14:04  CRC=1FD863A8]
+    TV_D501_TH.h                                            [25-Aug-22 14:02  CRC=79282120]
+    ..\..\..\Program Files (x86)\PICC\Devices\18f4550.h     [21-Jan-21 11:37  CRC=71B7866C]
+    ..\..\..\Program Files (x86)\PICC\Drivers\math.h        [05-May-20 12:57  CRC=02232397]
+    TV_LOWLEVER.C                                           [12-Oct-22 15:49  CRC=97B0DA2C]
+    TV_LOWLEVER.H                                           [19-Nov-22 07:33  CRC=D872A938]
+
+Source signature=87AC6C78
+Program memory checksum=0000
+Hex file CRC=5A57
+
+Units:
+    C:\TTVXL\TTVXL\Thuc Hanh\BAI_414_DEM_XUNG_T0_240_255 (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   BAI_414_DEM_XUNG_T0_240_255.xsym
+    Errors:      BAI_414_DEM_XUNG_T0_240_255.err
+    Ext Symbols: BAI_414_DEM_XUNG_T0_240_255.esym
+    INHX32:      BAI_414_DEM_XUNG_T0_240_255.hex
+    Symbols:     BAI_414_DEM_XUNG_T0_240_255.sym
+    List:        BAI_414_DEM_XUNG_T0_240_255.lst
+    Debug/COFF:  BAI_414_DEM_XUNG_T0_240_255.cof
+    Project:     BAI_414_DEM_XUNG_T0_240_255.ccspjt
+    Call Tree:   BAI_414_DEM_XUNG_T0_240_255.tre
+    Statistics:  BAI_414_DEM_XUNG_T0_240_255.STA

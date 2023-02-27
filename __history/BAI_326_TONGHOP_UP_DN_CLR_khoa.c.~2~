@@ -1,0 +1,234 @@
+//#define board d501
+#include<tv_boards.c>
+unsigned int16 i,n=0,m=0;
+signed int8 tt=0;
+unsigned int8 chuyendoi=0;
+void kt_nutnhan()
+{
+   if(inputcd(UP)==0) 
+   {
+      tt++;
+      n=0;
+      chuyendoi=0;
+      break;
+   }
+   if(inputcd(DW)==0)
+   {
+      tt--;
+      n=0;
+      chuyendoi=0;
+      break;
+   }
+   if(inputcd(CLR)==0) 
+   {
+      tt=0;
+      n=0;
+      chuyendoi=0;
+      break;
+   }
+}
+void choptat()
+{
+   led32.ledx32=~led32.ledx32;
+   led32_display();
+   for(i=0;i<1000;i++) kt_nutnhan();
+}
+void sangdan_pst()
+{
+   if((n<=32)&&(chuyendoi==0))
+   {
+      led32.ledx32=~(0xffffffff<<n);
+      led32_display();
+      n++;
+      for(i=0;i<1000;i++) kt_nutnhan();
+   }
+   else
+   {
+      n=0;
+      chuyendoi=1;
+   }
+}
+void tatdan_pst()
+{
+   if((n<=32)&&(chuyendoi==1))
+   {
+      led32.ledx32=0xffffffff<<n;
+      led32_display();
+      n++;
+      for(i=0;i<1000;i++) kt_nutnhan();
+   }
+   else 
+   {
+      n=0;
+      chuyendoi=0;
+   }
+}
+void sangdan_tsp()
+{
+   if((n<=32)&&(chuyendoi==0))
+   {
+      led32.ledx32=~(0xffffffff>>n);
+      led32_display();
+      n++;
+      for(i=0;i<1000;i++) kt_nutnhan();
+   }
+   else
+   {
+      n=0;
+      chuyendoi=1;
+   }
+}
+void tatdan_tsp()
+{
+   if((n<=32)&&(chuyendoi==1))
+   {
+      led32.ledx32=0xffffffff>>n;
+      led32_display();
+      n++;
+      for(i=0;i<1000;i++) kt_nutnhan();
+   }
+   else 
+   {
+      n=0;
+      chuyendoi=0;
+   }
+}
+void sangdan_ngoaivao()
+{
+   if((n<=16)&&(chuyendoi==0))
+   {
+      led32.ledx16[1]=~(0xffff>>n);
+      led32.ledx16[0]=~(0xffff<<n);
+      led32_display();
+      n++;
+      for(i=0;i<1000;i++) kt_nutnhan();
+   }
+   else
+   {
+      n=0;
+      chuyendoi=1;
+   }
+}
+void tatdan_ngoaivao()
+{
+   if((n<=16)&&(chuyendoi==1))
+   {
+      led32.ledx16[1]=0xffff>>n;
+      led32.ledx16[0]=0xffff<<n;
+      led32_display();
+      n++;
+      for(i=0;i<1000;i++) kt_nutnhan();
+   }
+   else
+   {
+      n=0;
+      chuyendoi=0;
+   }
+}
+void sangdan_trongra()
+{
+   if((n<=16)&&(chuyendoi==0))
+   {
+      led32.ledx16[1]=~(0xffff<<n);
+      led32.ledx16[0]=~(0xffff>>n);
+      led32_display();
+      n++;
+      for(i=0;i<1000;i++) kt_nutnhan();
+   }
+   else
+   {
+      n=0;
+      chuyendoi=1;
+   }
+}
+void tatdan_trongra()
+{
+   if((n<=16)&&(chuyendoi==1))
+   {
+      led32.ledx16[1]=0xffff<<n;
+      led32.ledx16[0]=0xffff>>n;
+      led32_display();
+      n++;
+      for(i=0;i<1000;i++) kt_nutnhan();
+   }
+   else
+   {
+      n=0;
+      chuyendoi=0;
+   }
+}
+void sangdon_pst()
+{
+   for(n=0;n<=32;n++)
+   {
+      for(m=0;m<32-n;m++)
+      {
+         led32.ledx32=(~(0xffffffff<<n))|(0x80000000>>m);
+         led32_display();
+         for(i=0;i<1000;i++) 
+         {
+            if(inputcd(UP)==0) 
+            {
+               tt++;
+               n=32;
+            }   
+            if(inputcd(DW)==0) 
+            {
+               tt--;
+               n=32;
+            }
+            if(inputcd(CLR)==0) 
+            {
+               tt=0;
+               n=32;
+            }
+         } 
+      }
+   }
+}
+void sangdon_tsp()
+{
+   for(n=0;n<=32;n++)
+   {
+      for(m=0;m<32-n;m++)
+      {
+         led32.ledx32=(~(0xffffffff>>n))|((int32)1<<m);
+         led32_display();
+         for(i=0;i<1000;i++) 
+         {
+            if(inputcd(UP)==0) 
+            {
+               tt++;          
+               n=32;
+            }   
+            if(inputcd(DW)==0) 
+            {
+               tt--;             
+               n=32;
+            }
+            if(inputcd(CLR)==0) 
+            {
+               tt=0;
+               n=32;
+            }
+         } 
+      }
+   }
+}
+void main ()
+{
+   system_init();
+   while(true)
+   {
+//!      if(tt==0) choptat();
+//!      if(tt==1) {sangdan_pst(); tatdan_pst();}
+//!      if(tt==2) {sangdan_tsp(); tatdan_tsp();}
+//!      if(tt==3) {sangdan_ngoaivao(); tatdan_ngoaivao();}
+//!      if(tt==4) {sangdan_trongra(); tatdan_trongra();}
+//!      if(tt==5) sangdon_pst();
+//!      if(tt==6) sangdon_tsp();
+//!      if(tt==7) tt=6;
+//!      if(tt==-1) tt=0;
+   sangdan_pst(); tatdan_pst();
+   }
+}

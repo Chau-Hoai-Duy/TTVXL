@@ -1,0 +1,15 @@
+#DEFINE BOARD D501
+#include<tv_boards.c>
+#include<tv_key4x4.c>
+void main()
+{
+   system_init();
+   d7seg.led[0]=0xff-128;
+   d7seg.led[1]=0xff-128;
+   d7seg.led[2]=0xff-128;
+   d7seg.led[3]=0xff-128;
+   while(true)
+   {
+   
+   }
+}

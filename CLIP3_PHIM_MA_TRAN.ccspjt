@@ -1,0 +1,104 @@
+[PROJECT]
+Target=CLIP3_PHIM_MA_TRAN.hex
+Processor_Text=PIC18F6722
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=CLIP3_PHIM_MA_TRAN.c
+[CLIP3_PHIM_MA_TRAN.c]
+Type=4
+[mru-list]
+1=CLIP3_PHIM_MA_TRAN.c
+
+[defines]
+buildcount=47
+
+[Opened Files]
+1=CLIP3_PHIM_MA_TRAN.c
+t1=1
+Count=3
+2=CLIP2_NUT_NHAN_DON.c
+t2=1
+3=BAI_401_HIENTHI_4SO.c
+t3=1
+
+[ProjectLog]
+Days=6
+D1=08-02-2023
+D1_L=12
+D1_L1=[55616]Stopped Editing.
+TotalEdit=134
+TotalDebug=0
+D1_E=93
+D1_D=0
+D1_L2=[55665]Started Editing.
+D1_L3=[57864]Stopped Editing.
+D1_L4=[57876]Started Editing.
+D1_L5=[58613]Stopped Editing.
+D1_L6=[58628]Started Editing.
+D1_L7=[58638]Stopped Editing.
+D1_L8=[58638]Project Closed.
+D1_L9=[60511]Project Opened.
+D1_L10=[60664]Started Editing.
+D1_L11=[62819]Stopped Editing.
+D1_L12=[64597]Project Closed.
+D2=09-02-2023
+D2_L=6
+D2_L1=[30751]Project Opened.
+D2_L2=[30814]Started Editing.
+D2_L3=[31116]Stopped Editing.
+D2_L4=[31145]Started Editing.
+D2_L5=[31871]Stopped Editing.
+D2_E=13
+D2_D=0
+D2_L6=[31871]Project Closed.
+D3=10-02-2023
+D3_L=12
+D3_L1=[77458]Project Opened.
+D3_L2=[77459]Project Closed.
+D3_L3=[78098]Project Opened.
+D3_L4=[78115]Started Editing.
+D3_L5=[78518]Stopped Editing.
+D3_E=12
+D3_D=0
+D3_L6=[78544]Project Closed.
+D3_L7=[78581]Project Opened.
+D3_L8=[78650]Started Editing.
+D3_L9=[78664]Stopped Editing.
+D3_L10=[78862]Started Editing.
+D3_L11=[79378]Stopped Editing.
+D3_L12=[79487]Project Closed.
+D4=11-02-2023
+D4_L=9
+D4_L1=[58288]Project Opened.
+D4_L2=[58331]Started Editing.
+D4_L3=[58665]Stopped Editing.
+D4_E=6
+D4_D=0
+D4_L4=[58665]Project Closed.
+D4_L5=[59402]Project Opened.
+D4_L6=[59727]Started Editing.
+D4_L7=[60070]Stopped Editing.
+D4_L8=[60719]Started Editing.
+D4_L9=[60814]Project Closed.
+D5=12-02-2023
+D5_L=6
+D5_L1=[34389]Project Opened.
+D5_L2=[34480]Started Editing.
+D5_L3=[35075]Stopped Editing.
+D5_E=10
+D5_D=0
+D5_L4=[36242]Project Closed.
+D5_L5=[43605]Project Opened.
+D5_L6=[44232]Project Closed.
+D6=13-02-2023
+D6_L=3
+D6_L1=[75847]Project Opened.
+D6_L2=[76718]Started Editing.
+D6_L3=[76734]Project Closed.
+
+[fileformats]
+forcecoff=0
+[Units]
+Count=1
+1=CLIP3_PHIM_MA_TRAN (main)

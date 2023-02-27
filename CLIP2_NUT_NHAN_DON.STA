@@ -1,0 +1,77 @@
+
+ROM used:   2730/131072 (2%)
+            2730/131072 (2%) including unused fragments
+
+            0.7 Average locations per line
+            4.3 Average locations per statement
+
+RAM used:   41/3936 (1%) at main() level
+            61/3936 (2%) worst case
+
+Stack used: 0 worst case (0 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  199   163  26  CLIP2_NUT_NHAN_DON.c
+   26     0   0  tv_boards.c
+  137   121  19  TV_MOPHONG.C
+  104     0   0  TV_MOPHONG.h
+  952     0   0  ..\..\..\Program Files (x86)\PICC\Devices\18f6722.h
+ 2228   258  41  ..\..\..\Program Files (x86)\PICC\Drivers\math.h
+  179    86  14  TV_LOWLEVER.C
+    7     0   0  TV_LOWLEVER.H
+----- -----
+ 3832   628 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     42   1    1             @delay_ms1
+0     54   1    0    221  2.6  led32_display
+0    102   2    0    452  2.8  d7seg_display
+0     98   2    2    301  5.1  s7seg_display
+0     12   0    0     30  1.0  buzzer_off
+0     12   0    0     30  1.0  triac_2_off
+0     62   1    0    394  3.2  system_init
+0     90   2    4    431  6.2  CHECK_MODULE
+0     82   2    0    153  3.9  delay_start
+0    142   3   13             @DIV3232
+0    146   3    6    318  6.3  delay_stop
+0    398   7    4   1119  7.4  inputcd
+0     62   1    6             @WRITEBITA
+0     50   1    5             @READBITA
+0     40   1    0             @goto59220
+0    172   3    1   1036  7.8  kt_nut_nhan
+0     76   1    4    228  5.4  chop_tat_led_don
+0    118   2    5    374  6.5  sang_tat_dan_pst
+0    114   2    5    374  6.5  sang_tat_dan_tsp
+0     62   1    1    206  5.3  sang_dich_pst
+0     62   1    1    206  5.3  sang_dich_tsp
+0    112   2    2    660  7.7  sang_tat_dan_tu_trong_ra
+0    118   2    2    701  7.7  sang_tat_dan_tu_ngoai_vao
+0     78   1    0    283  6.4  sang_dich_tu_trong_ra
+0     78   1    0    283  6.4  sang_dich_tu_ngoai_vao
+0    172   3    6    395  7.9  sang_don_pst
+0    172   3    0    474  2.8  MAIN
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               22
+    Statements              628
+    Comments                434
+    Volume (V)              15232
+    Difficulty (D)          116.4
+    Effort to implement (E) 1772326
+    Time to implement (T)   27 hours, 21 minutes
+    Est Delivered Bugs (B)  5
+    Cyclomatic Complexity   65
+    Maintainability (MI)    110
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-0FFFE  2726  62806  
+10000-1FFFE     0  65536  
+
+
+

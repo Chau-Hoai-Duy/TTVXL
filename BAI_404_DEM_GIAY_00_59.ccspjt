@@ -1,0 +1,28 @@
+[PROJECT]
+Target=BAI_404_DEM_GIAY_00_59.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=BAI_404_DEM_GIAY_00_59.c
+[BAI_404_DEM_GIAY_00_59.c]
+Type=4
+[mru-list]
+1=BAI_404_DEM_GIAY_00_59.c
+[Units]
+Count=1
+1=BAI_404_DEM_GIAY_00_59 (main)
+
+[defines]
+buildcount=1
+
+[Opened Files]
+1=BAI_404_DEM_GIAY_00_59.c
+t1=1
+Count=1
+
+[ProjectLog]
+Days=1
+D1=14-02-2023
+D1_L=1
+D1_L1=[48854]Project Closed.

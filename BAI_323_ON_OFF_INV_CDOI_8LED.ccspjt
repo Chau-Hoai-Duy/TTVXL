@@ -1,0 +1,23 @@
+[PROJECT]
+Target=BAI_323_ON_OFF_INV_CDOI_8LED.hex
+Processor_Text=PIC18F6722
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=BAI_323_ON_OFF_INV_CDOI_8LED.c
+[BAI_323_ON_OFF_INV_CDOI_8LED.c]
+Type=4
+[mru-list]
+1=BAI_323_ON_OFF_INV_CDOI_8LED.c
+[Units]
+Count=1
+1=BAI_323_ON_OFF_INV_CDOI_8LED (main)
+
+[defines]
+buildcount=1
+
+[ProjectLog]
+Days=1
+D1=04-02-2023
+D1_L=1
+D1_L1=[71331]Project Closed.

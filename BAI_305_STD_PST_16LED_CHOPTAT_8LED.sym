@@ -1,0 +1,120 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004-009 system_var
+00A-00D delay
+00E-011 led32
+012-015 d7seg
+016-01D s7seg
+01E-01F inputcd.oldpin
+020-021 inputcd.t
+022     inputcd.step
+023     i
+024-025 y
+026-027 inputcd.pin
+026     write_glcd128x64.glcd_signal
+026     @WRITEBITA.P1
+026-029 atan2.y
+026     write_lcd20x4.lcd_signal
+026-027 write_ledmatrix.mahang
+026     s7seg_display.i
+026     @READBITA.P1
+026     MAIN.@SCRATCH1
+027-028 @READBITA.P1
+027     write_lcd20x4.lcd_ins_hthi
+027     s7seg_display.n
+027     write_glcd128x64.glcd_ins_hthi
+027     @WRITEBITA.P1
+027     MAIN.@SCRATCH2
+028-029 write_ledmatrix.macot1
+028-029 @WRITEBITA.P1
+028     @delay_ms1.P2
+028     s7seg_display.@SCRATCH1
+02A-02B write_ledmatrix.macot2
+02A-02D atan2.x
+02C-02D write_ledmatrix.macot3
+02E-031 atan2.z
+02E     write_ledmatrix.@SCRATCH1
+02F     write_ledmatrix.@SCRATCH2
+030     SSPI_WRITE.x
+032.0   atan2.sign
+033     atan2.quad
+F83     PSP_DATA
+F84.0   SSCK
+F84.2   SSDO
+FA1.1   TIM3IF
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P3
+FE9-FEA @READ_PROGRAM_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  SSPI_WRITE
+000096  private_write_buzzer_relay
+0000B2  led32_display
+0000D8  d7seg_display
+000100  @delay_ms1
+000126  s7seg_display
+00017C  private_write_glcd_lcd
+0001A2  write_lcd20x4
+0001B8  write_glcd128x64
+0001CE  write_ledmatrix
+000216  system_init
+000284  @cinit1
+000284  MAIN
+0002A6  @cinit2
+
+Project Directory:
+    C:\TTVXL\TTVXL\Thuc Hanh\
+
+Project Files:
+    BAI_305_STD_PST_16LED_CHOPTAT_8LED.c                    [31-Jan-23 16:14  CRC=D99EFE6A]
+    tv_boards.c                                             [25-Aug-22 14:39  CRC=BADBB360]
+    TV_D501_TH.C                                            [25-Aug-22 14:04  CRC=1FD863A8]
+    TV_D501_TH.h                                            [25-Aug-22 14:02  CRC=79282120]
+    ..\..\..\Program Files (x86)\PICC\Devices\18f4550.h     [21-Jan-21 11:37  CRC=71B7866C]
+    ..\..\..\Program Files (x86)\PICC\Drivers\math.h        [05-May-20 12:57  CRC=02232397]
+    TV_LOWLEVER.C                                           [12-Oct-22 15:49  CRC=97B0DA2C]
+    TV_LOWLEVER.H                                           [19-Nov-22 07:33  CRC=D872A938]
+
+Source signature=E9EC0D31
+Program memory checksum=0000
+Hex file CRC=7D03
+
+Units:
+    C:\TTVXL\TTVXL\Thuc Hanh\BAI_305_STD_PST_16LED_CHOPTAT_8LED (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   BAI_305_STD_PST_16LED_CHOPTAT_8LED.xsym
+    Errors:      BAI_305_STD_PST_16LED_CHOPTAT_8LED.err
+    Ext Symbols: BAI_305_STD_PST_16LED_CHOPTAT_8LED.esym
+    INHX32:      BAI_305_STD_PST_16LED_CHOPTAT_8LED.hex
+    Symbols:     BAI_305_STD_PST_16LED_CHOPTAT_8LED.sym
+    List:        BAI_305_STD_PST_16LED_CHOPTAT_8LED.lst
+    Debug/COFF:  BAI_305_STD_PST_16LED_CHOPTAT_8LED.cof
+    Project:     BAI_305_STD_PST_16LED_CHOPTAT_8LED.ccspjt
+    Call Tree:   BAI_305_STD_PST_16LED_CHOPTAT_8LED.tre
+    Statistics:  BAI_305_STD_PST_16LED_CHOPTAT_8LED.STA

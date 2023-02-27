@@ -1,0 +1,41 @@
+[PROJECT]
+Target=BAI_504_SANGDAN_NHAPNHAY_MSSV.hex
+Processor_Text=PIC18F6722
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=BAI_504_SANGDAN_NHAPNHAY_MSSV.c
+[BAI_504_SANGDAN_NHAPNHAY_MSSV.c]
+Type=4
+[mru-list]
+1=BAI_504_SANGDAN_NHAPNHAY_MSSV.c
+
+[defines]
+buildcount=38
+
+[Opened Files]
+1=BAI_501_HIENTHI_8SO.c
+t1=5
+Count=2
+2=BAI_504_SANGDAN_NHAPNHAY_MSSV.c
+t2=5
+
+[ProjectLog]
+Days=2
+D1=21-02-2023
+D1_L=5
+D1_L1=[50686]Stopped Editing.
+D1_L2=[50694]Started Editing.
+D1_L3=[52286]Stopped Editing.
+D1_L4=[52326]Started Editing.
+D1_L5=[53134]Project Closed.
+D2=26-02-2023
+D2_L=2
+D2_L1=[71910]Project Opened.
+D2_L2=[74647]Project Closed.
+
+[fileformats]
+forcecoff=0
+[Units]
+Count=1
+1=BAI_504_SANGDAN_NHAPNHAY_MSSV (main)

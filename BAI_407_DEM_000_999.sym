@@ -1,0 +1,121 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004-007 delay
+008-00B led32
+00C-013 d7seg
+014-01B s7seg
+01C-01D inputcd.oldpin
+01E-01F inputcd.t
+020     inputcd.step
+021-022 dem
+023-026 @SPI_XFER_1_32.P1
+023     @WRITEBITA.P2
+023     @READBITA.P3
+023     s7seg_display.n
+023-026 atan2.y
+023.0   CHECK_MODULE.tt
+023-024 inputcd.pin
+023     MAIN.@SCRATCH1
+024     CHECK_MODULE.n
+024-025 @READBITA.P1
+024     @WRITEBITA.P2
+024     s7seg_display.@SCRATCH1
+024     MAIN.@SCRATCH2
+025-026 @WRITEBITA.P1
+025-026 @DIV1616.P2
+025     @delay_ms1.P3
+025     CHECK_MODULE.@SCRATCH1
+026     CHECK_MODULE.@SCRATCH2
+027-028 @DIV1616.P1
+027-02A atan2.x
+029     @DIV1616.@SCRATCH1
+02B-02E atan2.z
+02F.0   atan2.sign
+030     atan2.quad
+F71     CCP_5
+F71     CCP_5_LOW
+F72     CCP_5_HIGH
+F74     CCP_4_LOW
+F74     CCP_4
+F75     CCP_4_HIGH
+F83     PSP_DATA
+FA1.1   TIM3IF
+FB4.6   C1OUT
+FB4.7   C2OUT
+FB8     CCP_3
+FB8     CCP_3_LOW
+FB9     CCP_3_HIGH
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P3
+FE9-FEA @READ_PROGRAM_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  m7d.call
+000018  m7d.data
+000028  @delay_ms1
+00004E  CHECK_MODULE
+0000A8  led32_display
+0000E0  d7seg_display
+000144  s7seg_display
+0001A6  buzzer_off
+0001B2  triac_2_off
+0001BE  system_init
+0001FC  @DIV1616
+00023E  MAIN
+00023E  @cinit1
+00025E  @cinit2
+
+Project Directory:
+    C:\TTVXL\TTVXL\Thuc Hanh\
+
+Project Files:
+    BAI_407_DEM_000_999.c                                   [13-Feb-23 21:32  CRC=C451E437]
+    tv_boards.c                                             [25-Aug-22 14:39  CRC=BADBB360]
+    TV_MOPHONG.C                                            [13-Jan-23 10:01  CRC=BC0C87F3]
+    TV_MOPHONG.h                                            [25-Aug-22 14:03  CRC=D88B226F]
+    ..\..\..\Program Files (x86)\PICC\Devices\18f6722.h     [21-Jan-21 11:39  CRC=97E248DF]
+    ..\..\..\Program Files (x86)\PICC\Drivers\math.h        [05-May-20 12:57  CRC=02232397]
+    TV_LOWLEVER.C                                           [12-Oct-22 15:49  CRC=97B0DA2C]
+    TV_LOWLEVER.H                                           [19-Nov-22 07:33  CRC=D872A938]
+
+Source signature=F660DB0B
+Program memory checksum=0000
+Hex file CRC=B15F
+
+Units:
+    C:\TTVXL\TTVXL\Thuc Hanh\BAI_407_DEM_000_999 (main)
+
+Compiler Settings:
+    Processor:      PIC18F6722
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   BAI_407_DEM_000_999.xsym
+    Errors:      BAI_407_DEM_000_999.err
+    Ext Symbols: BAI_407_DEM_000_999.esym
+    INHX32:      BAI_407_DEM_000_999.hex
+    Symbols:     BAI_407_DEM_000_999.sym
+    List:        BAI_407_DEM_000_999.lst
+    Debug/COFF:  BAI_407_DEM_000_999.cof
+    Project:     BAI_407_DEM_000_999.ccspjt
+    Call Tree:   BAI_407_DEM_000_999.tre
+    Statistics:  BAI_407_DEM_000_999.STA

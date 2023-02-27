@@ -1,0 +1,125 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004-009 system_var
+00A-00D delay
+00E-011 led32
+012-015 d7seg
+016-01D s7seg
+01E-01F inputcd.oldpin
+020-021 inputcd.t
+022     inputcd.step
+023     phut
+024     giay
+025     write_lcd20x4.lcd_signal
+025     s7seg_display.i
+025-026 inputcd.pin
+025     @WRITEBITA.P1
+025-028 atan2.y
+025     @READBITA.P1
+025-026 write_ledmatrix.mahang
+025     write_glcd128x64.glcd_signal
+025     MAIN.@SCRATCH1
+026     write_glcd128x64.glcd_ins_hthi
+026     @WRITEBITA.P1
+026     s7seg_display.n
+026-027 @READBITA.P1
+026     write_lcd20x4.lcd_ins_hthi
+026     @DIV88.P1
+027-028 @WRITEBITA.P1
+027     @DIV88.P2
+027-028 write_ledmatrix.macot1
+027     @delay_ms1.P1
+027     s7seg_display.@SCRATCH1
+028     @DIV88.@SCRATCH1
+029-02C atan2.x
+029-02A write_ledmatrix.macot2
+02B-02C write_ledmatrix.macot3
+02D-030 atan2.z
+02D     write_ledmatrix.@SCRATCH1
+02E     write_ledmatrix.@SCRATCH2
+02F     SSPI_WRITE.x
+031.0   atan2.sign
+032     atan2.quad
+F83     PSP_DATA
+F84.0   SSCK
+F84.2   SSDO
+FA1.1   TIM3IF
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P3
+FE9-FEA @READ_PACKED_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  m7d.call
+000014  m7d.data
+000024  SSPI_WRITE
+000096  private_write_buzzer_relay
+0000B2  led32_display
+0000DA  d7seg_display
+000100  @delay_ms1
+000126  s7seg_display
+00017C  private_write_glcd_lcd
+0001A2  write_lcd20x4
+0001B8  write_glcd128x64
+0001CE  write_ledmatrix
+000216  system_init
+000284  @DIV88
+0002AC  @cinit1
+0002AC  MAIN
+0002D2  @cinit2
+
+Project Directory:
+    C:\TTVXL\TTVXL\Thuc Hanh\
+
+Project Files:
+    BAI_409_DEM_PHUT_GIAY.c                                 [14-Feb-23 14:08  CRC=2979D3EE]
+    tv_boards.c                                             [25-Aug-22 14:39  CRC=BADBB360]
+    TV_D501_TH.C                                            [25-Aug-22 14:04  CRC=1FD863A8]
+    TV_D501_TH.h                                            [25-Aug-22 14:02  CRC=79282120]
+    ..\..\..\Program Files (x86)\PICC\Devices\18f4550.h     [21-Jan-21 11:37  CRC=71B7866C]
+    ..\..\..\Program Files (x86)\PICC\Drivers\math.h        [05-May-20 12:57  CRC=02232397]
+    TV_LOWLEVER.C                                           [12-Oct-22 15:49  CRC=97B0DA2C]
+    TV_LOWLEVER.H                                           [19-Nov-22 07:33  CRC=D872A938]
+
+Source signature=39C6E2B5
+Program memory checksum=0000
+Hex file CRC=DB16
+
+Units:
+    C:\TTVXL\TTVXL\Thuc Hanh\BAI_409_DEM_PHUT_GIAY (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   BAI_409_DEM_PHUT_GIAY.xsym
+    Errors:      BAI_409_DEM_PHUT_GIAY.err
+    Ext Symbols: BAI_409_DEM_PHUT_GIAY.esym
+    INHX32:      BAI_409_DEM_PHUT_GIAY.hex
+    Symbols:     BAI_409_DEM_PHUT_GIAY.sym
+    List:        BAI_409_DEM_PHUT_GIAY.lst
+    Debug/COFF:  BAI_409_DEM_PHUT_GIAY.cof
+    Project:     BAI_409_DEM_PHUT_GIAY.ccspjt
+    Call Tree:   BAI_409_DEM_PHUT_GIAY.tre
+    Statistics:  BAI_409_DEM_PHUT_GIAY.STA

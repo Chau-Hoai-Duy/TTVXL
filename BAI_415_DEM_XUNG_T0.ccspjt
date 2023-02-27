@@ -1,0 +1,36 @@
+[PROJECT]
+Target=BAI_415_DEM_XUNG_T0.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=BAI_415_DEM_XUNG_T0.c
+[BAI_415_DEM_XUNG_T0.c]
+Type=4
+[mru-list]
+1=BAI_415_DEM_XUNG_T0.c
+[Units]
+Count=1
+1=BAI_415_DEM_XUNG_T0 (main)
+
+[defines]
+buildcount=1
+
+[ProjectLog]
+Days=3
+D1=14-02-2023
+D1_L=2
+D1_L1=[53066]Started Editing.
+D1_L2=[53122]Project Closed.
+D2=15-02-2023
+D2_L=2
+D2_L1=[36905]Project Opened.
+D2_L2=[36913]Project Closed.
+D3=17-02-2023
+D3_L=3
+D3_L1=[57995]Project Opened.
+D3_L2=[58211]Started Editing.
+D3_L3=[58299]Project Closed.
+
+[fileformats]
+forcecoff=0

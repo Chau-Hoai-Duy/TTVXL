@@ -1,0 +1,23 @@
+[PROJECT]
+Target=BAI_402_DEM_0_9.hex
+Processor_Text=PIC18F6722
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=BAI_402_DEM_0_9.c
+[BAI_402_DEM_0_9.c]
+Type=4
+[mru-list]
+1=BAI_402_DEM_0_9.c
+[Units]
+Count=1
+1=BAI_402_DEM_0_9 (main)
+
+[defines]
+buildcount=1
+
+[ProjectLog]
+Days=1
+D1=13-02-2023
+D1_L=1
+D1_L1=[77013]Project Closed.

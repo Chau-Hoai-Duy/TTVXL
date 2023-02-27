@@ -1,0 +1,16 @@
+#DEFINE BOARD D501
+#include <tv_boards.c>
+#include <tv_key4x4.c>
+void kt_keypad()
+{
+   
+}
+void main()
+{
+   system_init();
+   while(true)
+   {
+   
+   }
+}
+

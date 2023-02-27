@@ -1,0 +1,158 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004-007 delay
+008-00B led32
+00C-013 d7seg
+014-01B s7seg
+01C-01D inputcd.oldpin
+01E-01F inputcd.t
+020     inputcd.step
+021     key4x4
+022     key4x4_read.step
+023-024 key4x4_read.t
+025     i
+026     gtcaibd
+027     dem
+028     gtcaisau
+029     j
+02A     jcu
+02B-02C k
+02D.0   cdo
+02E.0   CHECK_MODULE.tt
+02E-02F inputcd.pin
+02E     @READBITA.P1
+02E-031 @SPI_XFER_1_32.P2
+02E-031 atan2.y
+02E-02F delay_stop.t
+02E     KEYREAD.cot
+02E     s7seg_display.n
+02E     @WRITEBITA.P1
+02E     key4x4_read.@SCRATCH1
+02E     kt_nutnhan.@SCRATCH1
+02E     MAIN.@SCRATCH1
+02F     @DIVS88.P1
+02F     @WRITEBITA.P2
+02F-030 @READBITA.P3
+02F     CHECK_MODULE.n
+02F     s7seg_display.@SCRATCH1
+02F     KEYREAD.@SCRATCH1
+02F     key4x4_read.@SCRATCH2
+030-031 @WRITEBITA.P1
+030     @DIVS88.P2
+030     @delay_ms1.P3
+030-031 delay_stop.tam
+030     CHECK_MODULE.@SCRATCH1
+031     CHECK_MODULE.@SCRATCH2
+031     @DIVS88.@SCRATCH1
+032-035 atan2.x
+032-035 @DIV3232.P1
+032     delay_stop.@SCRATCH1
+032     @DIVS88.@SCRATCH2
+033     delay_stop.@SCRATCH2
+036-039 @DIV3232.P1
+036-039 atan2.z
+03A.0   atan2.sign
+03A     @DIV3232.@SCRATCH1
+03B     atan2.quad
+03B     @DIV3232.@SCRATCH2
+03C     @DIV3232.@SCRATCH3
+03D     @DIV3232.@SCRATCH4
+03E     @DIV3232.@SCRATCH5
+F71     CCP_5
+F71     CCP_5_LOW
+F72     CCP_5_HIGH
+F74     CCP_4
+F74     CCP_4_LOW
+F75     CCP_4_HIGH
+F83     PSP_DATA
+FA1.1   TIM3IF
+FB4.6   C1OUT
+FB4.7   C2OUT
+FB8     CCP_3
+FB8     CCP_3_LOW
+FB9     CCP_3_HIGH
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P3
+FE9-FEA @READ_PACKED_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  m7d.call
+000018  m7d.data
+000028  mq.call
+00003C  mq.data
+000040  @delay_ms1
+000066  CHECK_MODULE
+0000C0  led32_display
+0000F8  d7seg_display
+00015C  s7seg_display
+0001BE  buzzer_off
+0001CA  triac_2_off
+0001D6  system_init
+000214  KEYREAD
+0002BC  @DIV3232
+00034A  delay_start
+00039C  delay_stop
+00042E  key4x4_read
+000508  @goto8974
+000530  kt_nutnhan
+000588  @DIVS88
+0005D0  MAIN
+0005D0  @cinit1
+0005FE  @cinit2
+
+Project Directory:
+    C:\TTVXL\TTVXL\Thuc Hanh\
+
+Project Files:
+    CLIP4.c                                                 [23-Feb-23 08:32  CRC=58C9381C]
+    tv_boards.c                                             [25-Aug-22 14:39  CRC=BADBB360]
+    TV_MOPHONG.C                                            [13-Jan-23 10:01  CRC=BC0C87F3]
+    TV_MOPHONG.h                                            [25-Aug-22 14:03  CRC=D88B226F]
+    ..\..\..\Program Files (x86)\PICC\Devices\18f6722.h     [21-Jan-21 11:39  CRC=97E248DF]
+    ..\..\..\Program Files (x86)\PICC\Drivers\math.h        [05-May-20 12:57  CRC=02232397]
+    TV_LOWLEVER.C                                           [12-Oct-22 15:49  CRC=97B0DA2C]
+    TV_LOWLEVER.H                                           [19-Nov-22 07:33  CRC=D872A938]
+    tv_key4x4.c                                             [07-Jun-22 20:08  CRC=53A906E2]
+    tv_key4x4.h                                             [29-Apr-22 14:10  CRC=D872A938]
+
+Source signature=B6F3DF0A
+Program memory checksum=0000
+Hex file CRC=1204
+
+Units:
+    C:\TTVXL\TTVXL\Thuc Hanh\CLIP4 (main)
+
+Compiler Settings:
+    Processor:      PIC18F6722
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   CLIP4.xsym
+    Errors:      CLIP4.err
+    Ext Symbols: CLIP4.esym
+    INHX32:      CLIP4.hex
+    Symbols:     CLIP4.sym
+    List:        CLIP4.lst
+    Debug/COFF:  CLIP4.cof
+    Project:     CLIP4.ccspjt
+    Call Tree:   CLIP4.tre
+    Statistics:  CLIP4.STA

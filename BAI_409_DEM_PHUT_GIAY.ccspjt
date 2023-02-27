@@ -1,0 +1,35 @@
+[PROJECT]
+Target=BAI_409_DEM_PHUT_GIAY.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=BAI_409_DEM_PHUT_GIAY.c
+[BAI_409_DEM_PHUT_GIAY.c]
+Type=4
+[mru-list]
+1=BAI_409_DEM_PHUT_GIAY.c
+
+[defines]
+buildcount=3
+
+[Opened Files]
+1=BAI_409_DEM_PHUT_GIAY.c
+t1=5
+2=BAI_407_DEM_000_999.c
+t2=1
+Count=2
+[Units]
+Count=1
+1=BAI_409_DEM_PHUT_GIAY (main)
+
+[ProjectLog]
+Days=1
+D1=14-02-2023
+D1_L=2
+D1_L1=[51094]Stopped Editing.
+TotalEdit=13
+TotalDebug=0
+D1_E=13
+D1_D=0
+D1_L2=[51094]Project Closed.

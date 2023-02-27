@@ -1,0 +1,65 @@
+//#define   BOARD     D501
+#include<tv_boards.c>  
+unsigned int8 i,j;
+unsigned int32 Y,K;
+void main()
+{
+      system_init();  
+      while(true)
+      {
+         for(i=0;i<5;i++)
+         {
+            led32.ledx32=~led32.ledx32;
+            led32_display();
+            delay_ms(500);
+         }
+         for(i=0;i<2;i++)
+         {
+            Y=0x00000000;
+            for(i=0;i<32;i++)
+            {
+               Y=(Y<<1)|0x00000001;
+               led32.ledx32=Y;
+               led32_display();
+               delay_ms(300);
+            }
+            for(i=0;i<32;i++)
+            {
+               Y=Y<<1;
+               led32.ledx32=Y;
+               led32_display();
+               delay_ms(300);
+            }
+         }
+         for(i=0;i<5;i++)
+         {
+            led32.ledx32=~led32.ledx32;
+            led32_display();
+            delay_ms(500);
+         }
+         for(i=0;i<2;i++)
+         {
+            Y=0x00000000;
+            for(i=0;i<32;i++)
+            {
+               Y=(Y>>1)|0x80000000;
+               led32.ledx32=Y;
+               led32_display();
+               delay_ms(300);
+            }
+            for(i=0;i<32;i++)
+            {
+               Y=Y>>1;
+               led32.ledx32=Y;
+               led32_display();
+               delay_ms(300);
+            }
+         }
+         for(i=0;i<5;i++)
+         {
+            led32.ledx32=~led32.ledx32;
+            led32_display();
+            delay_ms(500);
+         }
+      }
+}

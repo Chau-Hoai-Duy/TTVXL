@@ -1,0 +1,21 @@
+//#define   BOARD     D501 
+#include<tv_boards.c>
+unsigned int8 i=0;
+void kiemtra_xuli_nutnhan()
+{
+   if(input(UP)==0)
+   {
+      i=i++;
+      
+   }
+}
+void main()
+{
+      system_init();  
+      while(true)
+      {     
+    
+      }
+}
+  
+

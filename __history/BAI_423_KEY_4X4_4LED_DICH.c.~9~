@@ -1,0 +1,24 @@
+#DEFINE BOARD D501
+#include<tv_boards.c>
+#include<tv_key4x4.c>
+signed int8 n=-1,dl;
+void main()
+{
+   system_init();
+   d7seg.led[0]=0xff-128;
+   d7seg.led[1]=0xff-128;
+   d7seg.led[2]=0xff-128;
+   d7seg.led[3]=0xff-128;
+   d7seg_display();
+   while(true)
+   {
+      if(key4x4_read()==ok)
+      {
+         n++;
+         d7seg.led[0]=m7d[key4x4.key];
+         d7seg.led[n]=d7seg.led[n-1];
+         if(n>=4) n=0;
+         d7seg_display();
+      }
+   }
+}

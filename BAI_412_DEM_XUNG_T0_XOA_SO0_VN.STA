@@ -1,0 +1,64 @@
+
+ROM used:   954/32768 (3%)
+            954/32768 (3%) including unused fragments
+
+            0.3 Average locations per line
+            1.8 Average locations per statement
+
+RAM used:   36/2048 (2%) at main() level
+            56/2048 (3%) worst case
+
+Stack used: 0 worst case (0 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   28    17   3  BAI_412_DEM_XUNG_T0_XOA_SO0_VN.c
+   26     0   0  tv_boards.c
+  239   186  34  TV_D501_TH.C
+  135     0   0  TV_D501_TH.h
+  876     0   0  ..\..\..\Program Files (x86)\PICC\Devices\18f4550.h
+ 2228   258  48  ..\..\..\Program Files (x86)\PICC\Drivers\math.h
+  179    80  15  TV_LOWLEVER.C
+    7     0   0  TV_LOWLEVER.H
+----- -----
+ 3718   541 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     40   2    1             @delay_ms1
+0     32   2    0             @const929
+0     40   2    0    221  2.6  led32_display
+0     38   2    0    221  2.6  d7seg_display
+0     86   5    3    355  6.1  s7seg_display
+0     38   2    0    172  2.1  private_write_glcd_lcd
+0     22   1    2    120  3.4  write_lcd20x4
+0     22   1    2    120  3.4  write_glcd128x64
+0     72   4   10    362  3.3  write_ledmatrix
+0     28   1    0    151  2.5  private_write_buzzer_relay
+0    110   6    0    561  3.8  system_init
+0    114   6    1   1186  3.3  SSPI_WRITE
+0    116   6    7    311  6.7  d7seg_xoa0VN
+0     66   3    5             @DIV1616
+0    126   7    0    172  3.5  MAIN
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               12
+    Statements              541
+    Comments                429
+    Volume (V)              6360
+    Difficulty (D)          43.8
+    Effort to implement (E) 278654
+    Time to implement (T)   4 hours, 18 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   12
+    Maintainability (MI)    85
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE   950  31814  
+
+
+

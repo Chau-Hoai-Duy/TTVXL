@@ -1,0 +1,149 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004-007 delay
+008-00B led32
+00C-013 d7seg
+014-01B s7seg
+01C-01D inputcd.oldpin
+01E-01F inputcd.t
+020     inputcd.step
+021     key4x4
+022     key4x4_read.step
+023-024 key4x4_read.t
+025     i
+026     dem
+027     dl1
+028     dl2
+029     dl3
+02A     dl4
+02B     KEYREAD.cot
+02B     @WRITEBITA.P1
+02B-02C delay_stop.t
+02B.0   CHECK_MODULE.tt
+02B-02C inputcd.pin
+02B-02E @SPI_XFER_1_32.P1
+02B-02E atan2.y
+02B     @READBITA.P1
+02B     s7seg_display.n
+02B     key4x4_read.@SCRATCH1
+02B     MAIN.@SCRATCH1
+02C     CHECK_MODULE.n
+02C     @WRITEBITA.P1
+02C-02D @READBITA.P2
+02C     s7seg_display.@SCRATCH1
+02C     KEYREAD.@SCRATCH1
+02C     key4x4_read.@SCRATCH2
+02D-02E delay_stop.tam
+02D     @delay_ms1.P1
+02D-02E @WRITEBITA.P2
+02D     CHECK_MODULE.@SCRATCH1
+02E     CHECK_MODULE.@SCRATCH2
+02F-032 @DIV3232.P1
+02F-032 atan2.x
+02F     delay_stop.@SCRATCH1
+030     delay_stop.@SCRATCH2
+033-036 @DIV3232.P1
+033-036 atan2.z
+037.0   atan2.sign
+037     @DIV3232.@SCRATCH1
+038     atan2.quad
+038     @DIV3232.@SCRATCH2
+039     @DIV3232.@SCRATCH3
+03A     @DIV3232.@SCRATCH4
+03B     @DIV3232.@SCRATCH5
+F71     CCP_5_LOW
+F71     CCP_5
+F72     CCP_5_HIGH
+F74     CCP_4
+F74     CCP_4_LOW
+F75     CCP_4_HIGH
+F83     PSP_DATA
+FA1.1   TIM3IF
+FB4.6   C1OUT
+FB4.7   C2OUT
+FB8     CCP_3
+FB8     CCP_3_LOW
+FB9     CCP_3_HIGH
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P3
+FE9-FEA @READ_PROGRAM_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  m7d.call
+000018  m7d.data
+000028  mq.call
+00003C  mq.data
+000040  @delay_ms1
+000066  CHECK_MODULE
+0000C0  led32_display
+0000F8  d7seg_display
+00015C  s7seg_display
+0001BE  buzzer_off
+0001CA  triac_2_off
+0001D6  system_init
+000214  KEYREAD
+0002BC  @DIV3232
+00034A  delay_start
+00039C  delay_stop
+00042E  key4x4_read
+000508  @goto33933
+000530  MAIN
+000530  @cinit1
+000550  @cinit2
+
+Project Directory:
+    C:\TTVXL\TTVXL\Thuc Hanh\
+
+Project Files:
+    BAI_424_KEY_4X4_4LED_DICH_UNDO4.c                       [18-Feb-23 11:01  CRC=07B20ABF]
+    tv_boards.c                                             [25-Aug-22 14:39  CRC=BADBB360]
+    TV_MOPHONG.C                                            [13-Jan-23 10:01  CRC=BC0C87F3]
+    TV_MOPHONG.h                                            [25-Aug-22 14:03  CRC=D88B226F]
+    ..\..\..\Program Files (x86)\PICC\Devices\18f6722.h     [21-Jan-21 11:39  CRC=97E248DF]
+    ..\..\..\Program Files (x86)\PICC\Drivers\math.h        [05-May-20 12:57  CRC=02232397]
+    TV_LOWLEVER.C                                           [12-Oct-22 15:49  CRC=97B0DA2C]
+    TV_LOWLEVER.H                                           [19-Nov-22 07:33  CRC=D872A938]
+    tv_key4x4.c                                             [07-Jun-22 20:08  CRC=53A906E2]
+    tv_key4x4.h                                             [29-Apr-22 14:10  CRC=D872A938]
+
+Source signature=65DCB1AD
+Program memory checksum=0000
+Hex file CRC=AEAB
+
+Units:
+    C:\TTVXL\TTVXL\Thuc Hanh\BAI_424_KEY_4X4_4LED_DICH_UNDO4 (main)
+
+Compiler Settings:
+    Processor:      PIC18F6722
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   BAI_424_KEY_4X4_4LED_DICH_UNDO4.xsym
+    Errors:      BAI_424_KEY_4X4_4LED_DICH_UNDO4.err
+    Ext Symbols: BAI_424_KEY_4X4_4LED_DICH_UNDO4.esym
+    INHX32:      BAI_424_KEY_4X4_4LED_DICH_UNDO4.hex
+    Symbols:     BAI_424_KEY_4X4_4LED_DICH_UNDO4.sym
+    List:        BAI_424_KEY_4X4_4LED_DICH_UNDO4.lst
+    Debug/COFF:  BAI_424_KEY_4X4_4LED_DICH_UNDO4.cof
+    Project:     BAI_424_KEY_4X4_4LED_DICH_UNDO4.ccspjt
+    Call Tree:   BAI_424_KEY_4X4_4LED_DICH_UNDO4.tre
+    Statistics:  BAI_424_KEY_4X4_4LED_DICH_UNDO4.STA

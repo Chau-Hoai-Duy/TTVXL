@@ -1,0 +1,5 @@
+Compiling C:\TTVXL\TTVXL\Thuc Hanh\BAI_403_DEM_00_99 on 13-Feb-23 at 21:27
+>>> Warning 224 "C:\TTVXL\TTVXL\Thuc Hanh\tv_boards.c" Line 21(9,66): #warning  "Day la file mo phong, SV khong duoc nap tren board that"
+      Memory usage:   ROM=1%      RAM=1% - 1%
+      0 Errors,  1 Warnings.
+Build Successful.

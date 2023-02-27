@@ -1,0 +1,50 @@
+[PROJECT]
+Target=BAI_311_STD_PST_32LED_NO_LOOP.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=BAI_311_STD_PST_32LED_NO_LOOP.c
+[BAI_311_STD_PST_32LED_NO_LOOP.c]
+Type=4
+[mru-list]
+1=BAI_311_STD_PST_32LED_NO_LOOP.c
+
+[defines]
+buildcount=9
+
+[ProjectLog]
+Days=2
+D1=31-01-2023
+D1_L=6
+D1_L1=[60025]Started Editing.
+D1_L2=[61036]Stopped Editing.
+TotalEdit=18
+TotalDebug=0
+D1_E=17
+D1_D=0
+D1_L3=[61036]Project Closed.
+D1_L4=[62546]Project Opened.
+D1_L5=[62618]Started Editing.
+D1_L6=[63089]Project Closed.
+D2=07-02-2023
+D2_L=4
+D2_L1=[60706]Project Opened.
+D2_L2=[60750]Started Editing.
+D2_L3=[60754]Stopped Editing.
+D2_E=1
+D2_D=0
+D2_L4=[60754]Project Closed.
+
+[Opened Files]
+1=BAI_312_STD_PST_TSP_32LED.c
+t1=1
+Count=2
+2=BAI_311_STD_PST_32LED_NO_LOOP.c
+t2=1
+
+[fileformats]
+forcecoff=0
+[Units]
+Count=1
+1=BAI_311_STD_PST_32LED_NO_LOOP (main)

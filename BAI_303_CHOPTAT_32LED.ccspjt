@@ -1,0 +1,41 @@
+[PROJECT]
+Target=BAI_303_CHOPTAT_32LED.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=BAI_303_CHOPTAT_32LED.c
+[BAI_303_CHOPTAT_32LED.c]
+Type=4
+[mru-list]
+1=BAI_303_CHOPTAT_32LED.c
+
+[defines]
+buildcount=2
+
+[Opened Files]
+1=BAI_310_TONGHOP_32LED.c
+t1=23
+Count=2
+2=BAI_303_CHOPTAT_32LED.c
+t2=23
+
+[ProjectLog]
+Days=1
+D1=31-01-2023
+D1_L=5
+D1_L1=[51968]Project Closed.
+D1_L2=[58271]Project Opened.
+D1_L3=[58310]Started Editing.
+D1_L4=[58314]Stopped Editing.
+TotalEdit=1
+TotalDebug=0
+D1_E=1
+D1_D=0
+D1_L5=[58314]Project Closed.
+
+[fileformats]
+forcecoff=0
+[Units]
+Count=1
+1=BAI_303_CHOPTAT_32LED (main)

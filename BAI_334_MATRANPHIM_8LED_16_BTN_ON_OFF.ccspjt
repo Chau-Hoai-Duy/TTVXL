@@ -1,0 +1,41 @@
+[PROJECT]
+Target=BAI_334_MATRANPHIM_8LED_16_BTN_ON_OFF.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=BAI_334_MATRANPHIM_8LED_16_BTN_ON_OFF.c
+[BAI_334_MATRANPHIM_8LED_16_BTN_ON_OFF.c]
+Type=4
+[mru-list]
+1=BAI_334_MATRANPHIM_8LED_16_BTN_ON_OFF.c
+
+[defines]
+buildcount=11
+
+[ProjectLog]
+Days=1
+D1=07-02-2023
+D1_L=5
+D1_L1=[57924]Started Editing.
+D1_L2=[58376]Stopped Editing.
+TotalEdit=25
+TotalDebug=0
+D1_E=25
+D1_D=0
+D1_L3=[58405]Started Editing.
+D1_L4=[59410]Stopped Editing.
+D1_L5=[59450]Project Closed.
+
+[Opened Files]
+1=BAI_326_TONGHOP_UP_DN_CLR.c
+t1=105
+2=BAI_334_MATRANPHIM_8LED_16_BTN_ON_OFF.c
+t2=105
+Count=2
+
+[fileformats]
+forcecoff=0
+[Units]
+Count=1
+1=BAI_334_MATRANPHIM_8LED_16_BTN_ON_OFF (main)

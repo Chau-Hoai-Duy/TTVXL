@@ -1,0 +1,57 @@
+[PROJECT]
+Target=BAI_310_TONGHOP_32LED.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=BAI_310_TONGHOP_32LED.c
+[BAI_310_TONGHOP_32LED.c]
+Type=4
+[mru-list]
+1=BAI_310_TONGHOP_32LED.c
+
+[defines]
+buildcount=9
+
+[ProjectLog]
+Days=3
+D1=31-01-2023
+D1_L=9
+D1_L1=[58271]Stopped Editing.
+TotalEdit=15
+TotalDebug=0
+D1_E=15
+D1_D=0
+D1_L2=[58271]Project Closed.
+D1_L3=[58833]Project Opened.
+D1_L4=[58841]Started Editing.
+D1_L5=[59637]Project Closed.
+D1_L6=[62326]Project Opened.
+D1_L7=[62341]Started Editing.
+D1_L8=[62546]Stopped Editing.
+D1_L9=[62546]Project Closed.
+D2=07-02-2023
+D2_L=2
+D2_L1=[60754]Project Opened.
+D2_L2=[60860]Project Closed.
+D3=08-02-2023
+D3_L=2
+D3_L1=[36131]Project Opened.
+D3_L2=[36132]Project Closed.
+
+[fileformats]
+forcecoff=0
+
+[Opened Files]
+1=BAI_312_STD_PST_TSP_32LED.c
+t1=1
+2=BAI_311_STD_PST_32LED_NO_LOOP.c
+t2=1
+3=BAI_310_TONGHOP_32LED.c
+t3=1
+4=BAI_309_SANGDON_PST_TSP_32LED.c
+t4=11
+Count=3
+[Units]
+Count=1
+1=BAI_310_TONGHOP_32LED (main)

@@ -1,0 +1,30 @@
+[PROJECT]
+Target=BAI_423_KEY_4X4_4LED_DICH.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=BAI_423_KEY_4X4_4LED_DICH.c
+[BAI_423_KEY_4X4_4LED_DICH.c]
+Type=4
+[mru-list]
+1=BAI_423_KEY_4X4_4LED_DICH.c
+
+[defines]
+buildcount=12
+
+[Opened Files]
+1=BAI_422_DEM_XUNG_T0_QUANG_CAO_32LED.c
+t1=31
+2=BAI_423_KEY_4X4_4LED_DICH.c
+t2=31
+Count=2
+[Units]
+Count=1
+1=BAI_423_KEY_4X4_4LED_DICH (main)
+
+[ProjectLog]
+Days=1
+D1=14-02-2023
+D1_L=1
+D1_L1=[58792]Project Closed.

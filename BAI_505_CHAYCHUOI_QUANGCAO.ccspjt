@@ -1,0 +1,49 @@
+[PROJECT]
+Target=BAI_505_CHAYCHUOI_QUANGCAO.hex
+Processor_Text=PIC18F6722
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=BAI_505_CHAYCHUOI_QUANGCAO.c
+[BAI_505_CHAYCHUOI_QUANGCAO.c]
+Type=4
+[mru-list]
+1=BAI_505_CHAYCHUOI_QUANGCAO.c
+
+[defines]
+buildcount=13
+
+[Opened Files]
+1=BAI_505_CHAYCHUOI_QUANGCAO.c
+t1=16
+2=BAI_511_DEM_GIAY.c
+t2=1
+3=BAI_513_DEM_PHUT_GIAY.c
+t3=1
+Count=4
+4=BAI_514_DEM_GIO_PHUT_GIAY.c
+t4=1
+
+[ProjectLog]
+Days=2
+D1=21-02-2023
+D1_L=1
+D1_L1=[55568]Project Closed.
+D2=26-02-2023
+D2_L=6
+D2_L1=[74825]Project Opened.
+D2_L2=[75279]Started Editing.
+D2_L3=[75754]Stopped Editing.
+D2_L4=[76286]Started Editing.
+D2_L5=[76463]Stopped Editing.
+TotalEdit=6
+TotalDebug=0
+D2_E=6
+D2_D=0
+D2_L6=[76463]Project Closed.
+
+[fileformats]
+forcecoff=0
+[Units]
+Count=1
+1=BAI_505_CHAYCHUOI_QUANGCAO (main)

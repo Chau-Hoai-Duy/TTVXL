@@ -1,0 +1,139 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004-009 system_var
+00A-00D delay
+00E-011 led32
+012-015 d7seg
+016-01D s7seg
+01E-01F inputcd.oldpin
+020-021 inputcd.t
+022     inputcd.step
+023-024 inputcd.pin
+023-024 write_ledmatrix.mahang
+023     write_glcd128x64.glcd_signal
+023-026 atan2.y
+023     write_lcd20x4.lcd_signal
+023     s7seg_display.i
+023     kiemtra_xuli_nutnhan.@SCRATCH1
+024     s7seg_display.n
+024     write_lcd20x4.lcd_ins_hthi
+024     write_glcd128x64.glcd_ins_hthi
+024     kiemtra_xuli_nutnhan.@SCRATCH2
+025-026 delay_stop.t
+025     @delay_ms1.P1
+025     @WRITEBITA.P2
+025-026 write_ledmatrix.macot1
+025     @READBITA.P1
+025     s7seg_display.@SCRATCH1
+025     inputcd.@SCRATCH1
+026-027 @READBITA.P1
+026     @WRITEBITA.P2
+026     inputcd.@SCRATCH2
+027-028 delay_stop.tam
+027-028 @WRITEBITA.P1
+027-02A atan2.x
+027-028 write_ledmatrix.macot2
+029-02C @DIV3232.P1
+029-02A write_ledmatrix.macot3
+029     delay_stop.@SCRATCH1
+02A     delay_stop.@SCRATCH2
+02B-02E atan2.z
+02B     write_ledmatrix.@SCRATCH1
+02C     write_ledmatrix.@SCRATCH2
+02D-030 @DIV3232.P1
+02D     SSPI_WRITE.x
+02F.0   atan2.sign
+030     atan2.quad
+031     @DIV3232.@SCRATCH1
+032     @DIV3232.@SCRATCH2
+033     @DIV3232.@SCRATCH3
+034     @DIV3232.@SCRATCH4
+035     @DIV3232.@SCRATCH5
+F83     PSP_DATA
+F84.0   SSCK
+F84.2   SSDO
+FA1.1   TIM3IF
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P3
+FE9-FEA @READ_PROGRAM_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  SSPI_WRITE
+000096  private_write_buzzer_relay
+0000B2  led32_display
+0000D8  d7seg_display
+000100  @delay_ms1
+000128  s7seg_display
+00017E  private_write_glcd_lcd
+0001A4  write_lcd20x4
+0001BA  write_glcd128x64
+0001D0  write_ledmatrix
+000218  system_init
+000286  @WRITEBITA
+0002C4  @READBITA
+0002F6  @DIV3232
+000384  delay_start
+0003D6  delay_stop
+000468  inputcd
+0005F6  @goto56411
+000618  kiemtra_xuli_nutnhan
+00066A  @cinit1
+00066A  MAIN
+00068C  @cinit2
+
+Project Directory:
+    C:\TTVXL\TTVXL\Thuc Hanh\
+
+Project Files:
+    BAI_324_16LED_UP_DW_CLR_1.c                             [07-Feb-23 13:37  CRC=D935DA0C]
+    tv_boards.c                                             [25-Aug-22 14:39  CRC=BADBB360]
+    TV_D501_TH.C                                            [25-Aug-22 14:04  CRC=1FD863A8]
+    TV_D501_TH.h                                            [25-Aug-22 14:02  CRC=79282120]
+    ..\..\..\Program Files (x86)\PICC\Devices\18f4550.h     [21-Jan-21 11:37  CRC=71B7866C]
+    ..\..\..\Program Files (x86)\PICC\Drivers\math.h        [05-May-20 12:57  CRC=02232397]
+    TV_LOWLEVER.C                                           [12-Oct-22 15:49  CRC=97B0DA2C]
+    TV_LOWLEVER.H                                           [19-Nov-22 07:33  CRC=D872A938]
+
+Source signature=E982E8D3
+Program memory checksum=0000
+Hex file CRC=572E
+
+Units:
+    C:\TTVXL\TTVXL\Thuc Hanh\BAI_324_16LED_UP_DW_CLR_1 (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   BAI_324_16LED_UP_DW_CLR_1.xsym
+    Errors:      BAI_324_16LED_UP_DW_CLR_1.err
+    Ext Symbols: BAI_324_16LED_UP_DW_CLR_1.esym
+    INHX32:      BAI_324_16LED_UP_DW_CLR_1.hex
+    Symbols:     BAI_324_16LED_UP_DW_CLR_1.sym
+    List:        BAI_324_16LED_UP_DW_CLR_1.lst
+    Debug/COFF:  BAI_324_16LED_UP_DW_CLR_1.cof
+    Project:     BAI_324_16LED_UP_DW_CLR_1.ccspjt
+    Call Tree:   BAI_324_16LED_UP_DW_CLR_1.tre
+    Statistics:  BAI_324_16LED_UP_DW_CLR_1.STA

@@ -1,0 +1,77 @@
+
+ROM used:   2296/32768 (7%)
+            2296/32768 (7%) including unused fragments
+
+            0.6 Average locations per line
+            3.5 Average locations per statement
+
+RAM used:   45/2048 (2%) at main() level
+            65/2048 (3%) worst case
+
+Stack used: 0 worst case (0 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  150   108  16  BAI_335_7CT_7BTN.c
+   26     0   0  tv_boards.c
+  239   186  28  TV_D501_TH.C
+  135     0   0  TV_D501_TH.h
+  876     0   0  ..\..\..\Program Files (x86)\PICC\Devices\18f4550.h
+ 2228   258  39  ..\..\..\Program Files (x86)\PICC\Drivers\math.h
+  179    80  12  TV_LOWLEVER.C
+    7     0   0  TV_LOWLEVER.H
+   45    30   5  tv_key4x4.c
+   10     0   0  tv_key4x4.h
+----- -----
+ 3895   662 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     38   1    1             @delay_ms1
+0     38   1    0    221  2.6  led32_display
+0     40   1    0    221  2.6  d7seg_display
+0     86   2    3    355  6.1  s7seg_display
+0    120   3    1    561  6.9  KEYREAD
+0     38   1    0    172  2.1  private_write_glcd_lcd
+0     22   0    2    120  3.4  write_lcd20x4
+0     22   0    2    120  3.4  write_glcd128x64
+0     72   2   10    362  3.3  write_ledmatrix
+0     28   1    0    151  2.5  private_write_buzzer_relay
+0    110   2    0    561  3.8  system_init
+0    146   3    1   1186  3.3  SSPI_WRITE
+0     82   2    0    153  3.9  delay_start
+0    142   3   13             @DIV3232
+0    146   3    6    318  6.3  delay_stop
+0    218   5    2    962  7.5  key4x4_read
+0     34   1    0     27  1.0  @goto20189
+0     34   1    1    176  3.1  kiemtra_xuli_nutnhan
+0     42   1    0    129  3.8  chop_tat_led
+0     84   2    5    312  6.0  sang_tat_dan_pst
+0     80   2    5    312  6.0  sang_tat_dan_tsp
+0     86   2    2    603  7.2  sang_tat_dan_ngoai_vao
+0     86   2    2    603  7.2  sang_tat_dan_trong_ra
+0    158   3    6    317  6.9  sang_don_pst
+0    158   3    6    304  6.8  sang_don_tsp
+0    182   4    0    335  3.2  MAIN
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               24
+    Statements              662
+    Comments                429
+    Volume (V)              15340
+    Difficulty (D)          110.6
+    Effort to implement (E) 1697065
+    Time to implement (T)   26 hours, 11 minutes
+    Est Delivered Bugs (B)  5
+    Cyclomatic Complexity   54
+    Maintainability (MI)    96
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  2292  30472  
+
+
+

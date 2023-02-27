@@ -1,0 +1,68 @@
+
+ROM used:   1366/131072 (1%)
+            1366/131072 (1%) including unused fragments
+
+            0.4 Average locations per line
+            2.3 Average locations per statement
+
+RAM used:   36/3936 (1%) at main() level
+            56/3936 (1%) worst case
+
+Stack used: 4 worst case (4 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  174   133  22  BAI_314_TONGHOP_32LED.c
+   26     0   0  tv_boards.c
+  137   121  20  TV_MOPHONG.C
+  104     0   0  TV_MOPHONG.h
+  952     0   0  ..\..\..\Program Files (x86)\PICC\Devices\18f6722.h
+ 2228   258  43  ..\..\..\Program Files (x86)\PICC\Drivers\math.h
+  179    86  14  TV_LOWLEVER.C
+    7     0   0  TV_LOWLEVER.H
+----- -----
+ 3807   598 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     42   2    1             @delay_ms1
+0     54   2    0    221  2.6  led32_display
+0    102   4    0    452  2.8  d7seg_display
+0     98   4    2    301  5.1  s7seg_display
+0     12   0    0     30  1.0  buzzer_off
+0     12   0    0     30  1.0  triac_2_off
+0     62   2    0    394  3.2  system_init
+0     90   3    4    431  6.2  CHECK_MODULE
+0     40   1    1    167  4.3  chop_tat_5_lan
+0     76   3    1    174  4.8  sang_dan_pst
+0     52   2    1    163  4.3  tat_dan_pst
+0     76   3    1    174  4.8  sang_dan_tsp
+0     52   2    1    163  4.3  tat_dan_tsp
+0     88   3    0    259  5.9  sang_dan_ngoai_vao
+0     64   2    0    237  5.4  tat_dan_ngoai_vao
+0     88   3    0    259  5.9  sang_dan_trong_ra
+0     64   2    0    237  5.4  tat_dan_trong_ra
+0    290  11    0   1335  3.9  MAIN
+ Inline         0    183  4.9  @cinit1
+
+Program metrics:
+    Functions               18
+    Statements              598
+    Comments                442
+    Volume (V)              8994
+    Difficulty (D)          77.6
+    Effort to implement (E) 698153
+    Time to implement (T)   10 hours, 46 minutes
+    Est Delivered Bugs (B)  3
+    Cyclomatic Complexity   35
+    Maintainability (MI)    131
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-0FFFE  1362  64170  
+10000-1FFFE     0  65536  
+
+
+

@@ -1,0 +1,23 @@
+[PROJECT]
+Target=BAI_406_DEM_00_59_3S_00_3S.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=BAI_406_DEM_00_59_3S_00_3S.c
+[BAI_406_DEM_00_59_3S_00_3S.c]
+Type=4
+[mru-list]
+1=BAI_406_DEM_00_59_3S_00_3S.c
+[Units]
+Count=1
+1=BAI_406_DEM_00_59_3S_00_3S (main)
+
+[defines]
+buildcount=1
+
+[ProjectLog]
+Days=1
+D1=14-02-2023
+D1_L=1
+D1_L1=[50169]Project Closed.

@@ -1,0 +1,37 @@
+ÀÄBAI_333_MATRANPHIM_8LED_ON_OFF
+   ÀÄMAIN  0/108  Ram=1
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄ@cinit2  (Inline)  Ram=0
+      ÃÄsystem_init  0/62  Ram=0
+      ³  ÃÄCHECK_MODULE  0/90  Ram=4
+      ³  ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ³  ÀÄ@delay_ms1  0/38  Ram=1
+      ³  ÃÄled32_display  0/54  Ram=0
+      ³  ÃÄd7seg_display  0/102  Ram=0
+      ³  ³  ÀÄ@delay_ms1  0/38  Ram=1
+      ³  ÃÄs7seg_display  0/98  Ram=2
+      ³  ³  ÀÄ@delay_ms1  0/38  Ram=1
+      ³  ÃÄbuzzer_off  0/12  Ram=0
+      ³  ÀÄtriac_2_off  0/12  Ram=0
+      ÃÄkey4x4_read  0/218  Ram=2
+      ³  ÃÄKEYREAD  0/168  Ram=2
+      ³  ³  ÃÄ@const970  0/24  Ram=0
+      ³  ³  ÃÄ@const970  0/24  Ram=0
+      ³  ³  ÃÄ@const970  0/24  Ram=0
+      ³  ³  ÀÄ@const970  0/24  Ram=0
+      ³  ÃÄ@goto29208  0/40  Ram=0
+      ³  ÃÄdelay_start  0/82  Ram=0
+      ³  ³  ÀÄ@DIV3232  0/142  Ram=13
+      ³  ÃÄdelay_stop  0/146  Ram=6
+      ³  ³  ÀÄ@DIV3232  0/142  Ram=13
+      ³  ÃÄdelay_start  0/82  Ram=0
+      ³  ³  ÀÄ*
+      ³  ÃÄdelay_stop  0/146  Ram=6
+      ³  ³  ÀÄ*
+      ³  ÃÄdelay_start  0/82  Ram=0
+      ³  ³  ÀÄ*
+      ³  ÃÄdelay_stop  0/146  Ram=6
+      ³  ³  ÀÄ*
+      ³  ÀÄdelay_start  0/82  Ram=0
+      ³     ÀÄ*
+      ÀÄled32_display  0/54  Ram=0

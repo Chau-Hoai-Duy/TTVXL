@@ -1,0 +1,13 @@
+#include<tv_boards.c>
+void kt_nutnhan()
+{
+   
+}
+void main()
+{
+   system_init();
+   while(true)
+   {
+      
+   }
+}

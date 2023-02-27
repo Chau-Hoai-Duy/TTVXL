@@ -1,0 +1,31 @@
+[PROJECT]
+Target=BAI_408_DEM_0000_9999.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=BAI_408_DEM_0000_9999.c
+[BAI_408_DEM_0000_9999.c]
+Type=4
+[mru-list]
+1=BAI_408_DEM_0000_9999.c
+
+[defines]
+buildcount=2
+
+[ProjectLog]
+Days=1
+D1=14-02-2023
+D1_L=2
+D1_L1=[50283]Started Editing.
+D1_L2=[50351]Project Closed.
+
+[Opened Files]
+1=BAI_408_DEM_0000_9999.c
+t1=1
+2=BAI_407_DEM_000_999.c
+t2=1
+Count=2
+[Units]
+Count=1
+1=BAI_408_DEM_0000_9999 (main)

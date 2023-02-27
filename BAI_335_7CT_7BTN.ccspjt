@@ -1,0 +1,40 @@
+[PROJECT]
+Target=BAI_335_7CT_7BTN.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=BAI_335_7CT_7BTN.c
+[BAI_335_7CT_7BTN.c]
+Type=4
+[mru-list]
+1=BAI_335_7CT_7BTN.c
+
+[defines]
+buildcount=5
+
+[ProjectLog]
+Days=1
+D1=07-02-2023
+D1_L=4
+D1_L1=[59865]Stopped Editing.
+TotalEdit=14
+TotalDebug=0
+D1_E=14
+D1_D=0
+D1_L2=[59933]Started Editing.
+D1_L3=[60297]Stopped Editing.
+D1_L4=[60297]Project Closed.
+
+[fileformats]
+forcecoff=0
+
+[Opened Files]
+1=BAI_326_TONGHOP_UP_DN_CLR.c
+t1=146
+2=BAI_335_7CT_7BTN.c
+t2=146
+Count=2
+[Units]
+Count=1
+1=BAI_335_7CT_7BTN (main)

@@ -1,0 +1,155 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004-009 system_var
+00A-00D delay
+00E-011 led32
+012-015 d7seg
+016-01D s7seg
+01E-01F inputcd.oldpin
+020-021 inputcd.t
+022     inputcd.step
+023     T0
+024     T0old
+025.0   cd
+026-027 d7seg_xoa0VN.d
+026-029 atan2.y
+026     write_glcd128x64.glcd_signal
+026-027 write_ledmatrix.mahang
+026     s7seg_display.i
+026-027 inputcd.pin
+026     write_lcd20x4.lcd_signal
+026     kt_nut_nhan.@SCRATCH1
+026     MAIN.@SCRATCH1
+027     write_glcd128x64.glcd_ins_hthi
+027     s7seg_display.n
+027     write_lcd20x4.lcd_ins_hthi
+028     @delay_ms1.P1
+028     @READBITA.P2
+028     @WRITEBITA.P3
+028     d7seg_xoa0VN.n
+028-029 delay_stop.t
+028-029 write_ledmatrix.macot1
+028     s7seg_display.@SCRATCH1
+028     inputcd.@SCRATCH1
+029-02A @READBITA.P1
+029     @WRITEBITA.P2
+029     inputcd.@SCRATCH2
+029     d7seg_xoa0VN.@SCRATCH1
+02A-02B @WRITEBITA.P1
+02A-02B delay_stop.tam
+02A-02D atan2.x
+02A-02B write_ledmatrix.macot2
+02A     d7seg_xoa0VN.@SCRATCH2
+02B-02C @DIV1616.P1
+02B     d7seg_xoa0VN.@SCRATCH3
+02C-02D write_ledmatrix.macot3
+02C-02F @DIV3232.P1
+02C     delay_stop.@SCRATCH1
+02C     d7seg_xoa0VN.@SCRATCH4
+02D-02E @DIV1616.P1
+02D     delay_stop.@SCRATCH2
+02E-031 atan2.z
+02E     write_ledmatrix.@SCRATCH1
+02F     write_ledmatrix.@SCRATCH2
+02F     @DIV1616.@SCRATCH1
+030     SSPI_WRITE.x
+030-033 @DIV3232.P1
+032.0   atan2.sign
+033     atan2.quad
+034     @DIV3232.@SCRATCH1
+035     @DIV3232.@SCRATCH2
+036     @DIV3232.@SCRATCH3
+037     @DIV3232.@SCRATCH4
+038     @DIV3232.@SCRATCH5
+F83     PSP_DATA
+F84.0   SSCK
+F84.2   SSDO
+FA1.1   TIM3IF
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P3
+FE9-FEA @READ_PROGRAM_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  m7d.call
+000014  m7d.data
+000024  SSPI_WRITE
+000096  private_write_buzzer_relay
+0000B2  led32_display
+0000D8  d7seg_display
+0000FE  @delay_ms1
+000126  s7seg_display
+00017C  private_write_glcd_lcd
+0001A2  write_lcd20x4
+0001B8  write_glcd128x64
+0001CE  write_ledmatrix
+000216  system_init
+000284  @WRITEBITA
+0002C2  @READBITA
+0002F4  @DIV3232
+000382  delay_start
+0003D4  delay_stop
+000466  inputcd
+0005F4  @goto9590
+000616  kt_nut_nhan
+000640  @DIV1616
+000682  d7seg_xoa0VN
+0006F6  MAIN
+0006F6  @cinit1
+00071C  @cinit2
+
+Project Directory:
+    C:\TTVXL\TTVXL\Thuc Hanh\
+
+Project Files:
+    BAI_417_DEM_XUNG_T0_START_STOP_32LED.c                  [14-Feb-23 14:59  CRC=64D700F2]
+    tv_boards.c                                             [25-Aug-22 14:39  CRC=BADBB360]
+    TV_D501_TH.C                                            [25-Aug-22 14:04  CRC=1FD863A8]
+    TV_D501_TH.h                                            [25-Aug-22 14:02  CRC=79282120]
+    ..\..\..\Program Files (x86)\PICC\Devices\18f4550.h     [21-Jan-21 11:37  CRC=71B7866C]
+    ..\..\..\Program Files (x86)\PICC\Drivers\math.h        [05-May-20 12:57  CRC=02232397]
+    TV_LOWLEVER.C                                           [12-Oct-22 15:49  CRC=97B0DA2C]
+    TV_LOWLEVER.H                                           [19-Nov-22 07:33  CRC=D872A938]
+
+Source signature=75240FB9
+Program memory checksum=0000
+Hex file CRC=2942
+
+Units:
+    C:\TTVXL\TTVXL\Thuc Hanh\BAI_417_DEM_XUNG_T0_START_STOP_32LED (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   BAI_417_DEM_XUNG_T0_START_STOP_32LED.xsym
+    Errors:      BAI_417_DEM_XUNG_T0_START_STOP_32LED.err
+    Ext Symbols: BAI_417_DEM_XUNG_T0_START_STOP_32LED.esym
+    INHX32:      BAI_417_DEM_XUNG_T0_START_STOP_32LED.hex
+    Symbols:     BAI_417_DEM_XUNG_T0_START_STOP_32LED.sym
+    List:        BAI_417_DEM_XUNG_T0_START_STOP_32LED.lst
+    Debug/COFF:  BAI_417_DEM_XUNG_T0_START_STOP_32LED.cof
+    Project:     BAI_417_DEM_XUNG_T0_START_STOP_32LED.ccspjt
+    Call Tree:   BAI_417_DEM_XUNG_T0_START_STOP_32LED.tre
+    Statistics:  BAI_417_DEM_XUNG_T0_START_STOP_32LED.STA

@@ -1,0 +1,57 @@
+ÀÄBAI_312_STD_PST_TSP_32LED
+   ÀÄMAIN  0/134  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄ@cinit2  (Inline)  Ram=0
+      ÃÄsystem_init  0/110  Ram=0
+      ³  ÃÄprivate_write_buzzer_relay  0/28  Ram=0
+      ³  ³  ÃÄSSPI_WRITE  0/146  Ram=1
+      ³  ³  ÀÄSSPI_WRITE  0/146  Ram=1
+      ³  ÃÄled32_display  0/38  Ram=0
+      ³  ³  ÃÄSSPI_WRITE  0/146  Ram=1
+      ³  ³  ÃÄSSPI_WRITE  0/146  Ram=1
+      ³  ³  ÃÄSSPI_WRITE  0/146  Ram=1
+      ³  ³  ÀÄSSPI_WRITE  0/146  Ram=1
+      ³  ÃÄd7seg_display  0/40  Ram=0
+      ³  ³  ÃÄSSPI_WRITE  0/146  Ram=1
+      ³  ³  ÃÄSSPI_WRITE  0/146  Ram=1
+      ³  ³  ÃÄSSPI_WRITE  0/146  Ram=1
+      ³  ³  ÀÄSSPI_WRITE  0/146  Ram=1
+      ³  ÃÄs7seg_display  0/86  Ram=3
+      ³  ³  ÃÄSSPI_WRITE  0/146  Ram=1
+      ³  ³  ÃÄSSPI_WRITE  0/146  Ram=1
+      ³  ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ³  ÀÄSSPI_WRITE  0/146  Ram=1
+      ³  ÃÄwrite_lcd20x4  0/22  Ram=2
+      ³  ³  ÀÄprivate_write_glcd_lcd  0/38  Ram=0
+      ³  ³     ÃÄSSPI_WRITE  0/146  Ram=1
+      ³  ³     ÃÄSSPI_WRITE  0/146  Ram=1
+      ³  ³     ÃÄSSPI_WRITE  0/146  Ram=1
+      ³  ³     ÀÄSSPI_WRITE  0/146  Ram=1
+      ³  ÃÄwrite_glcd128x64  0/22  Ram=2
+      ³  ³  ÀÄprivate_write_glcd_lcd  0/38  Ram=0
+      ³  ³     ÀÄ*
+      ³  ÀÄwrite_ledmatrix  0/72  Ram=10
+      ³     ÃÄSSPI_WRITE  0/146  Ram=1
+      ³     ÃÄSSPI_WRITE  0/146  Ram=1
+      ³     ÃÄSSPI_WRITE  0/146  Ram=1
+      ³     ÃÄSSPI_WRITE  0/146  Ram=1
+      ³     ÃÄSSPI_WRITE  0/146  Ram=1
+      ³     ÃÄSSPI_WRITE  0/146  Ram=1
+      ³     ÃÄSSPI_WRITE  0/146  Ram=1
+      ³     ÀÄSSPI_WRITE  0/146  Ram=1
+      ÃÄsang_dan_pst  0/80  Ram=1
+      ³  ÃÄled32_display  0/38  Ram=0
+      ³  ³  ÀÄ*
+      ³  ÀÄ@delay_ms1  0/38  Ram=1
+      ÃÄtat_dan_pst  0/56  Ram=1
+      ³  ÃÄled32_display  0/38  Ram=0
+      ³  ³  ÀÄ*
+      ³  ÀÄ@delay_ms1  0/38  Ram=1
+      ÃÄsang_dan_tsp  0/80  Ram=1
+      ³  ÃÄled32_display  0/38  Ram=0
+      ³  ³  ÀÄ*
+      ³  ÀÄ@delay_ms1  0/38  Ram=1
+      ÀÄtat_dan_tsp  0/56  Ram=1
+         ÃÄled32_display  0/38  Ram=0
+         ³  ÀÄ*
+         ÀÄ@delay_ms1  0/38  Ram=1

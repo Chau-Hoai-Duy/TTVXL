@@ -1,0 +1,22 @@
+//#define   BOARD     D501
+#include<tv_boards.c>  
+unsigned int8 i;
+void main()
+{
+      system_init();  
+      while(true)
+      {  
+         for(i=0;i<8;i++)
+         {
+            led32.ledx8[0]=(0x00<<1)|0x01;
+            led32_display();
+            delay_ms(1000);
+         }
+         for(i=0;i<8;i++)
+         {
+            led32.ledx8[0]=0xff<<1;
+            led32_display();
+            delay_ms(1000);
+         }
+      }
+}

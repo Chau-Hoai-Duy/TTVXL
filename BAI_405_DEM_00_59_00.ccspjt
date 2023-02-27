@@ -1,0 +1,29 @@
+[PROJECT]
+Target=BAI_405_DEM_00_59_00.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=BAI_405_DEM_00_59_00.c
+[BAI_405_DEM_00_59_00.c]
+Type=4
+[mru-list]
+1=BAI_405_DEM_00_59_00.c
+
+[defines]
+buildcount=3
+
+[ProjectLog]
+Days=1
+D1=14-02-2023
+D1_L=2
+D1_L1=[49351]Started Editing.
+D1_L2=[49982]Project Closed.
+
+[Opened Files]
+1=BAI_405_DEM_00_59_00.c
+t1=17
+Count=1
+[Units]
+Count=1
+1=BAI_405_DEM_00_59_00 (main)

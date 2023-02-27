@@ -1,0 +1,59 @@
+[PROJECT]
+Target=CLIP2_NUT_NHAN_DON.hex
+Processor_Text=PIC18F6722
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=CLIP2_NUT_NHAN_DON.c
+[CLIP2_NUT_NHAN_DON.c]
+Type=4
+[mru-list]
+1=CLIP2_NUT_NHAN_DON.c
+
+[defines]
+buildcount=11
+
+[ProjectLog]
+Days=2
+D1=11-02-2023
+D1_L=7
+D1_L1=[60980]Started Editing.
+D1_L2=[61095]Stopped Editing.
+TotalEdit=60
+TotalDebug=0
+D1_E=14
+D1_D=0
+D1_L3=[61095]Project Closed.
+D1_L4=[72733]Project Opened.
+D1_L5=[74214]Started Editing.
+D1_L6=[75179]Stopped Editing.
+D1_L7=[78954]Project Closed.
+D2=12-02-2023
+D2_L=12
+D2_L1=[29615]Project Opened.
+D2_L2=[30226]Started Editing.
+D2_L3=[30247]Stopped Editing.
+D2_E=46
+D2_D=0
+D2_L4=[30247]Project Closed.
+D2_L5=[30866]Project Opened.
+D2_L6=[30881]Started Editing.
+D2_L7=[33228]Stopped Editing.
+D2_L8=[33320]Started Editing.
+D2_L9=[33847]Stopped Editing.
+D2_L10=[34376]Started Editing.
+D2_L11=[34389]Stopped Editing.
+D2_L12=[34389]Project Closed.
+
+[fileformats]
+forcecoff=0
+
+[Opened Files]
+1=CLIP2_NUT_NHAN_DON.c
+t1=41
+Count=2
+2=CLIP1_LED_DON.c
+t2=1
+[Units]
+Count=1
+1=CLIP2_NUT_NHAN_DON (main)
