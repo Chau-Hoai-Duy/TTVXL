@@ -1,12 +1,12 @@
 
-ROM used:   1048/131072 (1%)
-            1048/131072 (1%) including unused fragments
+ROM used:   1176/32768 (4%)
+            1176/32768 (4%) including unused fragments
 
             0.3 Average locations per line
             2.1 Average locations per statement
 
-RAM used:   61/3936 (2%) at main() level
-            80/3936 (2%) worst case
+RAM used:   61/2048 (3%) at main() level
+            80/2048 (4%) worst case
 
 Stack used: 1 worst case (0 in main + 1 for interrupts)
 Stack size: 31
@@ -15,50 +15,52 @@ Lines Stmts  %   Files
 ----- ----- ---  -----
    46    32   6  BAI_514_DEM_GIO_PHUT_GIAY.c
    26     0   0  tv_boards.c
-  137   121  24  TV_MOPHONG.C
-  104     0   0  TV_MOPHONG.h
-  952     0   0  ..\..\..\Program Files (x86)\PICC\Devices\18f6722.h
- 2228   258  52  ..\..\..\Program Files (x86)\PICC\Drivers\math.h
-  179    86  17  TV_LOWLEVER.C
+  239   186  33  TV_D501_TH.C
+  135     0   0  TV_D501_TH.h
+  876     0   0  ..\..\..\Program Files (x86)\PICC\Devices\18f4550.h
+ 2228   258  46  ..\..\..\Program Files (x86)\PICC\Drivers\math.h
+  179    80  14  TV_LOWLEVER.C
     7     0   0  TV_LOWLEVER.H
 ----- -----
- 3679   497 Total
+ 3736   556 Total
 
 Page ROM  %  RAM    Vol Diff  Functions:
 ---- --- --- ---    --- ----  ----------
-0     38   2    1             @delay_ms1
-0     36   2    0             @const949
-0     56   3    0    221  2.6  led32_display
-0    102   5    0    452  2.8  d7seg_display
-0     96   5    2    301  5.1  s7seg_display
-0     12   1    0     30  1.0  buzzer_off
-0     12   1    0     30  1.0  triac_2_off
-0     62   3    0    394  3.2  system_init
-0     90   4    4    431  6.2  CHECK_MODULE
-0    300  14    1   1175  6.8  MAIN
-0     40   2    3    336  5.6  @DIV88
+0     40   2    1             @delay_ms1
+0     32   1    0             @const929
+0     40   2    0    221  2.6  led32_display
+0     40   2    0    221  2.6  d7seg_display
+0     84   4    3    355  6.1  s7seg_display
+0     38   2    0    172  2.1  private_write_glcd_lcd
+0     22   1    2    120  3.4  write_lcd20x4
+0     22   1    2    120  3.4  write_glcd128x64
+0     72   3   10    362  3.3  write_ledmatrix
+0     28   1    0    151  2.5  private_write_buzzer_relay
+0    110   5    0    561  3.8  system_init
+0    114   5    1   1186  3.3  SSPI_WRITE
+0    306  13    1   1175  6.8  MAIN
+0     40   2    3             @DIV88
 0     18   1    0     29  1.2  ngat_timer1
  Inline         0             @cinit1
 
 Program metrics:
-    Functions               10
-    Statements              497
-    Comments                442
-    Volume (V)              5138
-    Difficulty (D)          36.9
-    Effort to implement (E) 189588
-    Time to implement (T)   2 hours, 56 minutes
-    Est Delivered Bugs (B)  1
-    Cyclomatic Complexity   10
-    Maintainability (MI)    37
+    Functions               12
+    Statements              556
+    Comments                429
+    Volume (V)              7271
+    Difficulty (D)          42.2
+    Effort to implement (E) 307133
+    Time to implement (T)   4 hours, 44 minutes
+    Est Delivered Bugs (B)  2
+    Cyclomatic Complexity   13
+    Maintainability (MI)    83
 
  Segment     Used  Free
 -----------  ----  ----
 00000-00002     4  0  
 00004-00006     0  4  
-00008-000BC   182  0  
-000BE-0FFFE   862  64484  
-10000-1FFFE     0  65536  
+00008-000AC   166  0  
+000AE-07FFE  1006  31588  
 
 
 

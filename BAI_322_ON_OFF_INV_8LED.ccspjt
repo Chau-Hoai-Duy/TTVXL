@@ -1,6 +1,6 @@
 [PROJECT]
 Target=BAI_322_ON_OFF_INV_8LED.hex
-Processor_Text=PIC18F6722
+Processor_Text=PIC18F4550
 CCSVersion=5.101
 Compiler=PCH
 [Target Data]
@@ -9,16 +9,34 @@ FileList=BAI_322_ON_OFF_INV_8LED.c
 Type=4
 [mru-list]
 1=BAI_322_ON_OFF_INV_8LED.c
-[Units]
-Count=1
-1=BAI_322_ON_OFF_INV_8LED (main)
 
 [defines]
-buildcount=1
+buildcount=2
 
 [ProjectLog]
-Days=1
+Days=2
 D1=04-02-2023
 D1_L=2
 D1_L1=[70270]Stopped Editing.
 D1_L2=[70418]Project Closed.
+D2=28-02-2023
+D2_L=4
+D2_L1=[51274]Project Opened.
+D2_L2=[51277]Started Editing.
+D2_L3=[51286]Stopped Editing.
+TotalEdit=1
+TotalDebug=0
+D2_E=1
+D2_D=0
+D2_L4=[51349]Project Closed.
+
+[fileformats]
+forcecoff=0
+
+[Opened Files]
+1=BAI_322_ON_OFF_INV_8LED.c
+t1=1
+Count=1
+[Units]
+Count=1
+1=BAI_322_ON_OFF_INV_8LED (main)

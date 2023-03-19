@@ -91,7 +91,7 @@ ROM Allocation:
 000384  delay_start
 0003D6  delay_stop
 000468  inputcd
-0005F6  @goto56411
+0005F6  @goto38742
 000618  kiemtra_xuli_nutnhan
 00066A  @cinit1
 00066A  MAIN

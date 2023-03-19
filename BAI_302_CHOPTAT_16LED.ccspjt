@@ -1,6 +1,6 @@
 [PROJECT]
 Target=BAI_302_CHOPTAT_16LED.hex
-Processor_Text=PIC18F6722
+Processor_Text=PIC18F4550
 CCSVersion=5.101
 Compiler=PCH
 [Target Data]
@@ -11,18 +11,27 @@ Type=4
 1=BAI_302_CHOPTAT_16LED.c
 
 [defines]
-buildcount=3
+buildcount=4
 
 [Opened Files]
-1=BAI_302_CHOPTAT_16LED.c
+1=BAI_301_CHOPTAT_8LED.c
 t1=1
-Count=1
-[Units]
-Count=1
-1=BAI_302_CHOPTAT_16LED (main)
+Count=2
+2=BAI_302_CHOPTAT_16LED.c
+t2=1
 
 [ProjectLog]
-Days=1
+Days=2
 D1=31-01-2023
 D1_L=1
 D1_L1=[51797]Project Closed.
+D2=28-02-2023
+D2_L=2
+D2_L1=[50199]Project Opened.
+D2_L2=[50241]Project Closed.
+
+[fileformats]
+forcecoff=0
+[Units]
+Count=1
+1=BAI_302_CHOPTAT_16LED (main)

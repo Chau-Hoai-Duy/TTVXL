@@ -1,0 +1,26 @@
+[PROJECT]
+Target=BAI_603_LCD_HT_BIEN_PRINTF.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=BAI_603_LCD_HT_BIEN_PRINTF.c
+[BAI_603_LCD_HT_BIEN_PRINTF.c]
+Type=4
+[mru-list]
+1=BAI_603_LCD_HT_BIEN_PRINTF.c
+[Units]
+Count=1
+1=BAI_603_LCD_HT_BIEN_PRINTF (main)
+
+[defines]
+buildcount=1
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=1
+D1=28-02-2023
+D1_L=1
+D1_L1=[53959]Project Closed.

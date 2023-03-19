@@ -1,0 +1,27 @@
+#DEFINE BOARD D501
+#include<tv_boards.c>
+#include<tv_lcd.c>
+unsigned char S[]="TRUONG DAI HOC SU PHAM KY THUAT TP.HCM";
+unsigned char RONG[]=" ";
+unsigned int8 i;
+void chay_chuoi()
+{
+   if(i<39)
+   {
+      RONG[i]=S[i];
+      lcd_goto(19,0);
+      lcd_data(RONG);
+      i++;
+      delay_ms(500);
+   }
+   else i=0;
+}
+void main()
+{
+   system_init();
+   lcd_setup();
+   while(true)
+   { 
+        chay_chuoi();
+   }
+}

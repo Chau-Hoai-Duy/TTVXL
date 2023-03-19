@@ -1,10 +1,11 @@
+#DEFINE BOARD D501
 #include<tv_boards.c>
 signed int8 dem=0;
 void kt_nutnhan()
 {
    if(inputcd(on)==0) setup_timer_0(T0_EXT_L_TO_H| T0_DIV_1);
    else if(inputcd(off)==0) setup_timer_0(T0_OFF);
-   else if(inputcd(clr)==0) 
+   else if(inputcd(clr)==0)
    {
       dem=0;
       set_timer0(0);

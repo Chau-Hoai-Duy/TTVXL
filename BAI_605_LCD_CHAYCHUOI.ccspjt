@@ -1,0 +1,101 @@
+[PROJECT]
+Target=BAI_605_LCD_CHAYCHUOI.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=BAI_605_LCD_CHAYCHUOI.c
+[BAI_605_LCD_CHAYCHUOI.c]
+Type=4
+[mru-list]
+1=BAI_605_LCD_CHAYCHUOI.c
+
+[defines]
+buildcount=52
+
+[ProjectLog]
+Days=4
+D1=28-02-2023
+D1_L=13
+D1_L1=[55351]Started Editing.
+D1_L2=[56074]Stopped Editing.
+TotalEdit=92
+TotalDebug=0
+D1_E=69
+D1_D=0
+D1_L3=[56106]Started Editing.
+D1_L4=[56442]Stopped Editing.
+D1_L5=[56442]Project Closed.
+D1_L6=[57246]Project Opened.
+D1_L7=[57283]Started Editing.
+D1_L8=[60079]Stopped Editing.
+D1_L9=[60106]Started Editing.
+D1_L10=[60434]Stopped Editing.
+D1_L11=[60442]Started Editing.
+D1_L12=[60898]Stopped Editing.
+D1_L13=[60898]Project Closed.
+D2=05-03-2023
+D2_L=4
+D2_L1=[82836]Project Opened.
+D2_L2=[82836]Project Closed.
+D2_L3=[82837]Project Opened.
+D2_L4=[83855]Project Closed.
+D3=07-03-2023
+D3_L=13
+D3_L1=[44896]Project Opened.
+D3_L2=[44902]Started Editing.
+D3_L3=[45060]Stopped Editing.
+D3_E=3
+D3_D=0
+D3_L4=[45236]Started Editing.
+D3_L5=[45539]Stopped Editing.
+D3_L6=[46943]Started Editing.
+D3_L7=[47504]Project Closed.
+D3_L8=[56455]Project Opened.
+D3_L9=[56463]Started Editing.
+D3_L10=[57004]Project Closed.
+D3_L11=[57069]Project Opened.
+D3_L12=[57115]Started Editing.
+D3_L13=[57874]Project Closed.
+D4=14-03-2023
+D4_L=17
+D4_L1=[12704]Project Opened.
+D4_L2=[12845]Project Closed.
+D4_L3=[43383]Project Opened.
+D4_L4=[43394]Started Editing.
+D4_L5=[44424]Stopped Editing.
+D4_E=20
+D4_D=0
+D4_L6=[44424]Project Closed.
+D4_L7=[47455]Project Opened.
+D4_L8=[47530]Started Editing.
+D4_L9=[47552]Stopped Editing.
+D4_L10=[47552]Project Closed.
+D4_L11=[48230]Project Opened.
+D4_L12=[48351]Started Editing.
+D4_L13=[48354]Stopped Editing.
+D4_L14=[48354]Project Closed.
+D4_L15=[58164]Project Opened.
+D4_L16=[58313]Started Editing.
+D4_L17=[58450]Project Closed.
+
+[Opened Files]
+1=BAI_636_LCD_APPLE_DICHUYEN.c
+t1=13
+2=tv_lcd.c
+t2=1
+Count=5
+3=TV_LCD.h
+t3=49
+4=BAI_635_LCD_APPLE.c
+t4=9
+5=BAI_605_LCD_CHAYCHUOI.c
+t5=9
+6=BAI_606_LCD_CHAYCHUOI_QUALAI.c
+t6=22
+
+[fileformats]
+forcecoff=0
+[Units]
+Count=1
+1=BAI_605_LCD_CHAYCHUOI (main)

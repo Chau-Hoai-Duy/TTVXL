@@ -1,0 +1,89 @@
+
+ROM used:   3614/32768 (11%)
+            3614/32768 (11%) including unused fragments
+
+            0.9 Average locations per line
+            5.1 Average locations per statement
+
+RAM used:   66/2048 (3%) at main() level
+            85/2048 (4%) worst case
+
+Stack used: 6 worst case (5 in main + 1 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  184   153  21  BAI_615_LCD_8LED_GIO_PHUT_GIAY.c
+   26     0   0  tv_boards.c
+  239   186  26  TV_D501_TH.C
+  135     0   0  TV_D501_TH.h
+  876     0   0  ..\..\..\Program Files (x86)\PICC\Devices\18f4550.h
+ 2228   258  36  ..\..\..\Program Files (x86)\PICC\Drivers\math.h
+  179    80  11  TV_LOWLEVER.C
+    7     0   0  TV_LOWLEVER.H
+   57    35   5  tv_lcd.c
+   58     0   0  TV_LCD.h
+----- -----
+ 3989   712 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     38   1    1             @delay_ms1
+0     26   0    1             @delay_us1
+0     32   0    0             @const929
+0     40   1    0    221  2.6  led32_display
+0     40   1    0    221  2.6  d7seg_display
+0     84   1    3    355  6.1  s7seg_display
+0     38   1    0    172  2.1  private_write_glcd_lcd
+0     20   0    2    120  3.4  write_lcd20x4
+0     22   0    2    120  3.4  write_glcd128x64
+0     72   1   10    362  3.3  write_ledmatrix
+0     28   0    0    151  2.5  private_write_buzzer_relay
+0    110   2    0    561  3.8  system_init
+0    114   2    1   1186  3.3  SSPI_WRITE
+0     82   1    0    153  3.9  delay_start
+0    142   2   13             @DIV3232
+0    146   2    6    318  6.3  delay_stop
+0    398   6    4   1125  7.2  inputcd
+0     62   1    6             @WRITEBITA
+0     50   1    5             @READBITA
+0     34   0    0             @goto46618
+0     80   1    0             @const1043
+0     30   0    1     98  2.0  lcd_command
+0     32   0    1     98  2.0  lcd_data
+0     86   1    2    332  4.1  lcd_setup
+0     20   0    0             @const1050
+0     20   0    3    155  3.8  lcd_goto
+0     40   1    3             @DIV88
+0    192   3    1    916  5.3  kt_nutnhan
+0   1130  16    1   5551  8.9  MAIN
+0    102   1    2     29  1.2  @PRINTF_U_1021
+0     72   1    4     29  1.2  @DIVS88
+0      4   0    0     29  1.2  @const1081
+0     32   0    2             @PSTRINGC_1021
+0      4   0    0     29  1.2  @const1088
+0      4   0    0     29  1.2  @const1090
+0     18   0    0     29  1.2  ngat_timer1
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               25
+    Statements              712
+    Comments                456
+    Volume (V)              19237
+    Difficulty (D)          88.2
+    Effort to implement (E) 1696141
+    Time to implement (T)   26 hours, 11 minutes
+    Est Delivered Bugs (B)  5
+    Cyclomatic Complexity   54
+    Maintainability (MI)    98
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-000AC   166  0  
+000AE-07FFE  3444  29150  
+
+
+

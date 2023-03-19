@@ -41,24 +41,24 @@ Page ROM  %  RAM    Vol Diff  Functions:
 0    142   4   13             @DIV3232
 0    146   4    6    318  6.3  delay_stop
 0    398  12    4   1119  7.4  inputcd
-0     62   2    6             @WRITEBITA
-0     50   1    5             @READBITA
-0     34   1    0             @goto56411
+0     62   2    6    388  6.5  @WRITEBITA
+0     50   1    5    388  6.5  @READBITA
+0     34   1    0    687  7.7  @goto38742
 0     82   2    2    385  5.6  kiemtra_xuli_nutnhan
 0     88   3    0     38  1.2  MAIN
- Inline         0             @cinit1
+ Inline         0    163  4.3  @cinit1
 
 Program metrics:
-    Functions               15
+    Functions               19
     Statements              538
     Comments                429
-    Volume (V)              8991
-    Difficulty (D)          58.5
-    Effort to implement (E) 525904
-    Time to implement (T)   8 hours, 7 minutes
-    Est Delivered Bugs (B)  2
-    Cyclomatic Complexity   26
-    Maintainability (MI)    125
+    Volume (V)              12142
+    Difficulty (D)          84.3
+    Effort to implement (E) 1023852
+    Time to implement (T)   15 hours, 48 minutes
+    Est Delivered Bugs (B)  3
+    Cyclomatic Complexity   39
+    Maintainability (MI)    127
 
  Segment     Used  Free
 -----------  ----  ----

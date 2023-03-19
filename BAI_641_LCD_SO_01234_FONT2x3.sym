@@ -1,0 +1,147 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004-009 system_var
+00A-00D delay
+00E-011 led32
+012-015 d7seg
+016-01D s7seg
+01E-01F inputcd.oldpin
+020-021 inputcd.t
+022     inputcd.step
+023     write_glcd128x64.glcd_signal
+023-026 atan2.y
+023     @WRITEBITA.P1
+023-024 write_ledmatrix.mahang
+023     @READBITA.P1
+023     lcd_write_2x3_num.num_0_9
+023-024 inputcd.pin
+023     lcd_setup.n
+023     s7seg_display.i
+024     s7seg_display.n
+024     lcd_write_2x3_num.colum_0_17
+024     write_glcd128x64.glcd_ins_hthi
+024     @WRITEBITA.P1
+024-025 @READBITA.P2
+024     lcd_setup.@SCRATCH1
+025-026 @WRITEBITA.P1
+025-026 write_ledmatrix.macot1
+025     @delay_ms1.P1
+025     lcd_write_2x3_num.row_0_2
+025     s7seg_display.@SCRATCH1
+026     lcd_write_2x3_num.i
+027-02A atan2.x
+027-028 write_ledmatrix.macot2
+027     @MUL88.P1
+027     lcd_write_2x3_num.@SCRATCH1
+028     lcd_goto.colum_0_19
+028     @MUL88.P1
+028     lcd_data.data
+028     lcd_write_2x3_num.@SCRATCH2
+029-02A write_ledmatrix.macot3
+029     lcd_goto.row_0_3
+02A     lcd_goto.@SCRATCH1
+02B-02E atan2.z
+02B     lcd_command.command
+02B     write_ledmatrix.@SCRATCH1
+02C     write_lcd20x4.lcd_signal
+02C     @delay_us1.P1
+02C     write_ledmatrix.@SCRATCH2
+02D     write_lcd20x4.lcd_ins_hthi
+02E     SSPI_WRITE.x
+02F.0   atan2.sign
+030     atan2.quad
+F83     PSP_DATA
+F84.0   SSCK
+F84.2   SSDO
+FA1.1   TIM3IF
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P3
+FE9-FEA @WRITE_PROGRAM_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  LCD_SO_X.call
+000014  LCD_SO_X.data
+000056  LCD_MA_8DOAN.call
+000066  LCD_MA_8DOAN.data
+0000A6  dc.call
+0000B6  dc.data
+0000BA  SSPI_WRITE
+00012C  private_write_buzzer_relay
+000148  led32_display
+000170  d7seg_display
+000198  @delay_ms1
+0001BE  s7seg_display
+000214  private_write_glcd_lcd
+00023A  write_lcd20x4
+00024E  write_glcd128x64
+000264  write_ledmatrix
+0002AC  system_init
+00031A  @delay_us1
+000334  lcd_command
+000352  lcd_data
+000372  lcd_setup
+0003C8  lcd_goto
+0003DC  @MUL88
+000428  lcd_write_2x3_num
+000482  @cinit1
+000482  MAIN
+0004A4  @cinit2
+
+Project Directory:
+    C:\TTVXL\TTVXL\Thuc Hanh\
+
+Project Files:
+    BAI_641_LCD_SO_01234_FONT2x3.c                          [14-Mar-23 16:14  CRC=C9D8EA37]
+    tv_boards.c                                             [25-Aug-22 14:39  CRC=BADBB360]
+    TV_D501_TH.C                                            [25-Aug-22 14:04  CRC=1FD863A8]
+    TV_D501_TH.h                                            [25-Aug-22 14:02  CRC=79282120]
+    ..\..\..\Program Files (x86)\PICC\Devices\18f4550.h     [21-Jan-21 11:37  CRC=71B7866C]
+    ..\..\..\Program Files (x86)\PICC\Drivers\math.h        [05-May-20 12:57  CRC=02232397]
+    TV_LOWLEVER.C                                           [12-Oct-22 15:49  CRC=97B0DA2C]
+    TV_LOWLEVER.H                                           [19-Nov-22 07:33  CRC=D872A938]
+    tv_lcd.c                                                [12-Oct-22 16:17  CRC=9BCD177E]
+    TV_LCD.h                                                [29-Apr-22 15:59  CRC=93256EA5]
+
+Source signature=C3CB448E
+Program memory checksum=0000
+Hex file CRC=D1A0
+
+Units:
+    C:\TTVXL\TTVXL\Thuc Hanh\BAI_641_LCD_SO_01234_FONT2x3 (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   BAI_641_LCD_SO_01234_FONT2x3.xsym
+    Errors:      BAI_641_LCD_SO_01234_FONT2x3.err
+    Ext Symbols: BAI_641_LCD_SO_01234_FONT2x3.esym
+    INHX32:      BAI_641_LCD_SO_01234_FONT2x3.hex
+    Symbols:     BAI_641_LCD_SO_01234_FONT2x3.sym
+    List:        BAI_641_LCD_SO_01234_FONT2x3.lst
+    Debug/COFF:  BAI_641_LCD_SO_01234_FONT2x3.cof
+    Project:     BAI_641_LCD_SO_01234_FONT2x3.ccspjt
+    Call Tree:   BAI_641_LCD_SO_01234_FONT2x3.tre
+    Statistics:  BAI_641_LCD_SO_01234_FONT2x3.STA

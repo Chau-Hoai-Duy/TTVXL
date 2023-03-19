@@ -1,0 +1,59 @@
+[PROJECT]
+Target=CLIP7.hex
+Processor_Text=PIC18F6722
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=CLIP7.c
+[CLIP7.c]
+Type=4
+[mru-list]
+1=CLIP7.c
+
+[defines]
+buildcount=4
+
+[ProjectLog]
+Days=2
+D1=16-03-2023
+D1_L=3
+D1_L1=[31207]Started Editing.
+D1_L2=[32137]Stopped Editing.
+TotalEdit=36
+TotalDebug=0
+D1_E=11
+D1_D=0
+D1_L3=[32268]Project Closed.
+D2=17-03-2023
+D2_L=12
+D2_L1=[30050]Project Opened.
+D2_L2=[30051]Project Closed.
+D2_L3=[30051]Project Opened.
+D2_L4=[30635]Started Editing.
+D2_L5=[30935]Stopped Editing.
+D2_L6=[31003]Started Editing.
+D2_L7=[31021]Stopped Editing.
+D2_E=25
+D2_D=0
+D2_L8=[31064]Project Closed.
+D2_L9=[31254]Project Opened.
+D2_L10=[31373]Started Editing.
+D2_L11=[32811]Stopped Editing.
+D2_L12=[33362]Project Closed.
+
+[Opened Files]
+1=CLIP7.c
+t1=129
+2=BAI_645_LCD_TIMER_3FONT.c
+t2=125
+3=BAI_614_LCD_CHINH_GIO_PHUT_GIAY.c
+t3=1
+4=CLIP7.c
+t4=1
+Count=1
+
+[fileformats]
+forcecoff=0
+[Units]
+Count=1
+1=CLIP7 (main)

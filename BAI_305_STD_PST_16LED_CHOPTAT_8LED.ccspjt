@@ -11,21 +11,21 @@ Type=4
 1=BAI_305_STD_PST_16LED_CHOPTAT_8LED.c
 
 [defines]
-buildcount=4
+buildcount=5
 
 [Opened Files]
-1=BAI_310_TONGHOP_32LED.c
-t1=23
-Count=4
-2=BAI_303_CHOPTAT_32LED.c
-t2=1
+1=BAI_304_STD_PST_8LED.c
+t1=4
+Count=2
+2=BAI_305_STD_PST_16LED_CHOPTAT_8LED.c
+t2=4
 3=BAI_304_STD_PST_8LED.c
 t3=1
 4=BAI_305_STD_PST_16LED_CHOPTAT_8LED.c
 t4=1
 
 [ProjectLog]
-Days=1
+Days=2
 D1=31-01-2023
 D1_L=5
 D1_L1=[53305]Project Closed.
@@ -37,6 +37,10 @@ TotalDebug=0
 D1_E=1
 D1_D=0
 D1_L5=[58508]Project Closed.
+D2=28-02-2023
+D2_L=2
+D2_L1=[50346]Project Opened.
+D2_L2=[50445]Project Closed.
 
 [fileformats]
 forcecoff=0

@@ -1,0 +1,199 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016     @INTERRUPT_AREA
+017     @INTERRUPT_AREA
+018     @INTERRUPT_AREA
+019-01E system_var
+01F-022 delay
+023-026 led32
+027-02A d7seg
+02B-032 s7seg
+033-034 inputcd.oldpin
+035-036 inputcd.t
+037     inputcd.step
+038     bdn
+039     giay
+03A     phut
+03B     gio
+03C     cd
+03D-03E k
+03F-040 @sprintf_string
+041     write_glcd128x64.glcd_signal
+041     lcd_goto.colum_0_19
+041-042 write_ledmatrix.mahang
+041-042 inputcd.pin
+041-044 atan2.y
+041     @PRINTF_U_1021.P1
+041     s7seg_display.i
+041     lcd_setup.n
+041     kt_nutnhan.@SCRATCH1
+041     @PSTRINGC_1021.@SCRATCH1
+042     write_glcd128x64.glcd_ins_hthi
+042     lcd_goto.row_0_3
+042     s7seg_display.n
+042     @PRINTF_U_1021.P1
+042     lcd_setup.@SCRATCH1
+042     @PSTRINGC_1021.@SCRATCH2
+043-044 write_ledmatrix.macot1
+043-044 delay_stop.t
+043     @delay_ms1.P1
+043     @READBITA.P2
+043     @DIV88.P3
+043     lcd_data.data
+043     @WRITEBITA.P1
+043     s7seg_display.@SCRATCH1
+043     inputcd.@SCRATCH1
+043     lcd_goto.@SCRATCH1
+044-045 @READBITA.P1
+044     lcd_command.command
+044     @WRITEBITA.P1
+044     @DIV88.P2
+044     inputcd.@SCRATCH2
+045-046 delay_stop.tam
+045     @delay_us1.P1
+045-046 write_ledmatrix.macot2
+045-046 @WRITEBITA.P1
+045     write_lcd20x4.lcd_signal
+045-048 atan2.x
+045     @DIV88.@SCRATCH1
+046     write_lcd20x4.lcd_ins_hthi
+047-048 write_ledmatrix.macot3
+047-04A @DIV3232.P1
+047     delay_stop.@SCRATCH1
+048     delay_stop.@SCRATCH2
+049-04C atan2.z
+049     write_ledmatrix.@SCRATCH1
+04A     write_ledmatrix.@SCRATCH2
+04B     SSPI_WRITE.x
+04B-04E @DIV3232.P1
+04D.0   atan2.sign
+04E     atan2.quad
+04F     @DIV3232.@SCRATCH1
+050     @DIV3232.@SCRATCH2
+051     @DIV3232.@SCRATCH3
+052     @DIV3232.@SCRATCH4
+053     @DIV3232.@SCRATCH5
+F83     PSP_DATA
+F84.0   SSCK
+F84.2   SSDO
+FA1.1   TIM3IF
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P3
+FE9-FEA @READ_PROGRAM_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+0000AE  LCD_MA_8DOAN.call
+0000BE  LCD_MA_8DOAN.data
+0000FE  dc.call
+00010E  dc.data
+000112  @const1077.call
+000116  @const1084.call
+00011A  @const1086.call
+00011E  ngat_timer1
+000130  SSPI_WRITE
+0001A2  private_write_buzzer_relay
+0001BE  led32_display
+0001E6  d7seg_display
+00020E  @delay_ms1
+000234  s7seg_display
+00028A  private_write_glcd_lcd
+0002B0  write_lcd20x4
+0002C4  write_glcd128x64
+0002DA  write_ledmatrix
+000322  system_init
+000390  @delay_us1
+0003AA  lcd_command
+0003C8  lcd_data
+0003E8  lcd_setup
+00043E  @WRITEBITA
+00047C  @READBITA
+0004AE  @DIV3232
+00053C  delay_start
+00058E  delay_stop
+000620  inputcd
+0007AE  @goto2328
+0007D0  kt_nutnhan
+000890  lcd_goto
+0008A4  @DIV88
+0008CC  @PRINTF_U_1021
+000932  @PSTRINGC_1021
+000952  @cinit1
+000952  MAIN
+000984  @cinit2
+
+Project Directory:
+    C:\TTVXL\TTVXL\Thuc Hanh\
+
+Project Files:
+    BAI_614_LCD_CHINH_GIO_PHUT_GIAY.c                       [07-Mar-23 13:53  CRC=BA3B8083]
+    tv_boards.c                                             [25-Aug-22 14:39  CRC=BADBB360]
+    TV_D501_TH.C                                            [25-Aug-22 14:04  CRC=1FD863A8]
+    TV_D501_TH.h                                            [25-Aug-22 14:02  CRC=79282120]
+    ..\..\..\Program Files (x86)\PICC\Devices\18f4550.h     [21-Jan-21 11:37  CRC=71B7866C]
+    ..\..\..\Program Files (x86)\PICC\Drivers\math.h        [05-May-20 12:57  CRC=02232397]
+    TV_LOWLEVER.C                                           [12-Oct-22 15:49  CRC=97B0DA2C]
+    TV_LOWLEVER.H                                           [19-Nov-22 07:33  CRC=D872A938]
+    tv_lcd.c                                                [12-Oct-22 16:17  CRC=9BCD177E]
+    TV_LCD.h                                                [29-Apr-22 15:59  CRC=93256EA5]
+
+Source signature=B42DDADA
+Program memory checksum=0000
+Hex file CRC=2845
+
+Units:
+    C:\TTVXL\TTVXL\Thuc Hanh\BAI_614_LCD_CHINH_GIO_PHUT_GIAY (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   BAI_614_LCD_CHINH_GIO_PHUT_GIAY.xsym
+    Errors:      BAI_614_LCD_CHINH_GIO_PHUT_GIAY.err
+    Ext Symbols: BAI_614_LCD_CHINH_GIO_PHUT_GIAY.esym
+    INHX32:      BAI_614_LCD_CHINH_GIO_PHUT_GIAY.hex
+    Symbols:     BAI_614_LCD_CHINH_GIO_PHUT_GIAY.sym
+    List:        BAI_614_LCD_CHINH_GIO_PHUT_GIAY.lst
+    Debug/COFF:  BAI_614_LCD_CHINH_GIO_PHUT_GIAY.cof
+    Project:     BAI_614_LCD_CHINH_GIO_PHUT_GIAY.ccspjt
+    Call Tree:   BAI_614_LCD_CHINH_GIO_PHUT_GIAY.tre
+    Statistics:  BAI_614_LCD_CHINH_GIO_PHUT_GIAY.STA

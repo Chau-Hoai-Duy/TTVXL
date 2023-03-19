@@ -1,0 +1,70 @@
+
+ROM used:   1844/32768 (6%)
+            1844/32768 (6%) including unused fragments
+
+            0.5 Average locations per line
+            3.4 Average locations per statement
+
+RAM used:   38/2048 (2%) at main() level
+            57/2048 (3%) worst case
+
+Stack used: 1 worst case (1 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   64    25   5  EXAMPLE_4_COUNTER.c
+   26     0   0  tv_boards.c
+  239   186  34  TV_D501_TH.C
+  135     0   0  TV_D501_TH.h
+  876     0   0  ..\..\..\Program Files (x86)\PICC\Devices\18f4550.h
+ 2228   258  47  ..\..\..\Program Files (x86)\PICC\Drivers\math.h
+  179    80  15  TV_LOWLEVER.C
+    7     0   0  TV_LOWLEVER.H
+----- -----
+ 3754   549 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     40   1    1             @delay_ms1
+0     32   1    0             @const929
+0     40   1    0    221  2.6  led32_display
+0     38   1    0    221  2.6  d7seg_display
+0     86   2    3    355  6.1  s7seg_display
+0     38   1    0    172  2.1  private_write_glcd_lcd
+0     22   1    2    120  3.4  write_lcd20x4
+0     22   1    2    120  3.4  write_glcd128x64
+0     72   2   10    362  3.3  write_ledmatrix
+0     28   1    0    151  2.5  private_write_buzzer_relay
+0    110   3    0    561  3.8  system_init
+0    114   3    1   1186  3.3  SSPI_WRITE
+0     82   2    0    153  3.9  delay_start
+0    142   4   13             @DIV3232
+0    146   4    6    318  6.3  delay_stop
+0    400  11    4   1119  7.4  inputcd
+0     62   2    6     98  2.0  @WRITEBITA
+0     50   1    5     98  2.0  @READBITA
+0     34   1    0    332  4.1  @goto17019
+0    242   7    1   1113  9.3  MAIN
+0     40   1    3    155  3.8  @DIV88
+ Inline         0    293  6.5  @cinit1
+
+Program metrics:
+    Functions               19
+    Statements              549
+    Comments                703
+    Volume (V)              12084
+    Difficulty (D)          79.2
+    Effort to implement (E) 956886
+    Time to implement (T)   14 hours, 46 minutes
+    Est Delivered Bugs (B)  3
+    Cyclomatic Complexity   32
+    Maintainability (MI)    83
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  1840  30924  
+
+
+

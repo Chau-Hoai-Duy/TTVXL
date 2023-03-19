@@ -1,0 +1,75 @@
+
+ROM used:   1174/32768 (4%)
+            1174/32768 (4%) including unused fragments
+
+            0.3 Average locations per line
+            2.1 Average locations per statement
+
+RAM used:   37/2048 (2%) at main() level
+            57/2048 (3%) worst case
+
+Stack used: 0 worst case (0 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   20    12   2  BAI_601_LCD_HIENTHI_4HANG.c
+   26     0   0  tv_boards.c
+  239   186  33  TV_D501_TH.C
+  135     0   0  TV_D501_TH.h
+  876     0   0  ..\..\..\Program Files (x86)\PICC\Devices\18f4550.h
+ 2228   258  45  ..\..\..\Program Files (x86)\PICC\Drivers\math.h
+  179    80  14  TV_LOWLEVER.C
+    7     0   0  TV_LOWLEVER.H
+   57    35   6  tv_lcd.c
+   58     0   0  TV_LCD.h
+----- -----
+ 3825   571 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     38   2    1             @delay_ms1
+0     26   1    1             @delay_us1
+0     40   2    0    221  2.6  led32_display
+0     40   2    0    221  2.6  d7seg_display
+0     86   4    3    355  6.1  s7seg_display
+0     38   2    0    172  2.1  private_write_glcd_lcd
+0     20   1    2    120  3.4  write_lcd20x4
+0     22   1    2    120  3.4  write_glcd128x64
+0     72   3   10    362  3.3  write_ledmatrix
+0     28   1    0    151  2.5  private_write_buzzer_relay
+0    110   5    0    561  3.8  system_init
+0    114   5    1   1186  3.3  SSPI_WRITE
+0     80   3    0    149  1.3  @const1043
+0     30   1    1     98  2.0  lcd_command
+0     32   1    1     98  2.0  lcd_data
+0     86   4    2    332  4.1  lcd_setup
+0     20   1    0    304  6.8  @const1050
+0     20   1    3    155  3.8  lcd_goto
+0    162   7    0    258  2.2  MAIN
+0     20   1    0     29  1.2  @const1063
+0     32   1    2             @PSTRINGC_1021
+0     20   1    0             @const1068
+0     16   1    0             @const1069
+0     18   1    0             @const1070
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               18
+    Statements              571
+    Comments                460
+    Volume (V)              8475
+    Difficulty (D)          57.2
+    Effort to implement (E) 484326
+    Time to implement (T)   7 hours, 28 minutes
+    Est Delivered Bugs (B)  2
+    Cyclomatic Complexity   12
+    Maintainability (MI)    133
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  1170  31594  
+
+
+

@@ -29,7 +29,7 @@
                ---------------------------------------------- 
               
 *********************************** Chuong trinh *************************************************************/
-//#define   BOARD     D501 
+#define   BOARD     D501 
 #include<tv_boards.c> 
 #include<tv_dcmotor.c>
 #include<tv_glcd.c>

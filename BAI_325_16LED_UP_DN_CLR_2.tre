@@ -42,7 +42,7 @@
       ÀÄkiemtra_xuli_nutnhan  0/142  Ram=2
          ÃÄinputcd  0/398  Ram=4
          ³  ÃÄ@WRITEBITA  0/62  Ram=6
-         ³  ÃÄ@goto23562  0/34  Ram=0
+         ³  ÃÄ@goto22101  0/34  Ram=0
          ³  ÃÄ@WRITEBITA  0/62  Ram=6
          ³  ÃÄ@READBITA  0/50  Ram=5
          ³  ÃÄdelay_start  0/82  Ram=0

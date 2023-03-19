@@ -1,0 +1,21 @@
+#DEFINE BOARD D501
+#include<tv_boards.c>
+#include<tv_lcd.c>
+#include<tv_key4x4.c>
+
+void kt_nutnhan()
+{
+   if(key4x4_read()==ok)
+   {
+      
+   }
+}
+void main()
+{
+   system_init();
+   lcd_setup();
+   while(true)
+   {
+      
+   }
+}

@@ -1,4 +1,4 @@
-//#DEFINE BOARD 501
+#DEFINE BOARD D501
 #include<tv_boards.c>
 void main()
 {

@@ -1,0 +1,87 @@
+
+ROM used:   2072/32768 (6%)
+            2072/32768 (6%) including unused fragments
+
+            0.5 Average locations per line
+            3.3 Average locations per statement
+
+RAM used:   46/2048 (2%) at main() level
+            65/2048 (3%) worst case
+
+Stack used: 6 worst case (6 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   60    39   6  BAI_624_LCD_KEX4X4_DICH.c
+   26     0   0  tv_boards.c
+  239   186  30  TV_D501_TH.C
+  135     0   0  TV_D501_TH.h
+  876     0   0  ..\..\..\Program Files (x86)\PICC\Devices\18f4550.h
+ 2228   258  41  ..\..\..\Program Files (x86)\PICC\Drivers\math.h
+  179    80  13  TV_LOWLEVER.C
+    7     0   0  TV_LOWLEVER.H
+   57    35   6  tv_lcd.c
+   58     0   0  TV_LCD.h
+   45    30   5  tv_key4x4.c
+   10     0   0  tv_key4x4.h
+----- -----
+ 3920   628 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     38   1    1             @delay_ms1
+0     26   1    1             @delay_us1
+0     40   1    0    221  2.6  led32_display
+0     40   1    0    221  2.6  d7seg_display
+0     86   2    3    355  6.1  s7seg_display
+0    120   3    1    561  6.9  KEYREAD
+0     38   1    0    172  2.1  private_write_glcd_lcd
+0     20   0    2    120  3.4  write_lcd20x4
+0     22   1    2    120  3.4  write_glcd128x64
+0     72   2   10    362  3.3  write_ledmatrix
+0     26   1    0    151  2.5  private_write_buzzer_relay
+0     12   0    0     72  2.1  buzzer_on
+0     12   0    0     72  2.1  buzzer_off
+0    110   3    0    561  3.8  system_init
+0    114   3    1   1186  3.3  SSPI_WRITE
+0     82   2    0    153  3.9  delay_start
+0    142   3   13             @DIV3232
+0    146   4    6    318  6.3  delay_stop
+0     80   2    0    250  7.0  @const1043
+0     30   1    1     98  2.0  lcd_command
+0     32   1    1     98  2.0  lcd_data
+0     86   2    2    332  4.1  lcd_setup
+0     20   0    0             @const1050
+0     20   0    3    155  3.8  lcd_goto
+0    218   5    2    962  7.5  key4x4_read
+0     34   1    0    376  7.9  @goto16993
+0     54   1    1    307  5.1  kt_nutnhan
+0    276   7    1    693  5.6  MAIN
+0     18   0    0             @const1076
+0     32   1    2    952  8.6  @PSTRINGC_1021
+0      8   0    0    376  7.9  @const1081
+0      6   0    0             @const1082
+0      4   0    0             @const1083
+0      4   0    0             @const1084
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               26
+    Statements              628
+    Comments                456
+    Volume (V)              16574
+    Difficulty (D)          116.3
+    Effort to implement (E) 1926741
+    Time to implement (T)   29 hours, 44 minutes
+    Est Delivered Bugs (B)  5
+    Cyclomatic Complexity   47
+    Maintainability (MI)    96
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  2068  30696  
+
+
+

@@ -1,4 +1,4 @@
-CCS PCH C Compiler, Version 5.101, 43599               31-Jan-23 16:14
+CCS PCH C Compiler, Version 5.101, 43599               28-Feb-23 13:59
 
                Filename:   C:\TTVXL\TTVXL\Thuc Hanh\BAI_305_STD_PST_16LED_CHOPTAT_8LED.lst
 
@@ -6,7 +6,7 @@ CCS PCH C Compiler, Version 5.101, 43599               31-Jan-23 16:14
                            Largest free fragment is 31932
                RAM used:   40 (2%) at main() level
                            58 (3%) worst case
-               Stack used: 0 locations
+               Stack used: 1 locations
                Stack size: 31
 
 *

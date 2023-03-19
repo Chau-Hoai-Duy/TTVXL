@@ -1,0 +1,220 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016     @INTERRUPT_AREA
+017     @INTERRUPT_AREA
+018     @INTERRUPT_AREA
+019     @INTERRUPT_AREA
+01A     @INTERRUPT_AREA
+01B-01E delay
+01F-022 led32
+023-02A d7seg
+02B-032 s7seg
+033-034 inputcd.oldpin
+035-036 inputcd.t
+037     inputcd.step
+038     key4x4
+039     key4x4_read.step
+03A-03B key4x4_read.t
+03C     bdn
+03D     cd
+03E     i
+03F     caitg
+040     gt_spcai
+041     gio
+042     phut
+043     giay
+044     dem
+045-046 k
+047-048 @sprintf_string
+049     @READBITA.P1
+049     @WRITEBITA.P2
+049     s7seg_display.n
+049-04C atan2.y
+049     lcd_setup.n
+049.0   CHECK_MODULE.tt
+049-04C @SPI_XFER_1_32.P1
+049-04A delay_stop.t
+049-04A inputcd.pin
+049     KEYREAD.cot
+049     lcd_goto.colum_0_19
+049     key4x4_read.@SCRATCH1
+049     kt_nutnhan.@SCRATCH1
+049     @PSTRINGC_1028.@SCRATCH1
+049     MAIN.@SCRATCH1
+04A     @DIVS88.P1
+04A-04B @READBITA.P2
+04A     CHECK_MODULE.n
+04A     lcd_goto.row_0_3
+04A     @WRITEBITA.P1
+04A     s7seg_display.@SCRATCH1
+04A     KEYREAD.@SCRATCH1
+04A     lcd_setup.@SCRATCH1
+04A     key4x4_read.@SCRATCH2
+04A     @PSTRINGC_1028.@SCRATCH2
+04B     @DIVS88.P1
+04B-04C @WRITEBITA.P2
+04B-04C delay_stop.tam
+04B     @delay_ms1.P1
+04B     CHECK_MODULE.@SCRATCH1
+04B     lcd_goto.@SCRATCH1
+04B     @PSTRINGC_1028.@SCRATCH3
+04C     lcd_data.data
+04C     lcd_command.command
+04C     CHECK_MODULE.@SCRATCH2
+04C     @DIVS88.@SCRATCH1
+04D     @delay_us1.P1
+04D     write_lcd20x4.lcd_signal
+04D-050 atan2.x
+04D-050 @DIV3232.P1
+04D     delay_stop.@SCRATCH1
+04D     @DIVS88.@SCRATCH2
+04E     write_lcd20x4.lcd_ins_hthi
+04E     delay_stop.@SCRATCH2
+051-054 @DIV3232.P1
+051-054 atan2.z
+055.0   atan2.sign
+055     @DIV3232.@SCRATCH1
+056     atan2.quad
+056     @DIV3232.@SCRATCH2
+057     @DIV3232.@SCRATCH3
+058     @DIV3232.@SCRATCH4
+059     @DIV3232.@SCRATCH5
+F71     CCP_5
+F71     CCP_5_LOW
+F72     CCP_5_HIGH
+F74     CCP_4
+F74     CCP_4_LOW
+F75     CCP_4_HIGH
+F83     PSP_DATA
+FA1.1   TIM3IF
+FB4.6   C1OUT
+FB4.7   C2OUT
+FB8     CCP_3
+FB8     CCP_3_LOW
+FB9     CCP_3_HIGH
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P3
+FE9-FEA @WRITE_PROGRAM_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+0000BE  mq.call
+0000D2  mq.data
+0000D6  LCD_MA_8DOAN.call
+0000EA  LCD_MA_8DOAN.data
+00012A  dc.call
+00013E  dc.data
+000142  @const1086.call
+000158  @const1092.call
+00015C  @const1093.call
+000166  @const1094.call
+00016A  @const1095.call
+000176  @const1096.call
+00017A  @const1097.call
+000186  @const1098.call
+00018A  @const1099.call
+00019A  @const1103.call
+0001A4  ngat_timer1
+0001B6  @delay_ms1
+0001DC  CHECK_MODULE
+000236  led32_display
+00026E  d7seg_display
+0002D4  s7seg_display
+000336  buzzer_off
+000342  triac_2_off
+00034E  system_init
+00038C  write_lcd20x4
+0003B0  @delay_us1
+0003CA  lcd_command
+0003E8  lcd_data
+000408  lcd_setup
+00045E  lcd_goto
+000472  @PSTRINGC_1028
+00049A  KEYREAD
+000542  @DIV3232
+0005D0  delay_start
+000622  delay_stop
+0006B4  key4x4_read
+00078E  @goto64439
+0007B6  kt_nutnhan
+000872  nhapnhay
+0009AE  @DIVS88
+0009F6  MAIN
+0009F6  @cinit1
+000A2E  @cinit2
+
+Project Directory:
+    C:\TTVXL\TTVXL\Thuc Hanh\
+
+Project Files:
+    CLIP6.c                                                 [10-Mar-23 09:19  CRC=C18A1ED2]
+    tv_boards.c                                             [25-Aug-22 14:39  CRC=BADBB360]
+    TV_MOPHONG.C                                            [13-Jan-23 10:01  CRC=BC0C87F3]
+    TV_MOPHONG.h                                            [25-Aug-22 14:03  CRC=D88B226F]
+    ..\..\..\Program Files (x86)\PICC\Devices\18f6722.h     [21-Jan-21 11:39  CRC=97E248DF]
+    ..\..\..\Program Files (x86)\PICC\Drivers\math.h        [05-May-20 12:57  CRC=02232397]
+    TV_LOWLEVER.C                                           [12-Oct-22 15:49  CRC=97B0DA2C]
+    TV_LOWLEVER.H                                           [19-Nov-22 07:33  CRC=D872A938]
+    tv_lcd.c                                                [12-Oct-22 16:17  CRC=9BCD177E]
+    TV_LCD.h                                                [29-Apr-22 15:59  CRC=93256EA5]
+    tv_key4x4.c                                             [07-Jun-22 20:08  CRC=53A906E2]
+    tv_key4x4.h                                             [29-Apr-22 14:10  CRC=D872A938]
+
+Source signature=4EA74BE3
+Program memory checksum=0000
+Hex file CRC=0E6B
+
+Units:
+    C:\TTVXL\TTVXL\Thuc Hanh\CLIP6 (main)
+
+Compiler Settings:
+    Processor:      PIC18F6722
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   CLIP6.xsym
+    Errors:      CLIP6.err
+    Ext Symbols: CLIP6.esym
+    INHX32:      CLIP6.hex
+    Symbols:     CLIP6.sym
+    List:        CLIP6.lst
+    Debug/COFF:  CLIP6.cof
+    Project:     CLIP6.ccspjt
+    Call Tree:   CLIP6.tre
+    Statistics:  CLIP6.STA

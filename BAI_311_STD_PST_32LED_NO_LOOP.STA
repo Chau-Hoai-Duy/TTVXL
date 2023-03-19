@@ -8,7 +8,7 @@ ROM used:   894/32768 (3%)
 RAM used:   37/2048 (2%) at main() level
             57/2048 (3%) worst case
 
-Stack used: 0 worst case (0 in main + 0 for interrupts)
+Stack used: 1 worst case (1 in main + 0 for interrupts)
 Stack size: 31
 
 Lines Stmts  %   Files
@@ -40,19 +40,19 @@ Page ROM  %  RAM    Vol Diff  Functions:
 0     80   4    1    194  5.3  sang_dan_pst
 0     56   3    1    183  4.9  tat_dan_pst
 0    114   6    0    207  3.6  MAIN
- Inline         0    183  4.9  @cinit1
+ Inline         0   4348  9.9  @cinit1
 
 Program metrics:
     Functions               14
     Statements              553
     Comments                429
-    Volume (V)              7034
-    Difficulty (D)          53.0
-    Effort to implement (E) 372753
-    Time to implement (T)   5 hours, 45 minutes
-    Est Delivered Bugs (B)  2
-    Cyclomatic Complexity   15
-    Maintainability (MI)    116
+    Volume (V)              12269
+    Difficulty (D)          58.9
+    Effort to implement (E) 722496
+    Time to implement (T)   11 hours, 9 minutes
+    Est Delivered Bugs (B)  3
+    Cyclomatic Complexity   36
+    Maintainability (MI)    113
 
  Segment     Used  Free
 -----------  ----  ----

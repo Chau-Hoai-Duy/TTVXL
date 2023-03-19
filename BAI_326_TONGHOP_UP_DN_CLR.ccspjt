@@ -11,10 +11,10 @@ Type=4
 1=BAI_326_TONGHOP_UP_DN_CLR.c
 
 [defines]
-buildcount=33
+buildcount=34
 
 [ProjectLog]
-Days=3
+Days=4
 D1=07-02-2023
 D1_L=13
 D1_L1=[51218]Started Editing.
@@ -48,11 +48,15 @@ D3=18-02-2023
 D3_L=2
 D3_L1=[31948]Project Opened.
 D3_L2=[31949]Project Closed.
+D4=28-02-2023
+D4_L=2
+D4_L1=[51638]Project Opened.
+D4_L2=[51794]Project Closed.
 
 [Opened Files]
 1=BAI_326_TONGHOP_UP_DN_CLR.c
 t1=1
-Count=2
+Count=1
 2=CLIP4.c
 t2=1
 

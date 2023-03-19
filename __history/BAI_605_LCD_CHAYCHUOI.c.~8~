@@ -1,0 +1,20 @@
+#DEFINE BOARD D501
+#include<tv_boards.c>
+#include<tv_lcd.c>
+unsigned char S[]="TRUONG DAI HOC SU PHAM KY THUAT TP.HCM";
+unsigned int8 i,j;
+void main()
+{
+   system_init();
+   lcd_setup();
+   while(true)
+   { 
+     for(i=0;i<19;i++)
+     {
+         for(j=19;j>0;j--)
+         {
+         
+         }
+     }
+   }
+}

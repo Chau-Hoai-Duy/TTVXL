@@ -1,4 +1,4 @@
-//#DEFINE BOARD D501
+#DEFINE BOARD D501
 #include<tv_boards.c>
 signed int8 gio=0, phut=0, giay=0, bdn=0, cdo=0,i;
 void kt_nutnhan()
@@ -7,7 +7,7 @@ void kt_nutnhan()
    {
       cdo++;
       if(cdo>=4) cdo=0;
-   }
+   } 
    if(inputcd(up)==0)
    {
       if(cdo==1) 

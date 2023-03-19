@@ -1,0 +1,314 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004-009 system_var
+00A-00D delay
+00E-011 led32
+012-015 d7seg
+016-01D s7seg
+01E-01F inputcd.oldpin
+020-021 inputcd.t
+022     inputcd.step
+023-027 dcmotor
+028-02C nowdcmotor
+02D-030 DCMOTOR_MIDDLELEVEL_CONTROL.t
+031     dcmotor_control.step
+032.0   dcmotor_read_speed.tt_init
+033     dcmotor_read_speed.step
+034-037 dcmotor_read_speed.t
+038-43F GLCD
+440     glcd_text.x1
+441     glcd_text.x2
+442     glcd_text.y1
+443     glcd_text.y2
+444-445 @sprintf_string
+446     s7seg_display.i
+446     write_lcd20x4.lcd_signal
+446-447 write_ledmatrix.mahang
+446     glcd_clear.color
+446-447 @DIVS1616.P1
+446-449 atan2.y
+446     glcd_update.hesox
+446-447 inputcd.pin
+446-447 glcd_text_setup.x
+446     dcmotor_control.@SCRATCH1
+446     dcmotor_read_speed.@SCRATCH1
+446     level_display.@SCRATCH1
+446     status_display.@SCRATCH1
+446     @PSTRINGC_1073.@SCRATCH1
+446     MAIN.@SCRATCH1
+447-448 DCMOTOR_MIDDLELEVEL_CONTROL.duty
+447-448 glcd_clear.d
+447     s7seg_display.n
+447     write_lcd20x4.lcd_ins_hthi
+447     glcd_update.hesox2
+447     dcmotor_read_speed.@SCRATCH2
+447     level_display.@SCRATCH2
+447     @PSTRINGC_1073.@SCRATCH2
+448-449 @PRINTF_LU_1073.P1
+448-449 glcd_text_setup.y
+448     @delay_ms1.P1
+448     @WRITEBITA.P2
+448-449 write_ledmatrix.macot1
+448-449 @DIVS1616.P1
+448-44B @MUL3232.P2
+448     glcd_update.hesoy
+448     @READBITA.P1
+448     s7seg_display.@SCRATCH1
+448     inputcd.@SCRATCH1
+448     dcmotor_read_speed.@SCRATCH3
+449-44A glcd_clear.doc
+449     DCMOTOR_MIDDLELEVEL_CONTROL.direct
+449-44A @READBITA.P1
+449     glcd_update.doc
+449     @WRITEBITA.P1
+449     inputcd.@SCRATCH2
+449     dcmotor_read_speed.@SCRATCH4
+44A-44D atan2.x
+44A     glcd_text_setup.size
+44A-44B @WRITEBITA.P1
+44A     glcd_update.ngang
+44A-44B write_ledmatrix.macot2
+44A     DCMOTOR_MIDDLELEVEL_CONTROL.tt
+44A     dcmotor_read_speed.@SCRATCH5
+44A     @DIVS1616.@SCRATCH1
+44A     @PRINTF_LU_1073.@SCRATCH1
+44B-44C glcd_clear.ngang
+44B     glcd_text_setup.color
+44B-44C DCMOTOR_LOWLEVEL_CONTROL.duty
+44B     DCMOTOR_MIDDLELEVEL_CONTROL.@SCRATCH1
+44B     dcmotor_read_speed.@SCRATCH6
+44B     glcd_update.@SCRATCH1
+44B     @DIVS1616.@SCRATCH2
+44B     @PRINTF_LU_1073.@SCRATCH2
+44C-44D write_ledmatrix.macot3
+44C     glcd_text_setup.overlay
+44C     glcd_command.data
+44C-44F @MUL3232.P1
+44C     DCMOTOR_MIDDLELEVEL_CONTROL.@SCRATCH2
+44C     dcmotor_read_speed.@SCRATCH7
+44C     glcd_update.@SCRATCH2
+44C     @PRINTF_LU_1073.@SCRATCH3
+44D-44E delay_stop.t
+44D     DCMOTOR_LOWLEVEL_CONTROL.direct
+44D     dcmotor_read_speed.@SCRATCH8
+44D     glcd_clear.@SCRATCH1
+44D     glcd_update.@SCRATCH3
+44D     @PRINTF_LU_1073.@SCRATCH4
+44E-451 atan2.z
+44E     glcd_data.data
+44E     write_ledmatrix.@SCRATCH1
+44E     glcd_clear.@SCRATCH2
+44E     @PRINTF_LU_1073.@SCRATCH5
+44F     write_glcd128x64.glcd_signal
+44F-450 delay_stop.tam
+44F     write_ledmatrix.@SCRATCH2
+44F     glcd_clear.@SCRATCH3
+44F     @PRINTF_LU_1073.@SCRATCH6
+450     write_glcd128x64.glcd_ins_hthi
+450     @MUL3232.@SCRATCH1
+450     glcd_clear.@SCRATCH4
+450     @PRINTF_LU_1073.@SCRATCH7
+451-454 @DIV3232.P1
+451     glcd_text.t
+451     SSPI_WRITE.x
+451     delay_stop.@SCRATCH1
+451     @MUL3232.@SCRATCH2
+452.0   atan2.sign
+452     glcd_text.j
+452     delay_stop.@SCRATCH2
+452     @MUL3232.@SCRATCH3
+453     atan2.quad
+453     glcd_text.k
+453     @MUL3232.@SCRATCH4
+454     glcd_text.l
+454     @MUL3232.@SCRATCH5
+455-458 @DIV3232.P1
+455     glcd_text.m
+455     @MUL3232.@SCRATCH6
+456-45A glcd_text.pixelData
+459     @DIV3232.@SCRATCH1
+45A     @DIV3232.@SCRATCH2
+45B     @DIV3232.@SCRATCH3
+45B     glcd_text.@SCRATCH1
+45C     @DIV3232.@SCRATCH4
+45C     glcd_text.@SCRATCH2
+45D     @DIV3232.@SCRATCH5
+45D     glcd_text.@SCRATCH3
+45E     glcd_rect.x1
+45E     glcd_text.@SCRATCH4
+45F     glcd_rect.y1
+45F     glcd_text.@SCRATCH5
+460     glcd_rect.x2
+461     glcd_rect.y2
+462     glcd_rect.fill
+463     glcd_rect.color
+464     glcd_rect.xmin
+465     glcd_rect.xmax
+466     glcd_rect.ymin
+467     glcd_rect.ymax
+468     glcd_rect.i
+469     GLCD_VERTICAL_LINE.x
+469     GLCD_UPDATE_COORDINATE.x1
+469     GLCD_HORIZONE_LINE.x1
+46A     GLCD_UPDATE_COORDINATE.y1
+46A     GLCD_HORIZONE_LINE.x2
+46A     GLCD_VERTICAL_LINE.y1
+46B     GLCD_VERTICAL_LINE.y2
+46B     GLCD_HORIZONE_LINE.y
+46B     GLCD_UPDATE_COORDINATE.x2
+46C     GLCD_VERTICAL_LINE.color
+46C     GLCD_HORIZONE_LINE.color
+46C     GLCD_UPDATE_COORDINATE.y2
+46D     GLCD_VERTICAL_LINE.i
+46D     GLCD_HORIZONE_LINE.doc
+46D     GLCD_UPDATE_COORDINATE.@SCRATCH1
+46E     GLCD_PIXEL_TEMP.x
+46E     GLCD_HORIZONE_LINE.i
+46F     GLCD_PIXEL_TEMP.y
+46F     GLCD_HORIZONE_LINE.right
+470     GLCD_HORIZONE_LINE.left
+470     GLCD_PIXEL_TEMP.color
+471     GLCD_PIXEL_TEMP.b
+471     GLCD_HORIZONE_LINE.@SCRATCH1
+472     GLCD_PIXEL_TEMP.doc
+472     GLCD_HORIZONE_LINE.@SCRATCH2
+473     GLCD_PIXEL_TEMP.ngang
+473     GLCD_HORIZONE_LINE.@SCRATCH3
+474     GLCD_PIXEL_TEMP.@SCRATCH1
+474     GLCD_HORIZONE_LINE.@SCRATCH4
+475-476 @MUL1616.P1
+475     GLCD_PIXEL_TEMP.@SCRATCH2
+475     GLCD_HORIZONE_LINE.@SCRATCH5
+476     GLCD_HORIZONE_LINE.@SCRATCH6
+477-478 @MUL1616.P1
+477     GLCD_HORIZONE_LINE.@SCRATCH7
+478     GLCD_HORIZONE_LINE.@SCRATCH8
+479     @MUL1616.@SCRATCH1
+479     GLCD_HORIZONE_LINE.@SCRATCH9
+47A     GLCD_HORIZONE_LINE.@SCRATCH10
+F83     PSP_DATA
+F84.0   SSCK
+F84.2   SSDO
+FA1.1   TIM3IF
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P3
+FE9-FEA @WRITE_PACKED_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  GLCD_FONT.call
+000014  GLCD_FONT.data
+000114  GLCD_FONT2.call
+000124  GLCD_FONT2.data
+000200  @const1258.call
+000208  @const1263.call
+000210  @const1264.call
+000218  @const1268.call
+000220  @const1269.call
+000228  SSPI_WRITE
+00029E  private_write_buzzer_relay
+0002B8  led32_display
+0002E0  d7seg_display
+000308  @delay_ms1
+000330  s7seg_display
+00039A  private_write_glcd_lcd
+0003C0  write_lcd20x4
+0003DA  write_glcd128x64
+0003F2  write_ledmatrix
+00044A  system_init
+0004C4  glcd_command
+0004EE  glcd_clear
+000592  @MUL1616
+0005B4  glcd_data
+0005E0  glcd_update
+00071A  glcd_setup
+000762  GLCD_HORIZONE_LINE
+000D4A  GLCD_PIXEL_TEMP
+000E54  GLCD_VERTICAL_LINE
+000E7E  GLCD_UPDATE_COORDINATE
+000EC8  glcd_rect
+000F88  glcd_text_setup
+000FAC  glcd_text
+001146  @PSTRINGC_1073
+001166  @DIVS1616
+0011E0  @PRINTF_LU_1073
+0012A6  level_display
+0012F2  @WRITEBITA
+001334  @READBITA
+00136A  @DIV3232
+0013FE  delay_start
+001454  delay_stop
+0014EE  inputcd
+0016C4  @goto57343
+0016E6  DCMOTOR_ENABLE
+001710  DCMOTOR_LOWLEVEL_CONTROL
+001794  DCMOTOR_MIDDLELEVEL_CONTROL
+00189C  dcmotor_control
+001944  @goto57423
+001966  @MUL3232
+0019C4  dcmotor_read_speed
+001AAA  speed_display
+001AE0  status_display
+001B38  MAIN
+001B38  @cinit1
+001B60  @cinit2
+
+Project Directory:
+    C:\TTVXL\TTVXL\Thuc Hanh\
+
+Project Files:
+    EXAMPLE_9_DCMOTOR.c                                     [07-Mar-23 15:50  CRC=7FFED0E6]
+    tv_boards.c                                             [25-Aug-22 14:39  CRC=BADBB360]
+    TV_D501_TH.C                                            [25-Aug-22 14:04  CRC=1FD863A8]
+    TV_D501_TH.h                                            [25-Aug-22 14:02  CRC=79282120]
+    ..\..\..\Program Files (x86)\PICC\Devices\18f4550.h     [21-Jan-21 11:37  CRC=71B7866C]
+    ..\..\..\Program Files (x86)\PICC\Drivers\math.h        [05-May-20 12:57  CRC=02232397]
+    TV_LOWLEVER.C                                           [12-Oct-22 15:49  CRC=97B0DA2C]
+    TV_LOWLEVER.H                                           [19-Nov-22 07:33  CRC=D872A938]
+    tv_dcmotor.c                                            [13-Jan-23 10:22  CRC=8AB7AB46]
+    TV_DCMOTOR.h                                            [13-Jan-23 10:42  CRC=2E6DF2DB]
+    tv_glcd.c                                               [16-Aug-22 16:39  CRC=2D7A6F47]
+    tv_glcd.h                                               [16-Aug-22 16:40  CRC=4D9B7E4A]
+
+Source signature=39B04071
+Program memory checksum=0000
+Hex file CRC=2E4B
+
+Units:
+    C:\TTVXL\TTVXL\Thuc Hanh\EXAMPLE_9_DCMOTOR (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   EXAMPLE_9_DCMOTOR.xsym
+    Errors:      EXAMPLE_9_DCMOTOR.err
+    Ext Symbols: EXAMPLE_9_DCMOTOR.esym
+    INHX32:      EXAMPLE_9_DCMOTOR.hex
+    Symbols:     EXAMPLE_9_DCMOTOR.sym
+    List:        EXAMPLE_9_DCMOTOR.lst
+    Debug/COFF:  EXAMPLE_9_DCMOTOR.cof
+    Project:     EXAMPLE_9_DCMOTOR.ccspjt
+    Call Tree:   EXAMPLE_9_DCMOTOR.tre
+    Statistics:  EXAMPLE_9_DCMOTOR.STA

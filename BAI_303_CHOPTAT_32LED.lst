@@ -1,4 +1,4 @@
-CCS PCH C Compiler, Version 5.101, 43599               31-Jan-23 16:11
+CCS PCH C Compiler, Version 5.101, 43599               28-Feb-23 13:57
 
                Filename:   C:\TTVXL\TTVXL\Thuc Hanh\BAI_303_CHOPTAT_32LED.lst
 
@@ -6,7 +6,7 @@ CCS PCH C Compiler, Version 5.101, 43599               31-Jan-23 16:11
                            Largest free fragment is 31990
                RAM used:   36 (2%) at main() level
                            55 (3%) worst case
-               Stack used: 0 locations
+               Stack used: 1 locations
                Stack size: 31
 
 *

@@ -1,0 +1,161 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004-009 system_var
+00A-00D delay
+00E-011 led32
+012-015 d7seg
+016-01D s7seg
+01E-01F inputcd.oldpin
+020-021 inputcd.t
+022     inputcd.step
+023     dem
+024-025 @sprintf_string
+026     @READBITA.P1
+026-027 inputcd.pin
+026-027 write_ledmatrix.mahang
+026     s7seg_display.i
+026     lcd_setup.n
+026     @WRITEBITA.P1
+026     write_glcd128x64.glcd_signal
+026-029 atan2.y
+026     MAIN.@SCRATCH1
+026     @PSTRINGC_1021.@SCRATCH1
+027     @DIV88.P1
+027     @WRITEBITA.P2
+027     s7seg_display.n
+027     write_glcd128x64.glcd_ins_hthi
+027-028 @READBITA.P1
+027     lcd_write_2x3_num.num_0_9
+027     lcd_setup.@SCRATCH1
+027     @PSTRINGC_1021.@SCRATCH2
+028     lcd_write_2x3_num.colum_0_17
+028     @delay_ms1.P1
+028-029 @WRITEBITA.P2
+028     @DIV88.P3
+028-029 write_ledmatrix.macot1
+028     s7seg_display.@SCRATCH1
+029     lcd_write_2x3_num.row_0_2
+029     @DIV88.@SCRATCH1
+02A-02D atan2.x
+02A     lcd_write_2x3_num.i
+02A-02B write_ledmatrix.macot2
+02B     @MUL88.P1
+02B     lcd_write_2x3_num.@SCRATCH1
+02C     lcd_goto.colum_0_19
+02C     @MUL88.P1
+02C-02D write_ledmatrix.macot3
+02C     lcd_data.data
+02C     lcd_write_2x3_num.@SCRATCH2
+02D     lcd_goto.row_0_3
+02E-031 atan2.z
+02E     write_ledmatrix.@SCRATCH1
+02E     lcd_goto.@SCRATCH1
+02F     lcd_command.command
+02F     write_ledmatrix.@SCRATCH2
+030     @delay_us1.P1
+030     write_lcd20x4.lcd_signal
+031     write_lcd20x4.lcd_ins_hthi
+032     SSPI_WRITE.x
+032.0   atan2.sign
+033     atan2.quad
+F83     PSP_DATA
+F84.0   SSCK
+F84.2   SSDO
+FA1.1   TIM3IF
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P3
+FE9-FEA @WRITE_PACKED_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  m7d.call
+000014  m7d.data
+000024  LCD_SO_X.call
+000034  LCD_SO_X.data
+000076  LCD_MA_8DOAN.call
+000086  LCD_MA_8DOAN.data
+0000C6  dc.call
+0000D6  dc.data
+0000DA  @const1064.call
+0000EC  SSPI_WRITE
+00015E  private_write_buzzer_relay
+00017A  led32_display
+0001A2  d7seg_display
+0001C8  @delay_ms1
+0001EE  s7seg_display
+000242  private_write_glcd_lcd
+000268  write_lcd20x4
+00027C  write_glcd128x64
+000292  write_ledmatrix
+0002DA  system_init
+000348  @delay_us1
+000362  lcd_command
+000380  lcd_data
+0003A0  lcd_setup
+0003F6  lcd_goto
+00040A  @PSTRINGC_1021
+00042C  @DIV88
+000454  @MUL88
+0004A0  lcd_write_2x3_num
+0004FA  @cinit1
+0004FA  MAIN
+000520  @cinit2
+0005F4  @SPRINTF
+
+Project Directory:
+    C:\TTVXL\TTVXL\Thuc Hanh\
+
+Project Files:
+    BAI_644_LCD_DEM_SP_KTL.c                                [14-Mar-23 16:31  CRC=19286A34]
+    tv_boards.c                                             [25-Aug-22 14:39  CRC=BADBB360]
+    TV_D501_TH.C                                            [25-Aug-22 14:04  CRC=1FD863A8]
+    TV_D501_TH.h                                            [25-Aug-22 14:02  CRC=79282120]
+    ..\..\..\Program Files (x86)\PICC\Devices\18f4550.h     [21-Jan-21 11:37  CRC=71B7866C]
+    ..\..\..\Program Files (x86)\PICC\Drivers\math.h        [05-May-20 12:57  CRC=02232397]
+    TV_LOWLEVER.C                                           [12-Oct-22 15:49  CRC=97B0DA2C]
+    TV_LOWLEVER.H                                           [19-Nov-22 07:33  CRC=D872A938]
+    tv_lcd.c                                                [12-Oct-22 16:17  CRC=9BCD177E]
+    TV_LCD.h                                                [29-Apr-22 15:59  CRC=93256EA5]
+
+Source signature=131AC48B
+Program memory checksum=0000
+Hex file CRC=6941
+
+Units:
+    C:\TTVXL\TTVXL\Thuc Hanh\BAI_644_LCD_DEM_SP_KTL (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   BAI_644_LCD_DEM_SP_KTL.xsym
+    Errors:      BAI_644_LCD_DEM_SP_KTL.err
+    Ext Symbols: BAI_644_LCD_DEM_SP_KTL.esym
+    INHX32:      BAI_644_LCD_DEM_SP_KTL.hex
+    Symbols:     BAI_644_LCD_DEM_SP_KTL.sym
+    List:        BAI_644_LCD_DEM_SP_KTL.lst
+    Debug/COFF:  BAI_644_LCD_DEM_SP_KTL.cof
+    Project:     BAI_644_LCD_DEM_SP_KTL.ccspjt
+    Call Tree:   BAI_644_LCD_DEM_SP_KTL.tre
+    Statistics:  BAI_644_LCD_DEM_SP_KTL.STA

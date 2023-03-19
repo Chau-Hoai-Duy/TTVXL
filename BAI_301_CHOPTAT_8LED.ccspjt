@@ -11,28 +11,38 @@ Type=4
 1=BAI_301_CHOPTAT_8LED.c
 
 [defines]
-buildcount=5
+buildcount=6
 
 [ProjectLog]
-Days=1
+Days=2
 D1=31-01-2023
 D1_L=4
 D1_L1=[50973]Stopped Editing.
-TotalEdit=2
+TotalEdit=3
 TotalDebug=0
 D1_E=2
 D1_D=0
 D1_L2=[50992]Started Editing.
 D1_L3=[51423]Stopped Editing.
 D1_L4=[51585]Project Closed.
+D2=28-02-2023
+D2_L=4
+D2_L1=[50161]Project Opened.
+D2_L2=[50195]Started Editing.
+D2_L3=[50199]Stopped Editing.
+D2_E=1
+D2_D=0
+D2_L4=[50199]Project Closed.
 
 [fileformats]
 forcecoff=0
 
 [Opened Files]
-1=BAI_301_CHOPTAT_8LED.c
-t1=1
-Count=1
+1=BAI_515_GIO_PHUT_GIAY_KEY.c
+t1=10
+Count=2
+2=BAI_301_CHOPTAT_8LED.c
+t2=10
 [Units]
 Count=1
 1=BAI_301_CHOPTAT_8LED (main)

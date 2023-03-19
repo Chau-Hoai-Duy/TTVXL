@@ -1,5 +1,4 @@
-Compiling C:\TTVXL\TTVXL\Thuc Hanh\BAI_332_MATRANPHIM_LEDDON on 04-Feb-23 at 19:55
->>> Warning 224 "C:\TTVXL\TTVXL\Thuc Hanh\tv_boards.c" Line 21(9,66): #warning  "Day la file mo phong, SV khong duoc nap tren board that"
-      Memory usage:   ROM=1%      RAM=1% - 1%
-      0 Errors,  1 Warnings.
+Compiling C:\TTVXL\TTVXL\Thuc Hanh\BAI_332_MATRANPHIM_LEDDON on 28-Feb-23 at 14:23
+      Memory usage:   ROM=5%      RAM=2% - 3%
+      0 Errors,  0 Warnings.
 Build Successful.

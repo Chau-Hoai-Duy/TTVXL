@@ -1,0 +1,87 @@
+ÀÄBAI_642_LCD_SO_01234_FONT4x3
+   ÀÄMAIN  0/134  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄ@cinit2  (Inline)  Ram=0
+      ÃÄsystem_init  0/110  Ram=0
+      ³  ÃÄprivate_write_buzzer_relay  0/28  Ram=0
+      ³  ³  ÃÄSSPI_WRITE  0/114  Ram=1
+      ³  ³  ÀÄSSPI_WRITE  0/114  Ram=1
+      ³  ÃÄled32_display  0/40  Ram=0
+      ³  ³  ÃÄSSPI_WRITE  0/114  Ram=1
+      ³  ³  ÃÄSSPI_WRITE  0/114  Ram=1
+      ³  ³  ÃÄSSPI_WRITE  0/114  Ram=1
+      ³  ³  ÀÄSSPI_WRITE  0/114  Ram=1
+      ³  ÃÄd7seg_display  0/40  Ram=0
+      ³  ³  ÃÄSSPI_WRITE  0/114  Ram=1
+      ³  ³  ÃÄSSPI_WRITE  0/114  Ram=1
+      ³  ³  ÃÄSSPI_WRITE  0/114  Ram=1
+      ³  ³  ÀÄSSPI_WRITE  0/114  Ram=1
+      ³  ÃÄs7seg_display  0/86  Ram=3
+      ³  ³  ÃÄSSPI_WRITE  0/114  Ram=1
+      ³  ³  ÃÄSSPI_WRITE  0/114  Ram=1
+      ³  ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ³  ÀÄSSPI_WRITE  0/114  Ram=1
+      ³  ÃÄwrite_lcd20x4  0/20  Ram=2
+      ³  ³  ÀÄprivate_write_glcd_lcd  0/38  Ram=0
+      ³  ³     ÃÄSSPI_WRITE  0/114  Ram=1
+      ³  ³     ÃÄSSPI_WRITE  0/114  Ram=1
+      ³  ³     ÃÄSSPI_WRITE  0/114  Ram=1
+      ³  ³     ÀÄSSPI_WRITE  0/114  Ram=1
+      ³  ÃÄwrite_glcd128x64  0/22  Ram=2
+      ³  ³  ÀÄprivate_write_glcd_lcd  0/38  Ram=0
+      ³  ³     ÀÄ*
+      ³  ÀÄwrite_ledmatrix  0/72  Ram=10
+      ³     ÃÄSSPI_WRITE  0/114  Ram=1
+      ³     ÃÄSSPI_WRITE  0/114  Ram=1
+      ³     ÃÄSSPI_WRITE  0/114  Ram=1
+      ³     ÃÄSSPI_WRITE  0/114  Ram=1
+      ³     ÃÄSSPI_WRITE  0/114  Ram=1
+      ³     ÃÄSSPI_WRITE  0/114  Ram=1
+      ³     ÃÄSSPI_WRITE  0/114  Ram=1
+      ³     ÀÄSSPI_WRITE  0/114  Ram=1
+      ÃÄlcd_setup  0/86  Ram=2
+      ³  ÃÄlcd_command  0/30  Ram=1
+      ³  ³  ÃÄwrite_lcd20x4  0/20  Ram=2
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄwrite_lcd20x4  0/20  Ram=2
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÀÄ@delay_us1  0/26  Ram=1
+      ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ÃÄlcd_command  0/30  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ÃÄlcd_command  0/30  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄlcd_command  0/30  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄlcd_command  0/30  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄ@const1043  0/80  Ram=0
+      ³  ÃÄlcd_data  0/32  Ram=1
+      ³  ³  ÃÄwrite_lcd20x4  0/20  Ram=2
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄwrite_lcd20x4  0/20  Ram=2
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÀÄ@delay_us1  0/26  Ram=1
+      ³  ÃÄlcd_command  0/30  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÀÄ@delay_ms1  0/38  Ram=1
+      ÃÄlcd_write_4x3_num  0/98  Ram=5
+      ³  ÃÄ@DIV88  0/40  Ram=3
+      ³  ÃÄ@DIV88  0/40  Ram=3
+      ³  ÃÄlcd_goto  0/22  Ram=3
+      ³  ³  ÃÄ@const1050  0/20  Ram=0
+      ³  ³  ÀÄlcd_command  0/30  Ram=1
+      ³  ³     ÀÄ*
+      ³  ÃÄ@MUL88  0/76  Ram=2
+      ³  ÃÄ@const1039  0/148  Ram=0
+      ³  ÀÄlcd_data  0/32  Ram=1
+      ³     ÀÄ*
+      ÃÄlcd_write_4x3_num  0/98  Ram=5
+      ³  ÀÄ*
+      ÃÄlcd_write_4x3_num  0/98  Ram=5
+      ³  ÀÄ*
+      ÃÄlcd_write_4x3_num  0/98  Ram=5
+      ³  ÀÄ*
+      ÀÄlcd_write_4x3_num  0/98  Ram=5
+         ÀÄ*

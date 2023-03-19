@@ -1,0 +1,233 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016     @INTERRUPT_AREA
+017     @INTERRUPT_AREA
+018     @INTERRUPT_AREA
+019-01E system_var
+01F-022 delay
+023-026 led32
+027-02A d7seg
+02B-032 s7seg
+033-034 inputcd.oldpin
+035-036 inputcd.t
+037     inputcd.step
+038     bdn
+039     giay
+03A     phut
+03B     gio
+03C     cd
+03D     font
+03E-03F k
+040-041 @sprintf_string
+042     @PRINTF_U_1021.P1
+042-043 inputcd.pin
+042     s7seg_display.i
+042-043 write_ledmatrix.mahang
+042     lcd_setup.n
+042-045 atan2.y
+042     write_glcd128x64.glcd_signal
+042     kt_nutnhan.@SCRATCH1
+042     @PSTRINGC_1021.@SCRATCH1
+042     MAIN.@SCRATCH1
+043     @DIVS88.P1
+043     @PRINTF_U_1021.P2
+043     write_glcd128x64.glcd_ins_hthi
+043     lcd_write_2x3_num.num_0_9
+043     lcd_write_4x3_num.num_0_9
+043     s7seg_display.n
+043     lcd_setup.@SCRATCH1
+043     @PSTRINGC_1021.@SCRATCH2
+044     @DIVS88.P1
+044     @delay_ms1.P2
+044     @WRITEBITA.P3
+044     lcd_write_4x3_num.colum_0_17
+044     lcd_write_2x3_num.colum_0_17
+044-045 write_ledmatrix.macot1
+044     @READBITA.P1
+044-045 delay_stop.t
+044     s7seg_display.@SCRATCH1
+044     inputcd.@SCRATCH1
+045     @WRITEBITA.P1
+045     lcd_write_2x3_num.row_0_2
+045-046 @READBITA.P1
+045     lcd_write_4x3_num.n
+045     inputcd.@SCRATCH2
+045     @DIVS88.@SCRATCH1
+046     @DIV88.P1
+046-047 write_ledmatrix.macot2
+046     lcd_write_2x3_num.i
+046-047 @WRITEBITA.P1
+046-047 delay_stop.tam
+046-049 atan2.x
+046     lcd_write_4x3_num.@SCRATCH1
+046     @DIVS88.@SCRATCH2
+047     @MUL88.P1
+047     @DIV88.P2
+047     lcd_write_2x3_num.@SCRATCH1
+047     lcd_write_4x3_num.@SCRATCH2
+048-049 write_ledmatrix.macot3
+048     lcd_goto.colum_0_19
+048-04B @DIV3232.P1
+048     lcd_data.data
+048     @MUL88.P1
+048     delay_stop.@SCRATCH1
+048     lcd_write_2x3_num.@SCRATCH2
+048     @DIV88.@SCRATCH1
+049     lcd_goto.row_0_3
+049     delay_stop.@SCRATCH2
+04A-04D atan2.z
+04A     write_ledmatrix.@SCRATCH1
+04A     lcd_goto.@SCRATCH1
+04B     lcd_command.command
+04B     write_ledmatrix.@SCRATCH2
+04C-04F @DIV3232.P1
+04C     write_lcd20x4.lcd_signal
+04C     @delay_us1.P1
+04D     write_lcd20x4.lcd_ins_hthi
+04E     SSPI_WRITE.x
+04E.0   atan2.sign
+04F     atan2.quad
+050     @DIV3232.@SCRATCH1
+051     @DIV3232.@SCRATCH2
+052     @DIV3232.@SCRATCH3
+053     @DIV3232.@SCRATCH4
+054     @DIV3232.@SCRATCH5
+F83     PSP_DATA
+F84.0   SSCK
+F84.2   SSDO
+FA1.1   TIM3IF
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P3
+FE9-FEA @WRITE_PACKED_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+0000AE  LCD_SO_X.call
+0000BE  LCD_SO_X.data
+000100  LCD_SO_X1.call
+000110  LCD_SO_X1.data
+000194  LCD_MA_8DOAN.call
+0001A4  LCD_MA_8DOAN.data
+0001E4  dc.call
+0001F4  dc.data
+0001F8  @const1068.call
+00020E  @const1073.call
+000224  @const1074.call
+00023A  @const1075.call
+000250  @const1076.call
+000266  @const1077.call
+00027C  @const1078.call
+000292  @const1092.call
+000296  @const1095.call
+00029A  @const1097.call
+00029E  ngat_timer1
+0002B0  SSPI_WRITE
+000322  private_write_buzzer_relay
+00033E  led32_display
+000366  d7seg_display
+00038E  @delay_ms1
+0003B4  s7seg_display
+00040A  private_write_glcd_lcd
+000430  write_lcd20x4
+000444  write_glcd128x64
+00045A  write_ledmatrix
+0004A2  system_init
+000510  @delay_us1
+00052A  lcd_command
+000548  lcd_data
+000568  lcd_setup
+0005BE  @WRITEBITA
+0005FC  @READBITA
+00062E  @DIV3232
+0006BC  delay_start
+00070E  delay_stop
+0007A0  inputcd
+00092E  @goto48700
+000950  lcd_goto
+000964  @PSTRINGC_1021
+000984  kt_nutnhan
+000AE8  @DIV88
+000B10  @PRINTF_U_1021
+000B76  @DIVS88
+000BBE  @MUL88
+000C08  lcd_write_2x3_num
+000C64  lcd_write_4x3_num
+000CC8  MAIN
+000CC8  @cinit1
+000CFC  @cinit2
+
+Project Directory:
+    C:\TTVXL\TTVXL\Thuc Hanh\
+
+Project Files:
+    BAI_645_LCD_TIMER_3FONT.c                               [14-Mar-23 16:48  CRC=8944D677]
+    tv_boards.c                                             [25-Aug-22 14:39  CRC=BADBB360]
+    TV_D501_TH.C                                            [25-Aug-22 14:04  CRC=1FD863A8]
+    TV_D501_TH.h                                            [25-Aug-22 14:02  CRC=79282120]
+    ..\..\..\Program Files (x86)\PICC\Devices\18f4550.h     [21-Jan-21 11:37  CRC=71B7866C]
+    ..\..\..\Program Files (x86)\PICC\Drivers\math.h        [05-May-20 12:57  CRC=02232397]
+    TV_LOWLEVER.C                                           [12-Oct-22 15:49  CRC=97B0DA2C]
+    TV_LOWLEVER.H                                           [19-Nov-22 07:33  CRC=D872A938]
+    tv_lcd.c                                                [12-Oct-22 16:17  CRC=9BCD177E]
+    TV_LCD.h                                                [29-Apr-22 15:59  CRC=93256EA5]
+
+Source signature=833730CE
+Program memory checksum=0000
+Hex file CRC=4674
+
+Units:
+    C:\TTVXL\TTVXL\Thuc Hanh\BAI_645_LCD_TIMER_3FONT (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   BAI_645_LCD_TIMER_3FONT.xsym
+    Errors:      BAI_645_LCD_TIMER_3FONT.err
+    Ext Symbols: BAI_645_LCD_TIMER_3FONT.esym
+    INHX32:      BAI_645_LCD_TIMER_3FONT.hex
+    Symbols:     BAI_645_LCD_TIMER_3FONT.sym
+    List:        BAI_645_LCD_TIMER_3FONT.lst
+    Debug/COFF:  BAI_645_LCD_TIMER_3FONT.cof
+    Project:     BAI_645_LCD_TIMER_3FONT.ccspjt
+    Call Tree:   BAI_645_LCD_TIMER_3FONT.tre
+    Statistics:  BAI_645_LCD_TIMER_3FONT.STA

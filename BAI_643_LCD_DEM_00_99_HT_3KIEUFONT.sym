@@ -1,0 +1,161 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004-009 system_var
+00A-00D delay
+00E-011 led32
+012-015 d7seg
+016-01D s7seg
+01E-01F inputcd.oldpin
+020-021 inputcd.t
+022     inputcd.step
+023     dem
+024     write_glcd128x64.glcd_signal
+024     @WRITEBITA.P1
+024     @READBITA.P2
+024-027 atan2.y
+024-025 inputcd.pin
+024-025 write_ledmatrix.mahang
+024     lcd_setup.n
+024     s7seg_display.i
+024     MAIN.@SCRATCH1
+025     s7seg_display.n
+025     write_glcd128x64.glcd_ins_hthi
+025     lcd_write_4x3_num.num_0_9
+025-026 @READBITA.P1
+025     @WRITEBITA.P2
+025     lcd_write_2x3_num.num_0_9
+025     lcd_setup.@SCRATCH1
+026-027 @WRITEBITA.P1
+026-027 write_ledmatrix.macot1
+026     lcd_write_2x3_num.colum_0_17
+026     lcd_write_4x3_num.colum_0_17
+026     @delay_ms1.P1
+026     s7seg_display.@SCRATCH1
+027     lcd_write_2x3_num.row_0_2
+027     lcd_write_4x3_num.n
+028-02B atan2.x
+028     @DIV88.P1
+028-029 write_ledmatrix.macot2
+028     lcd_write_2x3_num.i
+028     lcd_write_4x3_num.@SCRATCH1
+029     @DIV88.P1
+029     @MUL88.P2
+029     lcd_write_2x3_num.@SCRATCH1
+029     lcd_write_4x3_num.@SCRATCH2
+02A     lcd_goto.colum_0_19
+02A     @MUL88.P1
+02A-02B write_ledmatrix.macot3
+02A     lcd_data.data
+02A     lcd_write_2x3_num.@SCRATCH2
+02A     @DIV88.@SCRATCH1
+02B     lcd_goto.row_0_3
+02C-02F atan2.z
+02C     write_ledmatrix.@SCRATCH1
+02C     lcd_goto.@SCRATCH1
+02D     lcd_command.command
+02D     write_ledmatrix.@SCRATCH2
+02E     write_lcd20x4.lcd_signal
+02E     @delay_us1.P1
+02F     write_lcd20x4.lcd_ins_hthi
+030.0   atan2.sign
+030     SSPI_WRITE.x
+031     atan2.quad
+F83     PSP_DATA
+F84.0   SSCK
+F84.2   SSDO
+FA1.1   TIM3IF
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P3
+FE9-FEA @WRITE_PACKED_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  LCD_SO_X.call
+000014  LCD_SO_X.data
+000056  LCD_SO_X1.call
+000066  LCD_SO_X1.data
+0000EA  LCD_MA_8DOAN.call
+0000FA  LCD_MA_8DOAN.data
+00013A  dc.call
+00014A  dc.data
+00014E  SSPI_WRITE
+0001C0  private_write_buzzer_relay
+0001DC  led32_display
+000204  d7seg_display
+00022C  @delay_ms1
+000252  s7seg_display
+0002A8  private_write_glcd_lcd
+0002CE  write_lcd20x4
+0002E2  write_glcd128x64
+0002F8  write_ledmatrix
+000340  system_init
+0003AE  @delay_us1
+0003C8  lcd_command
+0003E6  lcd_data
+000406  lcd_setup
+00045C  lcd_goto
+000470  @DIV88
+000498  @MUL88
+0004E2  lcd_write_2x3_num
+00053C  lcd_write_4x3_num
+00059E  @cinit1
+00059E  MAIN
+0005C2  @cinit2
+
+Project Directory:
+    C:\TTVXL\TTVXL\Thuc Hanh\
+
+Project Files:
+    BAI_643_LCD_DEM_00_99_HT_3KIEUFONT.c                    [14-Mar-23 16:24  CRC=1FDAAA49]
+    tv_boards.c                                             [25-Aug-22 14:39  CRC=BADBB360]
+    TV_D501_TH.C                                            [25-Aug-22 14:04  CRC=1FD863A8]
+    TV_D501_TH.h                                            [25-Aug-22 14:02  CRC=79282120]
+    ..\..\..\Program Files (x86)\PICC\Devices\18f4550.h     [21-Jan-21 11:37  CRC=71B7866C]
+    ..\..\..\Program Files (x86)\PICC\Drivers\math.h        [05-May-20 12:57  CRC=02232397]
+    TV_LOWLEVER.C                                           [12-Oct-22 15:49  CRC=97B0DA2C]
+    TV_LOWLEVER.H                                           [19-Nov-22 07:33  CRC=D872A938]
+    tv_lcd.c                                                [12-Oct-22 16:17  CRC=9BCD177E]
+    TV_LCD.h                                                [29-Apr-22 15:59  CRC=93256EA5]
+
+Source signature=19CD04A0
+Program memory checksum=0000
+Hex file CRC=8AD2
+
+Units:
+    C:\TTVXL\TTVXL\Thuc Hanh\BAI_643_LCD_DEM_00_99_HT_3KIEUFONT (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   BAI_643_LCD_DEM_00_99_HT_3KIEUFONT.xsym
+    Errors:      BAI_643_LCD_DEM_00_99_HT_3KIEUFONT.err
+    Ext Symbols: BAI_643_LCD_DEM_00_99_HT_3KIEUFONT.esym
+    INHX32:      BAI_643_LCD_DEM_00_99_HT_3KIEUFONT.hex
+    Symbols:     BAI_643_LCD_DEM_00_99_HT_3KIEUFONT.sym
+    List:        BAI_643_LCD_DEM_00_99_HT_3KIEUFONT.lst
+    Debug/COFF:  BAI_643_LCD_DEM_00_99_HT_3KIEUFONT.cof
+    Project:     BAI_643_LCD_DEM_00_99_HT_3KIEUFONT.ccspjt
+    Call Tree:   BAI_643_LCD_DEM_00_99_HT_3KIEUFONT.tre
+    Statistics:  BAI_643_LCD_DEM_00_99_HT_3KIEUFONT.STA

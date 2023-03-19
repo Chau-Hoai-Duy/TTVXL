@@ -1,16 +1,22 @@
 [defines]
-buildcount=4
+buildcount=5
 
 [PROJECT]
-Processor_Text=PIC18F6722
+Processor_Text=PIC18F4550
 Target=BAI_518_DEM_XUNG_T0_SSC.hex
 CCSVersion=5.101
 Compiler=PCH
 
 [Opened Files]
-1=BAI_518_DEM_XUNG_T0_SSC.c
+1=BAI_517_GIO_PHUT_GIAY_KEY_CAITIEN_NHAPNHAY.c
 t1=1
-Count=1
+Count=4
+2=BAI_521_3MODULE_123.c
+t2=53
+3=BAI_516_GIO_PHUT_GIAY_KEY_CAITIEN_DAUCHAM.c
+t3=8
+4=BAI_518_DEM_XUNG_T0_SSC.c
+t4=8
 [Target Data]
 FileList=BAI_518_DEM_XUNG_T0_SSC.c
 [BAI_518_DEM_XUNG_T0_SSC.c]
@@ -19,20 +25,49 @@ Type=4
 1=BAI_518_DEM_XUNG_T0_SSC.c
 
 [ProjectLog]
-Days=2
+Days=6
 D1=26-02-2023
 D1_L=1
 D1_L1=[80792]Project Closed.
 D2=27-02-2023
-D2_L=4
+D2_L=9
 D2_L1=[29296]Project Opened.
 D2_L2=[29312]Started Editing.
 D2_L3=[30555]Stopped Editing.
-TotalEdit=16
+TotalEdit=21
 TotalDebug=0
 D2_E=16
 D2_D=0
 D2_L4=[30713]Project Closed.
+D2_L5=[72975]Project Opened.
+D2_L6=[73024]Started Editing.
+D2_L7=[73324]Stopped Editing.
+D2_L8=[73825]Started Editing.
+D2_L9=[74373]Project Closed.
+D3=28-02-2023
+D3_L=4
+D3_L1=[46093]Project Opened.
+D3_L2=[46360]Started Editing.
+D3_L3=[46569]Stopped Editing.
+D3_E=4
+D3_D=0
+D3_L4=[46569]Project Closed.
+D4=06-03-2023
+D4_L=4
+D4_L1=[77552]Project Opened.
+D4_L2=[77661]Started Editing.
+D4_L3=[77698]Stopped Editing.
+D4_E=1
+D4_D=0
+D4_L4=[77698]Project Closed.
+D5=07-03-2023
+D5_L=2
+D5_L1=[44751]Project Opened.
+D5_L2=[44751]Project Closed.
+D6=09-03-2023
+D6_L=2
+D6_L1=[31441]Project Opened.
+D6_L2=[31442]Project Closed.
 
 [fileformats]
 forcecoff=0

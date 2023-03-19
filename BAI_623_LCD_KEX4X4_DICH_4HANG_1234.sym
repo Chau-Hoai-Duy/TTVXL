@@ -1,0 +1,171 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004-009 system_var
+00A-00D delay
+00E-011 led32
+012-015 d7seg
+016-01D s7seg
+01E-01F inputcd.oldpin
+020-021 inputcd.t
+022     inputcd.step
+023     key4x4
+024     key4x4_read.step
+025-026 key4x4_read.t
+027-03A RONG0
+03B-04E RONG1
+04F-062 RONG2
+063-076 RONG3
+077     i
+078     j
+079     dem
+07A     @READBITA.P1
+07A-07B delay_stop.t
+07A-07B write_ledmatrix.mahang
+07A     s7seg_display.i
+07A     write_glcd128x64.glcd_signal
+07A     lcd_goto.colum_0_19
+07A     KEYREAD.cot
+07A-07D atan2.y
+07A     lcd_setup.n
+07A-07B inputcd.pin
+07A     @WRITEBITA.P1
+07A     key4x4_read.@SCRATCH1
+07A     kt_nutnhan.@SCRATCH1
+07B     lcd_goto.row_0_3
+07B     s7seg_display.n
+07B     write_glcd128x64.glcd_ins_hthi
+07B-07C @READBITA.P1
+07B     @WRITEBITA.P2
+07B     lcd_setup.@SCRATCH1
+07B     key4x4_read.@SCRATCH2
+07B     kt_nutnhan.@SCRATCH2
+07C     lcd_data.data
+07C-07D delay_stop.tam
+07C     @delay_ms1.P1
+07C-07D write_ledmatrix.macot1
+07C-07D @WRITEBITA.P1
+07C     s7seg_display.@SCRATCH1
+07C     lcd_goto.@SCRATCH1
+07C     kt_nutnhan.@SCRATCH3
+07D     lcd_command.command
+07E     @delay_us1.P1
+07E-07F write_ledmatrix.macot2
+07E     write_lcd20x4.lcd_signal
+07E-081 @DIV3232.P1
+07E-081 atan2.x
+07E     delay_stop.@SCRATCH1
+07F     write_lcd20x4.lcd_ins_hthi
+07F     delay_stop.@SCRATCH2
+080-081 write_ledmatrix.macot3
+082-085 @DIV3232.P1
+082-085 atan2.z
+082     write_ledmatrix.@SCRATCH1
+083     write_ledmatrix.@SCRATCH2
+084     SSPI_WRITE.x
+086.0   atan2.sign
+086     @DIV3232.@SCRATCH1
+087     atan2.quad
+087     @DIV3232.@SCRATCH2
+088     @DIV3232.@SCRATCH3
+089     @DIV3232.@SCRATCH4
+08A     @DIV3232.@SCRATCH5
+F83     PSP_DATA
+F84.0   SSCK
+F84.2   SSDO
+FA1.1   TIM3IF
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P3
+FE9-FEA @READ_PACKED_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  LCD_MA_8DOAN.call
+000014  LCD_MA_8DOAN.data
+000054  dc.call
+000064  dc.data
+000068  SSPI_WRITE
+0000DA  private_write_buzzer_relay
+0000F6  led32_display
+00011E  d7seg_display
+000146  @delay_ms1
+00016C  s7seg_display
+0001C2  private_write_glcd_lcd
+0001E8  write_lcd20x4
+0001FC  write_glcd128x64
+000212  write_ledmatrix
+00025A  system_init
+0002C8  @delay_us1
+0002E2  lcd_command
+000300  lcd_data
+000320  lcd_setup
+000376  KEYREAD
+0003EE  @DIV3232
+00047C  delay_start
+0004CE  delay_stop
+000560  key4x4_read
+00063A  @goto45048
+00065C  lcd_goto
+000670  kt_nutnhan
+000812  @cinit1
+000812  MAIN
+00083A  @cinit2
+
+Project Directory:
+    C:\TTVXL\TTVXL\Thuc Hanh\
+
+Project Files:
+    BAI_623_LCD_KEX4X4_DICH_4HANG_1234.c                    [14-Mar-23 13:27  CRC=D4608734]
+    tv_boards.c                                             [25-Aug-22 14:39  CRC=BADBB360]
+    TV_D501_TH.C                                            [25-Aug-22 14:04  CRC=1FD863A8]
+    TV_D501_TH.h                                            [25-Aug-22 14:02  CRC=79282120]
+    ..\..\..\Program Files (x86)\PICC\Devices\18f4550.h     [21-Jan-21 11:37  CRC=71B7866C]
+    ..\..\..\Program Files (x86)\PICC\Drivers\math.h        [05-May-20 12:57  CRC=02232397]
+    TV_LOWLEVER.C                                           [12-Oct-22 15:49  CRC=97B0DA2C]
+    TV_LOWLEVER.H                                           [19-Nov-22 07:33  CRC=D872A938]
+    tv_lcd.c                                                [12-Oct-22 16:17  CRC=9BCD177E]
+    TV_LCD.h                                                [29-Apr-22 15:59  CRC=93256EA5]
+    tv_key4x4.c                                             [07-Jun-22 20:08  CRC=53A906E2]
+    tv_key4x4.h                                             [29-Apr-22 14:10  CRC=D872A938]
+
+Source signature=3FBBCC38
+Program memory checksum=0000
+Hex file CRC=E699
+
+Units:
+    C:\TTVXL\TTVXL\Thuc Hanh\BAI_623_LCD_KEX4X4_DICH_4HANG_1234 (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   BAI_623_LCD_KEX4X4_DICH_4HANG_1234.xsym
+    Errors:      BAI_623_LCD_KEX4X4_DICH_4HANG_1234.err
+    Ext Symbols: BAI_623_LCD_KEX4X4_DICH_4HANG_1234.esym
+    INHX32:      BAI_623_LCD_KEX4X4_DICH_4HANG_1234.hex
+    Symbols:     BAI_623_LCD_KEX4X4_DICH_4HANG_1234.sym
+    List:        BAI_623_LCD_KEX4X4_DICH_4HANG_1234.lst
+    Debug/COFF:  BAI_623_LCD_KEX4X4_DICH_4HANG_1234.cof
+    Project:     BAI_623_LCD_KEX4X4_DICH_4HANG_1234.ccspjt
+    Call Tree:   BAI_623_LCD_KEX4X4_DICH_4HANG_1234.tre
+    Statistics:  BAI_623_LCD_KEX4X4_DICH_4HANG_1234.STA

@@ -1,0 +1,23 @@
+[PROJECT]
+Target=BAI_613_LCD_DEM_GIO_PHUT_GIAY.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=BAI_613_LCD_DEM_GIO_PHUT_GIAY.c
+[BAI_613_LCD_DEM_GIO_PHUT_GIAY.c]
+Type=4
+[mru-list]
+1=BAI_613_LCD_DEM_GIO_PHUT_GIAY.c
+[Units]
+Count=1
+1=BAI_613_LCD_DEM_GIO_PHUT_GIAY (main)
+
+[defines]
+buildcount=1
+
+[ProjectLog]
+Days=1
+D1=07-03-2023
+D1_L=1
+D1_L1=[48392]Project Closed.

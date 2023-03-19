@@ -1,6 +1,6 @@
 [PROJECT]
 Target=BAI_517_GIO_PHUT_GIAY_KEY_CAITIEN_NHAPNHAY.hex
-Processor_Text=PIC18F6722
+Processor_Text=PIC18F4550
 CCSVersion=5.101
 Compiler=PCH
 [Target Data]
@@ -11,21 +11,21 @@ Type=4
 1=BAI_517_GIO_PHUT_GIAY_KEY_CAITIEN_NHAPNHAY.c
 
 [defines]
-buildcount=2
+buildcount=5
 
 [Opened Files]
-1=BAI_518_DEM_XUNG_T0_SSC.c
+1=BAI_601_LCD_HIENTHI_4HANG.c
 t1=1
-2=BAI_515_GIO_PHUT_GIAY_KEY.c
-t2=24
-Count=1
+2=BAI_604_LCD_CHINH_MENU.c
+t2=1
+Count=3
 3=BAI_517_GIO_PHUT_GIAY_KEY_CAITIEN_NHAPNHAY.c
-t3=24
+t3=1
 4=BAI_516_GIO_PHUT_GIAY_KEY_CAITIEN_DAUCHAM.c
 t4=64
 
 [ProjectLog]
-Days=4
+Days=6
 D1=21-02-2023
 D1_L=1
 D1_L1=[60803]Project Closed.
@@ -34,7 +34,7 @@ D2_L=6
 D2_L1=[60825]Project Opened.
 D2_L2=[60855]Started Editing.
 D2_L3=[60945]Stopped Editing.
-TotalEdit=2
+TotalEdit=6
 TotalDebug=0
 D2_E=2
 D2_D=0
@@ -52,6 +52,22 @@ D4_L=3
 D4_L1=[79188]Project Opened.
 D4_L2=[80242]Started Editing.
 D4_L3=[80784]Project Closed.
+D5=28-02-2023
+D5_L=8
+D5_L1=[45972]Project Opened.
+D5_L2=[46074]Started Editing.
+D5_L3=[46093]Stopped Editing.
+D5_E=4
+D5_D=0
+D5_L4=[46093]Project Closed.
+D5_L5=[54888]Project Opened.
+D5_L6=[54957]Started Editing.
+D5_L7=[55122]Stopped Editing.
+D5_L8=[55122]Project Closed.
+D6=06-03-2023
+D6_L=2
+D6_L1=[77516]Project Opened.
+D6_L2=[77538]Project Closed.
 
 [fileformats]
 forcecoff=0

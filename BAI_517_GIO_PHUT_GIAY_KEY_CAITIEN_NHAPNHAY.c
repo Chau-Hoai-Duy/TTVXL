@@ -1,4 +1,4 @@
-//#DEFINE BOARD D501
+#DEFINE BOARD D501
 #include<tv_boards.c>
 unsigned int8 gio=0, phut=0, giay=0, bdn=0, cdo=0,i;
 void kt_nutnhan()
@@ -65,7 +65,7 @@ void main()
             kt_nutnhan();
             i++;
          }
-         else if((i>=100)&&(i<200))
+         else if(i<200)
          {
             s7seg.led[0]=m7d[giay%10];
             s7seg.led[1]=m7d[giay/10%10];
@@ -85,7 +85,7 @@ void main()
             kt_nutnhan();
             i++;
          }
-         else if((i>=100)&&(i<200))
+         else if(i<200)
          {
             s7seg.led[3]=m7d[phut%10];
             s7seg.led[4]=m7d[phut/10%10];
@@ -105,7 +105,7 @@ void main()
             kt_nutnhan();
             i++;
          }
-         else if((i>=100)&&(i<200))
+         else if(i<200)
          {
             s7seg.led[6]=m7d[gio%10];
             s7seg.led[7]=m7d[gio/10%10];

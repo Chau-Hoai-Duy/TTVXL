@@ -1,4 +1,4 @@
-//#DEFINE BOARD D501
+#DEFINE BOARD D501
 #include<tv_boards.c>
 unsigned int8 phut=0,giay=0,bdn=0;
 void main()

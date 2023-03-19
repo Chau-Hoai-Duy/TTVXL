@@ -1,0 +1,23 @@
+[PROJECT]
+Target=EXAMPLE_9_DCMOTOR.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=EXAMPLE_9_DCMOTOR.c
+[EXAMPLE_9_DCMOTOR.c]
+Type=4
+[mru-list]
+1=EXAMPLE_9_DCMOTOR.c
+[Units]
+Count=1
+1=EXAMPLE_9_DCMOTOR (main)
+
+[defines]
+buildcount=1
+
+[ProjectLog]
+Days=1
+D1=07-03-2023
+D1_L=1
+D1_L1=[57069]Project Closed.

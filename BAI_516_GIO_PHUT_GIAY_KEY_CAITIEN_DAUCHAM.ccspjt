@@ -1,6 +1,6 @@
 [PROJECT]
 Target=BAI_516_GIO_PHUT_GIAY_KEY_CAITIEN_DAUCHAM.hex
-Processor_Text=PIC18F6722
+Processor_Text=PIC18F4550
 CCSVersion=5.101
 Compiler=PCH
 [Target Data]
@@ -11,30 +11,41 @@ Type=4
 1=BAI_516_GIO_PHUT_GIAY_KEY_CAITIEN_DAUCHAM.c
 
 [defines]
-buildcount=2
+buildcount=4
 
 [ProjectLog]
-Days=1
+Days=2
 D1=26-02-2023
 D1_L=3
 D1_L1=[79075]Started Editing.
 D1_L2=[79188]Stopped Editing.
-TotalEdit=2
+TotalEdit=3
 TotalDebug=0
 D1_E=2
 D1_D=0
 D1_L3=[79188]Project Closed.
+D2=28-02-2023
+D2_L=4
+D2_L1=[45851]Project Opened.
+D2_L2=[45967]Started Editing.
+D2_L3=[45972]Stopped Editing.
+D2_E=1
+D2_D=0
+D2_L4=[45972]Project Closed.
 
 [Opened Files]
-1=BAI_514_DEM_GIO_PHUT_GIAY.c
-t1=24
-2=BAI_515_GIO_PHUT_GIAY_KEY.c
-t2=24
-3=BAI_517_GIO_PHUT_GIAY_KEY_CAITIEN_NHAPNHAY.c
-t3=24
+1=BAI_517_GIO_PHUT_GIAY_KEY_CAITIEN_NHAPNHAY.c
+t1=102
+2=BAI_521_3MODULE_123.c
+t2=53
+3=BAI_515_GIO_PHUT_GIAY_KEY.c
+t3=1
 4=BAI_516_GIO_PHUT_GIAY_KEY_CAITIEN_DAUCHAM.c
-t4=64
+t4=1
 Count=4
+
+[fileformats]
+forcecoff=0
 [Units]
 Count=1
 1=BAI_516_GIO_PHUT_GIAY_KEY_CAITIEN_DAUCHAM (main)

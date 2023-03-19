@@ -1,0 +1,18 @@
+#include<tv_boards.c>
+#include<tv_lcd.c>
+#include<tv_key4x4.c>
+signed int8 bdn=0;
+void main()
+{
+   system_init();
+   while(true)
+   {
+      
+   }
+}
+#int_timer1
+void ngat_timer1()
+{
+   set_timer1(3036);
+   bdn++;
+}

@@ -1,4 +1,4 @@
-//#define   BOARD     D501
+#define   BOARD     D501
 #include<tv_boards.c>  
 UNSIGNED INT8 j,i,hu;
 void chop_tat_5_lan()

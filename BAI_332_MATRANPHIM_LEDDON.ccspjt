@@ -1,6 +1,6 @@
 [PROJECT]
 Target=BAI_332_MATRANPHIM_LEDDON.hex
-Processor_Text=PIC18F6722
+Processor_Text=PIC18F4550
 CCSVersion=5.101
 Compiler=PCH
 [Target Data]
@@ -11,19 +11,33 @@ Type=4
 1=BAI_332_MATRANPHIM_LEDDON.c
 
 [defines]
-buildcount=2
+buildcount=3
 
 [ProjectLog]
-Days=1
+Days=2
 D1=04-02-2023
 D1_L=2
 D1_L1=[71677]Started Editing.
 D1_L2=[71838]Project Closed.
+D2=28-02-2023
+D2_L=5
+D2_L1=[51806]Project Opened.
+D2_L2=[51810]Started Editing.
+D2_L3=[51813]Stopped Editing.
+TotalEdit=1
+TotalDebug=0
+D2_E=1
+D2_D=0
+D2_L4=[51816]Started Editing.
+D2_L5=[51880]Project Closed.
 
 [Opened Files]
 1=BAI_332_MATRANPHIM_LEDDON.c
 t1=1
 Count=1
+
+[fileformats]
+forcecoff=0
 [Units]
 Count=1
 1=BAI_332_MATRANPHIM_LEDDON (main)

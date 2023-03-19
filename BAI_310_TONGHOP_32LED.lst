@@ -1,4 +1,4 @@
-CCS PCH C Compiler, Version 5.101, 43599               07-Feb-23 16:52
+CCS PCH C Compiler, Version 5.101, 43599               28-Feb-23 14:04
 
                Filename:   C:\TTVXL\TTVXL\Thuc Hanh\BAI_310_TONGHOP_32LED.lst
 
@@ -6,7 +6,7 @@ CCS PCH C Compiler, Version 5.101, 43599               07-Feb-23 16:52
                            Largest free fragment is 31246
                RAM used:   50 (2%) at main() level
                            65 (3%) worst case
-               Stack used: 4 locations
+               Stack used: 1 locations
                Stack size: 31
 
 *

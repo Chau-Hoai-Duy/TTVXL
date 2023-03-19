@@ -11,19 +11,26 @@ Type=4
 1=BAI_324_16LED_UP_DW_CLR_1.c
 
 [defines]
-buildcount=14
+buildcount=15
 
 [ProjectLog]
-Days=1
+Days=2
 D1=07-02-2023
 D1_L=2
 D1_L1=[47431]Started Editing.
 D1_L2=[49136]Project Closed.
+D2=28-02-2023
+D2_L=2
+D2_L1=[51445]Project Opened.
+D2_L2=[51551]Project Closed.
 
 [Opened Files]
 1=BAI_324_16LED_UP_DW_CLR_1.c
-t1=5
+t1=1
 Count=1
+
+[fileformats]
+forcecoff=0
 [Units]
 Count=1
 1=BAI_324_16LED_UP_DW_CLR_1 (main)

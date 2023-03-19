@@ -1,4 +1,4 @@
-CCS PCH C Compiler, Version 5.101, 43599               17-Feb-23 22:32
+CCS PCH C Compiler, Version 5.101, 43599               28-Feb-23 14:20
 
                Filename:   C:\TTVXL\TTVXL\Thuc Hanh\BAI_326_TONGHOP_UP_DN_CLR.lst
 
@@ -6,7 +6,7 @@ CCS PCH C Compiler, Version 5.101, 43599               17-Feb-23 22:32
                            Largest free fragment is 30262
                RAM used:   42 (2%) at main() level
                            62 (3%) worst case
-               Stack used: 0 locations
+               Stack used: 3 locations
                Stack size: 31
 
 *

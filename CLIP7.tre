@@ -1,0 +1,147 @@
+ÀÄCLIP7
+   ÃÄMAIN  0/544  Ram=1
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄ@cinit2  (Inline)  Ram=0
+   ³  ÃÄsystem_init  0/62  Ram=0
+   ³  ³  ÃÄCHECK_MODULE  0/90  Ram=4
+   ³  ³  ³  ÃÄ@delay_ms1  0/38  Ram=1
+   ³  ³  ³  ÀÄ@delay_ms1  0/38  Ram=1
+   ³  ³  ÃÄled32_display  0/56  Ram=0
+   ³  ³  ÃÄd7seg_display  0/102  Ram=0
+   ³  ³  ³  ÀÄ@delay_ms1  0/38  Ram=1
+   ³  ³  ÃÄs7seg_display  0/98  Ram=2
+   ³  ³  ³  ÀÄ@delay_ms1  0/38  Ram=1
+   ³  ³  ÃÄbuzzer_off  0/12  Ram=0
+   ³  ³  ÀÄtriac_2_off  0/12  Ram=0
+   ³  ÃÄlcd_setup  0/86  Ram=2
+   ³  ³  ÃÄlcd_command  0/30  Ram=1
+   ³  ³  ³  ÃÄwrite_lcd20x4  0/36  Ram=2
+   ³  ³  ³  ÃÄwrite_lcd20x4  0/36  Ram=2
+   ³  ³  ³  ÀÄ@delay_us1  0/26  Ram=1
+   ³  ³  ÃÄ@delay_ms1  0/38  Ram=1
+   ³  ³  ÃÄlcd_command  0/30  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@delay_ms1  0/38  Ram=1
+   ³  ³  ÃÄlcd_command  0/30  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄlcd_command  0/30  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄlcd_command  0/30  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@const1050  0/84  Ram=0
+   ³  ³  ÃÄlcd_data  0/32  Ram=1
+   ³  ³  ³  ÃÄwrite_lcd20x4  0/36  Ram=2
+   ³  ³  ³  ÃÄwrite_lcd20x4  0/36  Ram=2
+   ³  ³  ³  ÀÄ@delay_us1  0/26  Ram=1
+   ³  ³  ÃÄlcd_command  0/30  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÀÄ@delay_ms1  0/38  Ram=1
+   ³  ÃÄkt_nutnhan  0/166  Ram=1
+   ³  ³  ÀÄkey4x4_read  0/218  Ram=2
+   ³  ³     ÃÄKEYREAD  0/168  Ram=2
+   ³  ³     ³  ÃÄ@const970  0/24  Ram=0
+   ³  ³     ³  ÃÄ@const970  0/24  Ram=0
+   ³  ³     ³  ÃÄ@const970  0/24  Ram=0
+   ³  ³     ³  ÀÄ@const970  0/24  Ram=0
+   ³  ³     ÃÄ@goto19673  0/40  Ram=0
+   ³  ³     ÃÄdelay_start  0/82  Ram=0
+   ³  ³     ³  ÀÄ@DIV3232  0/142  Ram=13
+   ³  ³     ÃÄdelay_stop  0/146  Ram=6
+   ³  ³     ³  ÀÄ@DIV3232  0/142  Ram=13
+   ³  ³     ÃÄdelay_start  0/82  Ram=0
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÃÄdelay_stop  0/146  Ram=6
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÃÄdelay_start  0/82  Ram=0
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÃÄdelay_stop  0/146  Ram=6
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÀÄdelay_start  0/82  Ram=0
+   ³  ³        ÀÄ*
+   ³  ÃÄnhapnhay  0/300  Ram=0
+   ³  ³  ÃÄlcd_goto  0/20  Ram=3
+   ³  ³  ³  ÃÄ@const1057  0/24  Ram=0
+   ³  ³  ³  ÀÄlcd_command  0/30  Ram=1
+   ³  ³  ³     ÀÄ*
+   ³  ³  ÃÄ@PSTRINGC_1028  0/40  Ram=3
+   ³  ³  ³  ÀÄlcd_data  0/32  Ram=1
+   ³  ³  ³     ÀÄ*
+   ³  ³  ÃÄlcd_goto  0/20  Ram=3
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@PSTRINGC_1028  0/40  Ram=3
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄkt_nutnhan  0/166  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄlcd_goto  0/20  Ram=3
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@PSTRINGC_1028  0/40  Ram=3
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄlcd_goto  0/20  Ram=3
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@PSTRINGC_1028  0/40  Ram=3
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄkt_nutnhan  0/166  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄlcd_goto  0/20  Ram=3
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@PSTRINGC_1028  0/40  Ram=3
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄlcd_goto  0/20  Ram=3
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@PSTRINGC_1028  0/40  Ram=3
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄkt_nutnhan  0/166  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄlcd_goto  0/20  Ram=3
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@PSTRINGC_1028  0/40  Ram=3
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄlcd_goto  0/20  Ram=3
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@PSTRINGC_1028  0/40  Ram=3
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÀÄkt_nutnhan  0/166  Ram=1
+   ³  ³     ÀÄ*
+   ³  ÃÄ@DIVS88  0/72  Ram=4
+   ³  ÃÄ@DIVS88  0/72  Ram=4
+   ³  ÃÄlcd_write_2x3_num  0/92  Ram=6
+   ³  ³  ÃÄlcd_goto  0/20  Ram=3
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄlcd_goto  0/20  Ram=3
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@MUL88  0/76  Ram=2
+   ³  ³  ÃÄ@const1042  0/86  Ram=0
+   ³  ³  ÀÄlcd_data  0/32  Ram=1
+   ³  ³     ÀÄ*
+   ³  ÃÄ@DIVS88  0/72  Ram=4
+   ³  ÃÄlcd_write_2x3_num  0/92  Ram=6
+   ³  ³  ÀÄ*
+   ³  ÃÄ@DIVS88  0/72  Ram=4
+   ³  ÃÄ@DIVS88  0/72  Ram=4
+   ³  ÃÄlcd_write_2x3_num  0/92  Ram=6
+   ³  ³  ÀÄ*
+   ³  ÃÄ@DIVS88  0/72  Ram=4
+   ³  ÃÄlcd_write_2x3_num  0/92  Ram=6
+   ³  ³  ÀÄ*
+   ³  ÃÄ@DIVS88  0/72  Ram=4
+   ³  ÃÄ@DIVS88  0/72  Ram=4
+   ³  ÃÄlcd_write_2x3_num  0/92  Ram=6
+   ³  ³  ÀÄ*
+   ³  ÃÄ@DIVS88  0/72  Ram=4
+   ³  ÃÄlcd_write_2x3_num  0/92  Ram=6
+   ³  ³  ÀÄ*
+   ³  ÃÄ@DIVS88  0/72  Ram=4
+   ³  ÃÄ@DIVS88  0/72  Ram=4
+   ³  ÃÄlcd_write_2x3_num  0/92  Ram=6
+   ³  ³  ÀÄ*
+   ³  ÃÄ@DIVS88  0/72  Ram=4
+   ³  ÃÄlcd_write_2x3_num  0/92  Ram=6
+   ³  ³  ÀÄ*
+   ³  ÃÄ@DIVS88  0/72  Ram=4
+   ³  ÃÄ@DIVS88  0/72  Ram=4
+   ³  ÃÄlcd_write_2x3_num  0/92  Ram=6
+   ³  ³  ÀÄ*
+   ³  ÃÄ@DIVS88  0/72  Ram=4
+   ³  ÀÄlcd_write_2x3_num  0/92  Ram=6
+   ³     ÀÄ*
+   ÀÄngat_timer1  0/18  Ram=0

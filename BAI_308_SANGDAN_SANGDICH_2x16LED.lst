@@ -1,4 +1,4 @@
-CCS PCH C Compiler, Version 5.101, 43599               31-Jan-23 16:17
+CCS PCH C Compiler, Version 5.101, 43599               28-Feb-23 14:03
 
                Filename:   C:\TTVXL\TTVXL\Thuc Hanh\BAI_308_SANGDAN_SANGDICH_2x16LED.lst
 
@@ -6,7 +6,7 @@ CCS PCH C Compiler, Version 5.101, 43599               31-Jan-23 16:17
                            Largest free fragment is 31878
                RAM used:   42 (2%) at main() level
                            60 (3%) worst case
-               Stack used: 0 locations
+               Stack used: 1 locations
                Stack size: 31
 
 *

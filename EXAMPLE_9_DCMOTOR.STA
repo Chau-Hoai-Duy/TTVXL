@@ -1,0 +1,105 @@
+
+ROM used:   7464/32768 (23%)
+            7464/32768 (23%) including unused fragments
+
+            1.5 Average locations per line
+            7.0 Average locations per statement
+
+RAM used:   1095/2048 (53%) at main() level
+            1147/2048 (56%) worst case
+
+Stack used: 6 worst case (6 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   88    47   4  EXAMPLE_9_DCMOTOR.c
+   26     0   0  tv_boards.c
+  239   186  17  TV_D501_TH.C
+  135     0   0  TV_D501_TH.h
+  876     0   0  ..\..\..\Program Files (x86)\PICC\Devices\18f4550.h
+ 2228   258  24  ..\..\..\Program Files (x86)\PICC\Drivers\math.h
+  179    80   8  TV_LOWLEVER.C
+    7     0   0  TV_LOWLEVER.H
+   84    56   5  tv_dcmotor.c
+   22     0   0  TV_DCMOTOR.h
+ 1034   439  41  tv_glcd.c
+  195     0   0  tv_glcd.h
+----- -----
+ 5113  1066 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     40   0    1             @delay_ms1
+0     40   0    0    221  2.6  led32_display
+0     40   0    0    221  2.6  d7seg_display
+0    106   1    3    355  6.1  s7seg_display
+0     38   0    0    172  2.1  private_write_glcd_lcd
+0     26   0    2    120  3.4  write_lcd20x4
+0     24   0    2    120  3.4  write_glcd128x64
+0     88   1   10    362  3.3  write_ledmatrix
+0     26   0    0    151  2.5  private_write_buzzer_relay
+0     42   0    0    158  2.9  DCMOTOR_ENABLE
+0    132   1    3    265  3.7  DCMOTOR_LOWLEVEL_CONTROL
+0    122   1    0    561  3.8  system_init
+0    118   1    1   1186  3.3  SSPI_WRITE
+0     86   1    0    153  3.9  delay_start
+0    148   1   13             @DIV3232
+0    154   1    6    318  6.3  delay_stop
+0    470   3    4   1128  7.1  inputcd
+0     66   0    6             @WRITEBITA
+0     54   0    5             @READBITA
+0     34   0    0             @goto57343
+0    264   2    6    758  6.7  DCMOTOR_MIDDLELEVEL_CONTROL
+0    168   1    1    787  7.6  dcmotor_control
+0     34   0    0             @goto57423
+0    230   2    8    588  7.3  dcmotor_read_speed
+0     94   1   14     98  2.0  @MUL3232
+0    272   2    0     98  2.0  @const1118
+0    236   2    0    332  4.1  @const1122
+0     74   0    5    672  6.3  GLCD_UPDATE_COORDINATE
+0    164   1   11    553  6.1  glcd_clear
+0     34   0    5    250  7.0  @MUL1616
+0    266   2    8    520  8.3  GLCD_PIXEL_TEMP
+0    314   2    8   1558  8.7  glcd_update
+0     42   0    5    209  5.4  GLCD_VERTICAL_LINE
+0   1512  10   18   2513 13.4  GLCD_HORIZONE_LINE
+0     36   0    7    299  3.5  glcd_text_setup
+0    410   3   15   2264 10.6  glcd_text
+0    192   1   11   1026  6.6  glcd_rect
+0    122   1    6             @DIVS1616
+0     44   0    1     98  2.0  glcd_data
+0     42   0    1     98  2.0  glcd_command
+0     72   0    0    212  2.7  glcd_setup
+0     76   1    2    129  2.4  level_display
+0    198   1    9             @PRINTF_LU_1073
+0     54   0    0    117  2.0  speed_display
+0     88   1    1    221  3.5  status_display
+0      8   0    0             @const1258
+0     32   0    2             @PSTRINGC_1073
+0      8   0    0             @const1263
+0      8   0    0             @const1264
+0    496   3    1   1353  7.2  MAIN
+0      8   0    0             @const1268
+0      8   0    0             @const1269
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               38
+    Statements              1066
+    Comments                913
+    Volume (V)              36133
+    Difficulty (D)          185.3
+    Effort to implement (E) 6696432
+    Time to implement (T)   103 hours, 20 minutes
+    Est Delivered Bugs (B)  12
+    Cyclomatic Complexity   88
+    Maintainability (MI)    129
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  7460  25304  
+
+
+

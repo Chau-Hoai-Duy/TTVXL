@@ -1,17 +1,17 @@
-CCS PCH C Compiler, Version 5.101, 43599               07-Feb-23 16:54
+CCS PCH C Compiler, Version 5.101, 43599               28-Feb-23 14:08
 
                Filename:   C:\TTVXL\TTVXL\Thuc Hanh\BAI_314_TONGHOP_32LED.lst
 
-               ROM used:   1366 bytes (1%)
-                           Largest free fragment is 65536
-               RAM used:   36 (1%) at main() level
-                           56 (1%) worst case
-               Stack used: 4 locations
+               ROM used:   1540 bytes (5%)
+                           Largest free fragment is 31228
+               RAM used:   38 (2%) at main() level
+                           58 (3%) worst case
+               Stack used: 3 locations
                Stack size: 31
 
 *
-00000:  GOTO   0434
-.................... //#define   BOARD     D501
+0000:  GOTO   04DC
+.................... #define   BOARD     D501
 .................... #include<tv_boards.c>  
 .................... #ifndef    __TV_BOARDS_C__
 .................... #define    __TV_BOARDS_C__
@@ -27,19 +27,13 @@ CCS PCH C Compiler, Version 5.101, 43599               07-Feb-23 16:54
 .................... 
 .................... #elif  BOARD ==  D501
 .................... #include <TV_D501_TH.C>
-....................  
-.................... #elif  BOARD ==  D503
-.................... #include <TV_D501_TH.C>
-.................... 
-.................... #else 
-.................... #include <TV_MOPHONG.C>
-.................... #ifndef    __TV_MOPHONG_C__
-.................... #define    __TV_MOPHONG_C__
-.................... #include<TV_MOPHONG.h>
-.................... #ifndef    __TV_MOPHONG_H__
-.................... #define    __TV_MOPHONG_H__
-.................... #include    <18f6722.h>
-.................... //////////// Standard Header file for the PIC18F6722 device ////////////////
+.................... #ifndef    __TV_D501_TH_C__
+.................... #define    __TV_D501_TH_C__
+.................... #include<TV_D501_TH.h>
+.................... #ifndef    __TV_D501_TH_H__
+.................... #define    __TV_D501_TH_H__
+.................... #include     <18f4550.h>
+.................... //////////// Standard Header file for the PIC18F4550 device ////////////////
 .................... ///////////////////////////////////////////////////////////////////////////
 .................... ////        (C) Copyright 1996, 2020 Custom Computer Services          ////
 .................... //// This source code may only be used by licensed users of the CCS C  ////
@@ -49,35 +43,35 @@ CCS PCH C Compiler, Version 5.101, 43599               07-Feb-23 16:54
 .................... //// Derivative programs created using this software in object code    ////
 .................... //// form are not restricted in any way.                               ////
 .................... ///////////////////////////////////////////////////////////////////////////
-.................... #device PIC18F6722
+.................... #device PIC18F4550
 .................... 
 .................... #list
 .................... 
-.................... #device     adc =10
-.................... #fuses      hs,PUT, NOWDT
-.................... #use        delay(clock=20M)
-00004:  CLRF   FEA
-00006:  MOVLW  26
-00008:  MOVWF  FE9
-0000A:  MOVF   FEF,W
-0000C:  BTFSC  FD8.2
-0000E:  GOTO   002C
-00012:  MOVLW  06
-00014:  MOVWF  01
-00016:  CLRF   00
-00018:  DECFSZ 00,F
-0001A:  BRA    0018
-0001C:  DECFSZ 01,F
-0001E:  BRA    0016
-00020:  MOVLW  7B
-00022:  MOVWF  00
-00024:  DECFSZ 00,F
-00026:  BRA    0024
-00028:  DECFSZ FEF,F
-0002A:  BRA    0012
-0002C:  RETURN 0
-.................... #USE        SPI(SPI2,STREAM = SPI_2,baud=5000000)
-.................... #include    <math.h>
+.................... #device      adc=10
+.................... #fuses       nowdt,put,hs,noprotect,nolvp,cpudiv1
+.................... #use         delay(clock=20000000)
+*
+0100:  CLRF   FEA
+0102:  MOVLW  28
+0104:  MOVWF  FE9
+0106:  MOVF   FEF,W
+0108:  BZ    0124
+010A:  MOVLW  06
+010C:  MOVWF  01
+010E:  CLRF   00
+0110:  DECFSZ 00,F
+0112:  BRA    0110
+0114:  DECFSZ 01,F
+0116:  BRA    010E
+0118:  MOVLW  7B
+011A:  MOVWF  00
+011C:  DECFSZ 00,F
+011E:  BRA    011C
+0120:  DECFSZ FEF,F
+0122:  BRA    010A
+0124:  RETURN 0
+.................... #use         rs232(baud=9600, xmit=pin_c6,rcv=pin_c7)
+.................... #include     <math.h>
 .................... ////////////////////////////////////////////////////////////////////////////
 .................... ////        (C) Copyright 1996,2011 Custom Computer Services            ////
 .................... //// This source code may only be used by licensed users of the CCS C   ////
@@ -2306,62 +2300,85 @@ CCS PCH C Compiler, Version 5.101, 43599               07-Feb-23 16:54
 .................... 
 .................... #endif
 .................... 
-.................... #bit     TIM3IF           = 0xFA1.1
-.................... #define  analog_pins        an0_to_an3
-.................... #define  lm35a_channel      0
-.................... #define  lm35b_channel      1
-.................... #define  gp2d12_channel     2
-.................... #define  photoresis_channel 3
-.................... #define  TOUCH_PIN        pin_c6
-.................... #define  DHT11_PIN        pin_c5
-.................... #define  HX711_DO         pin_d2
-.................... #define  HX711_CLK        pin_d3
-.................... #define  DCMOTOR_IN1      PIN_G0
-.................... #define  STEPMOTOR_IN0    PIN_G1
-.................... #define  STEPMOTOR_IN1    PIN_G2
-.................... #define  STEPMOTOR_IN2    PIN_G3
-.................... #define  STEPMOTOR_IN3    PIN_G4
-.................... #define  soft_i2c_sda     pin_c4
-.................... #define  soft_i2c_scl     pin_c3 
-.................... #define  SRF04_TRIGER     PIN_C7
-.................... #define  LCD_RS           PIN_F0
-.................... #define  LCD_E            PIN_F5
-.................... #define  OUTPUT_LCD       OUTPUT_E
-.................... #define  LED32_RCK        pin_d5
-.................... #define  D7SEG_RCK        pin_d7
-.................... #define  S7SEG_RCK        pin_a5
-.................... #define  TRIAC_PIN        Pin_f6
-.................... #define  BUZZER_PIN       pin_f7
-.................... #define  GLCD_CSA         PIN_F1   
-.................... #define  GLCD_CSB         PIN_F2   
-.................... #define  GLCD_CSC         PIN_F3                       
-.................... #define  GLCD_RS          PIN_F0
-.................... #define  GLCD_E           PIN_F4
-.................... #define  output_glcd      output_e
-.................... 
-.................... //***** SRF04 using CCP1 (RC2) pin as ECHO pin *******************
-.................... #DEFINE  BT0             PIN_b4
-.................... #DEFINE  BT1             PIN_b5
-.................... #DEFINE  BT2             PIN_b6
-.................... #DEFINE  BT3             PIN_b7
-.................... #DEFINE  ON              BT0 
-.................... #DEFINE  UP              BT0  
-.................... #DEFINE  ON1             BT0 
-.................... #DEFINE  OFF             BT1
-.................... #DEFINE  DW              BT1
-.................... #DEFINE  OFF1            BT1
-.................... #DEFINE  INV             BT2
-.................... #DEFINE  ON2             BT2
-.................... #DEFINE  CLR             BT2
-.................... #DEFINE  MOD             BT3
-.................... #DEFINE  STOP            BT3    
-.................... #DEFINE  OFF2            BT3
+.................... #bit         TIM3IF                 = 0xFA1.1
+.................... #bit         SSDO                   = 0xF84.2
+.................... #bit         SSCK                   = 0xF84.0
+.................... #define      analog_pins            an0_to_an2
+.................... #define      lm35a_channel          0
+.................... #define      lm35b_channel          1
+.................... #define      gp2d12_channel         2
+.................... #define      photoresis_channel     3
+.................... #define      DCMOTOR_IN1            PIN_c1
+.................... #define      TOUCH_PIN              pin_a5
+.................... #define      DHT11_PIN              pin_d1
+.................... #define      HX711_DO               0       // khong co module nay , khai bao cho khoi bao loi
+.................... #define      HX711_CLK              0       // khong co module nay , khai bao cho khoi bao loi
+.................... #define      SRF04_TRIGER           PIN_E2
+.................... #define      soft_i2c_sda           pin_b0
+.................... #define      soft_i2c_scl           pin_b1
+.................... #define      bt0                    pin_b5
+.................... #define      bt1                    pin_b4
+.................... #define      bt2                    pin_b3
+.................... #define      bt3                    pin_b2
+.................... #define      on                     bt0      
+.................... #define      off                    bt1
+.................... #define      inv                    bt2
+.................... #define      up                     bt0    
+.................... #define      dw                     bt1
+.................... #define      clr                    bt2
+.................... #define      mod                    bt3
+.................... #define      stop                   bt3
+.................... #define      on1                    bt0     
+.................... #define      off1                   bt1
+.................... #define      on2                    bt2       
+.................... #define      off2                   bt3
+.................... #define      S7SEG_RCK              pin_d5
+.................... #define      LED32_RCK              pin_d4
+.................... #define      D7SEG_RCK              pin_d6
+.................... #define      ALLMODULE_G            pin_d0         //a - 4 byte
+.................... #define      LCD_RCK                pin_d2         //a - 2 byte dao
+.................... #define      RBDC_RCK               pin_d3         //b - 1 byte 
+.................... #define      MATRIX_RCK             pin_d7         //b - 3 byte dao
 .................... typedef enum 
 .................... {
 ....................       OK    = 0,
 ....................       ERROR = 1,
 ....................       BUSY  = 2
 .................... }result;
+.................... typedef struct 
+.................... {
+....................       int1      STEP_MOTOR_ENABLE;
+....................       int1      STEP_MOTOR_IN1;
+....................       int1      STEP_MOTOR_IN2;
+....................       int1      STEP_MOTOR_IN3;
+....................       int1      STEP_MOTOR_IN4;
+....................       int1      DC_MOTOR_ENABLE;
+....................       int1      PWRKEY;
+....................       int1      NC_PIN1;          
+....................       int1      BUZZER;
+....................       int1      TRIAC_1;
+....................       int1      TRIAC_2;
+....................       int1      RELAY_1;
+....................       int1      RELAY_2 ;
+....................       int1      NC_PIN2 ;  
+....................       int1      NC_PIN3;   
+....................       int1      NC_PIN4;  
+.................... }RBDC_STRUCT;
+.................... typedef union
+.................... {
+....................       RBDC_STRUCT         bit;
+....................       unsigned int8       xbyte[2];
+.................... }RBDC_UNION;
+.................... 
+.................... typedef struct 
+.................... {
+....................     RBDC_UNION           rbdc;
+....................     unsigned int8        lcddata; 
+....................     unsigned int8        lcdcontrol;
+....................     unsigned int8        glcddata;
+....................     unsigned int8        glcdcontrol;    
+.................... }SYSTEM_VAR_STRUCT;
+.................... SYSTEM_VAR_STRUCT system_var={0,0,0,0,0};
 .................... typedef struct
 .................... {
 ....................       unsigned int32 timeline;
@@ -2381,358 +2398,535 @@ CCS PCH C Compiler, Version 5.101, 43599               07-Feb-23 16:54
 .................... const unsigned int8 m7d[16]= {0XC0,0XF9,0xA4,0XB0,0X99,0X92,0X82,0XF8,0X80,0X90,0x88, 0x83, 0xC6, 0xA1, 0x86, 0x7f};
 .................... typedef struct 
 .................... { 
-....................   unsigned int8   led[8];  
+....................   unsigned int8   led[4];  
 .................... } D7SEG_STRUCT; 
-.................... D7SEG_STRUCT    d7seg ={0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff}; 
+.................... D7SEG_STRUCT    d7seg ={0xff,0xff,0xff,0xff}; 
 .................... result d7seg_display();
 .................... //xxxxxxxxxxxxxxxxxxxxxxxxxxxxx Module 7 DOAN QUET xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 .................... typedef struct 
 .................... { 
 ....................   unsigned int8   led[8];  
-.................... } S7SEG_STRUCT; 
-.................... S7SEG_STRUCT    s7seg ={0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff}; 
+.................... } S7SEG_STRUCT;
+.................... S7SEG_STRUCT s7seg={0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff};
 .................... result s7seg_display();
 .................... //xxxxxxxxxxxxxxxxxxxxxxxxxxxxx TRIAC-BUZZER xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-.................... result buzzer_on(void);
-.................... result buzzer_off(void);
-.................... result triac_2_on(void);
-.................... result triac_2_off(void);
+.................... result buzzer_on();
+.................... result buzzer_off();
+.................... result relay_1_on();
+.................... result relay_1_off();
+.................... result relay_2_on();
+.................... result relay_2_off();
+.................... result triac_1_on();
+.................... result triac_1_off();
+.................... result triac_2_on();
+.................... result triac_2_off();
+.................... result DCMOTOR_ENABLE();
+.................... result STEPMOTOR_ENABLE();
 .................... //xxxxxxxxxxxxxxxxxxxxxxxxxxxxx BASE FUNCTIONS xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 .................... result system_init(void);
-.................... result CHECK_MODULE();
+.................... void SSPI_WRITE(unsigned int8 x);
 .................... #endif
 .................... 
 .................... //xxxxxxxxxxxxxxxxxxxxxxxxxxxxx Module 32 LED don xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 .................... result led32_display()
 .................... {
-....................      spi_write2(led32.ledx8[3]);spi_write2(led32.ledx8[2]);
+....................      SSPI_WRITE(led32.ledx8[3]);SSPI_WRITE(led32.ledx8[2]);
 *
-00088:  MOVF   F66,W
-0008A:  MOVFF  0B,F66
-0008E:  RRCF   F64,W
-00090:  BNC   008E
-00092:  MOVF   F66,W
-00094:  MOVFF  0A,F66
-00098:  RRCF   F64,W
-0009A:  BNC   0098
-....................      spi_write2(led32.ledx8[1]);spi_write2(led32.ledx8[0]);
-0009C:  MOVF   F66,W
-0009E:  MOVFF  09,F66
-000A2:  RRCF   F64,W
-000A4:  BNC   00A2
-000A6:  MOVF   F66,W
-000A8:  MOVFF  08,F66
-000AC:  RRCF   F64,W
-000AE:  BNC   00AC
+00B2:  MOVFF  11,30
+00B6:  RCALL  0004
+00B8:  MOVFF  10,30
+00BC:  RCALL  0004
+....................      SSPI_WRITE(led32.ledx8[1]);SSPI_WRITE(led32.ledx8[0]);
+00BE:  MOVFF  0F,30
+00C2:  RCALL  0004
+00C4:  MOVFF  0E,30
+00C8:  RCALL  0004
 ....................      output_high(LED32_RCK); output_low(LED32_RCK);
-000B0:  BCF    F95.5
-000B2:  BSF    F8C.5
-000B4:  BCF    F95.5
-000B6:  BCF    F8C.5
-....................      return OK;
-000B8:  MOVLW  00
-000BA:  MOVWF  01
-000BC:  RETURN 0
+00CA:  BCF    F95.4
+00CC:  BSF    F8C.4
+00CE:  BCF    F95.4
+00D0:  BCF    F8C.4
+....................      return OK; 
+00D2:  MOVLW  00
+00D4:  MOVWF  01
+00D6:  RETURN 0
 .................... }
 .................... //xxxxxxxxxxxxxxxxxxxxxxxxxxxxx Module 7 DOAN TT xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 .................... result d7seg_display()
 .................... {
-....................       spi_write2(d7seg.led[4]);spi_write2(d7seg.led[5]);
-000BE:  MOVF   F66,W
-000C0:  MOVFF  10,F66
-000C4:  RRCF   F64,W
-000C6:  BNC   00C4
-000C8:  MOVF   F66,W
-000CA:  MOVFF  11,F66
-000CE:  RRCF   F64,W
-000D0:  BNC   00CE
-....................       spi_write2(d7seg.led[6]);spi_write2(d7seg.led[7]);
-000D2:  MOVF   F66,W
-000D4:  MOVFF  12,F66
-000D8:  RRCF   F64,W
-000DA:  BNC   00D8
-000DC:  MOVF   F66,W
-000DE:  MOVFF  13,F66
-000E2:  RRCF   F64,W
-000E4:  BNC   00E2
-....................       spi_write2(d7seg.led[0]);spi_write2(d7seg.led[1]);
-000E6:  MOVF   F66,W
-000E8:  MOVFF  0C,F66
-000EC:  RRCF   F64,W
-000EE:  BNC   00EC
-000F0:  MOVF   F66,W
-000F2:  MOVFF  0D,F66
-000F6:  RRCF   F64,W
-000F8:  BNC   00F6
-....................       spi_write2(d7seg.led[2]);spi_write2(d7seg.led[3]);
-000FA:  MOVF   F66,W
-000FC:  MOVFF  0E,F66
-00100:  RRCF   F64,W
-00102:  BNC   0100
-00104:  MOVF   F66,W
-00106:  MOVFF  0F,F66
-0010A:  RRCF   F64,W
-0010C:  BNC   010A
+....................       SSPI_WRITE(d7seg.led[0]);SSPI_WRITE(d7seg.led[1]);
+00D8:  MOVFF  12,30
+00DC:  RCALL  0004
+00DE:  MOVFF  13,30
+00E2:  RCALL  0004
+....................       SSPI_WRITE(d7seg.led[2]);SSPI_WRITE(d7seg.led[3]);
+00E4:  MOVFF  14,30
+00E8:  RCALL  0004
+00EA:  MOVFF  15,30
+00EE:  RCALL  0004
 ....................       output_high(D7SEG_RCK); output_low(D7SEG_RCK);
-0010E:  BCF    F95.7
-00110:  BSF    F8C.7
-00112:  BCF    F95.7
-00114:  BCF    F8C.7
-....................       delay_ms(8);
-00116:  MOVLW  08
-00118:  MOVWF  26
-0011A:  RCALL  0004
+00F0:  BCF    F95.6
+00F2:  BSF    F8C.6
+00F4:  BCF    F95.6
+00F6:  BCF    F8C.6
 ....................       return OK;
-0011C:  MOVLW  00
-0011E:  MOVWF  01
-00120:  GOTO   01CA (RETURN)
+00F8:  MOVLW  00
+00FA:  MOVWF  01
+00FC:  GOTO   0240 (RETURN)
 .................... }
-.................... //xxxxxxxxxxxxxxxxxxxxxxxxxxxxx Module 7 DOAN QUET xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+.................... //xxxxxxxxxxxxxxxxxxxxxxxxxxxxx Module 7 DOAN QUET xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 .................... result s7seg_display()
-.................... {    
-....................       for(int8 n=0;n<8;n++)
-00124:  CLRF   24
-00126:  MOVF   24,W
-00128:  SUBLW  07
-0012A:  BNC   017E
+.................... {
+....................       for(int8 i=0x80,n=0;n<8;n++,i>>=1)
+*
+0126:  MOVLW  80
+0128:  MOVWF  26
+012A:  CLRF   27
+012C:  MOVF   27,W
+012E:  SUBLW  07
+0130:  BNC   0174
 ....................       {
-....................             output_e(s7seg.led[n]); spi_write2(0x80>>n);
-0012C:  CLRF   03
-0012E:  MOVF   24,W
-00130:  ADDLW  14
-00132:  MOVWF  FE9
-00134:  MOVLW  00
-00136:  ADDWFC 03,W
-00138:  MOVWF  FEA
-0013A:  MOVFF  FEF,F8D
-0013E:  CLRF   F96
-00140:  MOVLW  80
-00142:  MOVWF  25
-00144:  MOVF   24,W
-00146:  MOVWF  01
-00148:  BZ    0152
-0014A:  BCF    FD8.0
-0014C:  RRCF   25,F
-0014E:  DECFSZ 01,F
-00150:  BRA    014A
-00152:  MOVF   F66,W
-00154:  MOVFF  25,F66
-00158:  RRCF   F64,W
-0015A:  BNC   0158
-....................             output_high(S7SEG_RCK); output_low(S7SEG_RCK);
-0015C:  BCF    F92.5
-0015E:  BSF    F89.5
-00160:  BCF    F92.5
-00162:  BCF    F89.5
+....................             SSPI_WRITE(i);
+0132:  MOVFF  26,30
+0136:  RCALL  0004
+....................             SSPI_WRITE(~s7seg.led[n]);     
+0138:  CLRF   03
+013A:  MOVF   27,W
+013C:  ADDLW  16
+013E:  MOVWF  FE9
+0140:  MOVLW  00
+0142:  ADDWFC 03,W
+0144:  MOVWF  FEA
+0146:  MOVF   FEF,W
+0148:  XORLW  FF
+014A:  MOVWF  28
+014C:  MOVWF  30
+014E:  RCALL  0004
+....................             output_high(S7SEG_RCK); output_low(S7SEG_RCK); 
+0150:  BCF    F95.5
+0152:  BSF    F8C.5
+0154:  BCF    F95.5
+0156:  BCF    F8C.5
 ....................             delay_ms(1);
-00164:  MOVLW  01
-00166:  MOVWF  26
-00168:  RCALL  0004
-....................             spi_write2(0);
-0016A:  MOVF   F66,W
-0016C:  CLRF   F66
-0016E:  RRCF   F64,W
-00170:  BNC   016E
+0158:  MOVLW  01
+015A:  MOVWF  28
+015C:  RCALL  0100
+....................             SSPI_WRITE(~0xff);
+015E:  CLRF   30
+0160:  RCALL  0004
 ....................             output_high(S7SEG_RCK); output_low(S7SEG_RCK);
-00172:  BCF    F92.5
-00174:  BSF    F89.5
-00176:  BCF    F92.5
-00178:  BCF    F89.5
-0017A:  INCF   24,F
-0017C:  BRA    0126
+0162:  BCF    F95.5
+0164:  BSF    F8C.5
+0166:  BCF    F95.5
+0168:  BCF    F8C.5
+016A:  MOVF   27,W
+016C:  INCF   27,F
+016E:  BCF    FD8.0
+0170:  RRCF   26,F
+0172:  BRA    012C
 ....................       }
 ....................       return OK;
-0017E:  MOVLW  00
-00180:  MOVWF  01
-00182:  GOTO   01CC (RETURN)
+0174:  MOVLW  00
+0176:  MOVWF  01
+0178:  GOTO   0242 (RETURN)
 .................... }
 .................... //xxxxxxxxxxxxxxxxxxxxxxxxxxxxx Module KEY4x4 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 .................... unsigned int8 KEYREAD()
-.................... {   const unsigned int8 mq[]={0xef,0xdf,0xbf,0x7f};
-....................     for(int8 cot=0;cot<4;cot++)
-....................     {
-....................         if(mq[cot]&0x80) output_float(pin_b7);
-....................         else             output_low(pin_b7);
-....................         if(mq[cot]&0x40) output_float(pin_b6);
-....................         else             output_low(pin_b6);
-....................         if(mq[cot]&0x20) output_float(pin_b5);
-....................         else             output_low(pin_b5);
-....................         if(mq[cot]&0x10) output_float(pin_b4);
-....................         else             output_low(pin_b4);
-....................         IF          (!INPUT(pin_b0))    return 0+cot*4;             
-....................         ELSE    IF  (!INPUT(pin_b1))    return 1+cot*4;                  
-....................         ELSE    IF  (!INPUT(pin_b2))    return 2+cot*4;               
-....................         ELSE    IF  (!INPUT(pin_b3))    return 3+cot*4;  
-....................     }
-....................     return 0xff;
+.................... {
+....................      unsigned int8 cot;
+....................      for(cot=0;cot<4;cot++)
+....................      {
+....................         output_bit(pin_b7,cot&0x02);
+....................         output_bit(pin_b6,cot&0x01);
+....................         IF          (!INPUT(PIN_B2))    return (3 + cot*4);             
+....................         ELSE    IF  (!INPUT(PIN_B3))    return (2 + cot*4);               
+....................         ELSE    IF  (!INPUT(PIN_B4))    return (1 + cot*4);            
+....................         ELSE    IF  (!INPUT(PIN_B5))    return (0 + cot*4);
+....................      }
+....................      return 0xff;
 .................... }
-.................... //xxxxxxxxxxxxxxxxxxxxxxxxxxxxx Module LCD xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-.................... result write_lcd20x4(unsigned int8 lcd_signal, lcd_ins_hthi)
-.................... {    
-....................     output_bit(LCD_E,bit_test(lcd_signal,0));
-....................     output_bit(LCD_RS,bit_test(lcd_signal,2));
-....................     output_lcd(lcd_ins_hthi);
+.................... //xxxxxxxxxxxxxxxxxxxxxxxxxxxxx LCD 20x4 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+.................... result private_write_glcd_lcd()
+.................... {      
+....................     SSPI_WRITE(system_var.glcdcontrol);             
+017C:  MOVFF  09,30
+0180:  RCALL  0004
+....................     SSPI_WRITE(system_var.glcddata);
+0182:  MOVFF  08,30
+0186:  RCALL  0004
+....................     SSPI_WRITE(system_var.lcdcontrol);       
+0188:  MOVFF  07,30
+018C:  RCALL  0004
+....................     SSPI_WRITE(system_var.lcddata);           
+018E:  MOVFF  06,30
+0192:  RCALL  0004
+....................     output_high(LCD_RCK);     
+0194:  BCF    F95.2
+0196:  BSF    F8C.2
+....................     output_low(LCD_RCK);
+0198:  BCF    F95.2
+019A:  BCF    F8C.2
 ....................     return OK;
+019C:  MOVLW  00
+019E:  MOVWF  01
+01A0:  RETURN 0
+.................... }
+.................... result write_lcd20x4(unsigned int8 lcd_signal, lcd_ins_hthi)
+.................... {     
+....................     system_var.lcdcontrol = ~lcd_signal;
+01A2:  MOVF   26,W
+01A4:  MOVWF  07
+01A6:  COMF   07,F
+....................     system_var.lcddata    = ~lcd_ins_hthi;      
+01A8:  MOVFF  27,06
+01AC:  COMF   06,F
+....................     private_write_glcd_lcd();
+01AE:  RCALL  017C
+....................     return OK;
+01B0:  MOVLW  00
+01B2:  MOVWF  01
+01B4:  GOTO   0248 (RETURN)
+.................... }
+.................... //xxxxxxxxxxxxxxxxxxxxxxxxxxxxx GLCD 128x64 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+.................... result write_glcd128x64(unsigned int8 glcd_signal,glcd_ins_hthi)
+.................... {     
+....................     system_var.glcdcontrol = ~glcd_signal;
+01B8:  MOVF   26,W
+01BA:  MOVWF  09
+01BC:  COMF   09,F
+....................     system_var.glcddata    = ~glcd_ins_hthi;     
+01BE:  MOVFF  27,08
+01C2:  COMF   08,F
+....................     private_write_glcd_lcd();
+01C4:  RCALL  017C
+....................     return OK;
+01C6:  MOVLW  00
+01C8:  MOVWF  01
+01CA:  GOTO   024E (RETURN)
+.................... }
+.................... //!//xxxxxxxxxxxxxxxxxxxxxxxxxxxxx LED Matrix xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+.................... result write_ledmatrix(unsigned int16 mahang,unsigned int16 macot1,
+.................... unsigned int16 macot2,unsigned int16 macot3)
+.................... {     
+....................       SSPI_WRITE(macot3>>8);SSPI_WRITE(macot3);
+01CE:  CLRF   2F
+01D0:  MOVFF  2D,30
+01D4:  RCALL  0004
+01D6:  MOVFF  2C,30
+01DA:  RCALL  0004
+....................       SSPI_WRITE(macot2>>8);SSPI_WRITE(macot2);
+01DC:  CLRF   2F
+01DE:  MOVFF  2B,30
+01E2:  RCALL  0004
+01E4:  MOVFF  2A,30
+01E8:  RCALL  0004
+....................       SSPI_WRITE(macot1>>8);SSPI_WRITE(macot1);
+01EA:  CLRF   2F
+01EC:  MOVFF  29,30
+01F0:  RCALL  0004
+01F2:  MOVFF  28,30
+01F6:  RCALL  0004
+....................       SSPI_WRITE(mahang>>8);SSPI_WRITE(mahang);
+01F8:  CLRF   2F
+01FA:  MOVFF  27,30
+01FE:  RCALL  0004
+0200:  MOVFF  26,30
+0204:  RCALL  0004
+....................       output_high(matrix_rck);
+0206:  BCF    F95.7
+0208:  BSF    F8C.7
+....................       output_low(matrix_rck); 
+020A:  BCF    F95.7
+020C:  BCF    F8C.7
+....................       return OK;
+020E:  MOVLW  00
+0210:  MOVWF  01
+0212:  GOTO   0260 (RETURN)
 .................... }
 .................... //xxxxxxxxxxxxxxxxxxxxxxxxxxxxx TRIAC-BUZZER xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-.................... result buzzer_on(){output_high(BUZZER_PIN);return OK;}
-.................... result buzzer_off(){ output_low(BUZZER_PIN);return OK;}
-00186:  BCF    F97.7
-00188:  BCF    F8E.7
-0018A:  MOVLW  00
-0018C:  MOVWF  01
-0018E:  GOTO   01CE (RETURN)
-.................... result triac_2_on(){output_high(TRIAC_PIN);return OK;}
-.................... result triac_2_off(){output_low(TRIAC_PIN);return OK;}
-00192:  BCF    F97.6
-00194:  BCF    F8E.6
-00196:  MOVLW  00
-00198:  MOVWF  01
-0019A:  GOTO   01D0 (RETURN)
+.................... result private_write_buzzer_relay()
+.................... {       
+....................       SSPI_WRITE(system_var.rbdc.xbyte[1]);      
+*
+0096:  MOVFF  05,30
+009A:  RCALL  0004
+....................       SSPI_WRITE(system_var.rbdc.xbyte[0]);
+009C:  MOVFF  04,30
+00A0:  RCALL  0004
+....................       output_high(rbdc_rck);
+00A2:  BCF    F95.3
+00A4:  BSF    F8C.3
+....................       output_low(rbdc_rck); 
+00A6:  BCF    F95.3
+00A8:  BCF    F8C.3
+....................       return OK;
+00AA:  MOVLW  00
+00AC:  MOVWF  01
+00AE:  GOTO   0234 (RETURN)
+.................... }
+.................... result buzzer_on()
+.................... {    
+....................       system_var.rbdc.bit.buzzer=1;
+....................       private_write_buzzer_relay();
+....................       return OK;
+.................... }
+.................... result buzzer_off()
+.................... {     
+....................       system_var.rbdc.bit.buzzer=0;
+....................       private_write_buzzer_relay();  
+....................       return OK;
+.................... }
+.................... result relay_1_on()
+.................... {    
+....................       system_var.rbdc.bit.relay_1=1;
+....................       private_write_buzzer_relay(); 
+....................       return OK;
+.................... }
+.................... result relay_1_off()
+.................... {    
+....................       system_var.rbdc.bit.relay_1=0;
+....................       private_write_buzzer_relay();  
+....................       return OK;
+.................... }
+.................... result relay_2_on()
+.................... {    
+....................       system_var.rbdc.bit.relay_2=1;
+....................       private_write_buzzer_relay(); 
+....................       return OK;
+.................... }
+.................... result relay_2_off()
+.................... {    
+....................       system_var.rbdc.bit.relay_2=0;
+....................       private_write_buzzer_relay(); 
+....................       return OK;
+.................... }
+.................... result triac_1_on()
+.................... {    
+....................       system_var.rbdc.bit.triac_1=1;
+....................       private_write_buzzer_relay(); 
+....................       return OK;
+.................... }
+.................... result triac_1_off()
+.................... {    
+....................       system_var.rbdc.bit.triac_1=0;
+....................       private_write_buzzer_relay();   
+....................       return OK;
+.................... }
+.................... result triac_2_on()
+.................... {    
+....................       system_var.rbdc.bit.triac_2=1;
+....................       private_write_buzzer_relay();
+....................       return OK;
+.................... }
+.................... result triac_2_off()
+.................... {    
+....................       system_var.rbdc.bit.triac_2=0;
+....................       private_write_buzzer_relay();   
+....................       return OK;
+.................... }
 .................... result DCMOTOR_ENABLE()
 .................... {
-....................    setup_timer_2(t2_div_by_16,249,1);  // Cau hinh xung PWM T=0.8 ms, su dung PWM1
-....................    setup_ccp1(ccp_pwm);  
-....................    set_pwm1_duty((int16)0) ;
-....................    output_low(DCMOTOR_IN1) ;
-....................    return OK;
+....................       system_var.rbdc.bit.DC_MOTOR_ENABLE=1;
+....................       private_write_buzzer_relay();  
+....................       setup_timer_2(t2_div_by_16,249,1);  // Cau hinh xung PWM T=0.8 ms, su dung PWM1
+....................       setup_ccp1(ccp_pwm);  
+....................       setup_ccp2(ccp_pwm);  
+....................       return OK;
 .................... }
-.................... 
 .................... result DCMOTOR_LOWLEVEL_CONTROL(signed int16 duty, int1 direct)
 .................... {
 ....................      if(duty)
-....................         if(direct){ output_high(DCMOTOR_IN1); set_pwm1_duty(1000-duty);  }
-....................         else      { output_low(DCMOTOR_IN1) ; set_pwm1_duty(duty)     ;  }
-....................      else         { output_low(DCMOTOR_IN1) ; set_pwm1_duty((int16)0) ;  }
+....................         if(direct){ set_pwm1_duty((int16)0);  set_pwm2_duty(duty);  }
+....................         else      { set_pwm2_duty((int16)0);  set_pwm1_duty(duty);  }
+....................      else         { set_pwm1_duty((int16)0);  set_pwm2_duty((int16)0);  }
 ....................      return OK;
 .................... }
-.................... result STEPMOTOR_ENABLE(){return OK;}
-.................... result STEPMOTOR_LOWLEVEL_CONTROL(int1 mode, int8 step)
-.................... {                                                                      
-....................       const unsigned int8 Step_data[2][8]={0x01,0x03,0x02,0x06,0x04,0x0c,0x08,0x09,0x01,0x02,0x04,0x08,0x01,0x02,0x04,0x08};
-....................       output_bit(STEPMOTOR_IN0, bit_test(step_data[mode][step],0));
-....................       output_bit(STEPMOTOR_IN1, bit_test(step_data[mode][step],1));
-....................       output_bit(STEPMOTOR_IN2, bit_test(step_data[mode][step],2));
-....................       output_bit(STEPMOTOR_IN3, bit_test(step_data[mode][step],3));
+.................... 
+.................... result STEPMOTOR_ENABLE()
+.................... {
+....................       system_var.rbdc.bit.step_motor_enable=1;
 ....................       return OK;
 .................... }
-.................... 
+.................... result STEPMOTOR_LOWLEVEL_CONTROL(int1 mode, int8 step)
+.................... {                                                                      
+....................       const unsigned int8 Step_data[2][8]={0x0e,0x0a,0x0b,0x08,0x01,0x05,0x04,0x06,0x0e,0x0b,0x0d,0x07,0x0e,0x0b,0x0d,0x07};
+....................       system_var.rbdc.bit.step_motor_in1=bit_test(Step_data[mode][step],0);
+....................       system_var.rbdc.bit.step_motor_in2=bit_test(Step_data[mode][step],1);
+....................       system_var.rbdc.bit.step_motor_in3=bit_test(Step_data[mode][step],2);
+....................       system_var.rbdc.bit.step_motor_in4=bit_test(Step_data[mode][step],3);
+....................       private_write_buzzer_relay();
+....................       return OK;
+.................... }
 .................... //xxxxxxxxxxxxxxxxxxxxxxxxxxxxx BOARD_INIT xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 .................... result system_init()
 .................... {
-....................       CHECK_MODULE();
-0019E:  BRA    002E
-....................       set_tris_a(0xdf);
-001A0:  MOVLW  DF
-001A2:  MOVWF  F92
-....................       set_tris_d(0x04);
-001A4:  MOVLW  04
-001A6:  MOVWF  F95
-....................       set_tris_e(0);
-001A8:  MOVLW  00
-001AA:  MOVWF  F96
-....................       set_tris_f(0);
-001AC:  MOVWF  F97
-....................       set_tris_g(0);
-001AE:  MOVWF  F98
-....................       set_tris_c(0xff);
-001B0:  MOVLW  FF
-001B2:  MOVWF  F94
-....................       port_b_pullups(0xFF);
-001B4:  BCF    FF1.7
-....................       output_g(0);
-001B6:  CLRF   F98
-001B8:  CLRF   F8F
-....................       output_high(pin_g0);
-001BA:  BCF    F98.0
-001BC:  BSF    F8F.0
-....................       led32.ledx32=0;
-001BE:  CLRF   0B
-001C0:  CLRF   0A
-001C2:  CLRF   09
-001C4:  CLRF   08
-....................       led32_display();
-001C6:  RCALL  0088
-....................       d7seg_display();
-001C8:  BRA    00BE
-....................       s7seg_display();
-001CA:  BRA    0124
-....................       buzzer_off(); 
-001CC:  BRA    0186
-....................       triac_2_off();
-001CE:  BRA    0192
-....................       setup_timer_3(t3_internal|t3_div_by_8|T3_CCP2_TO_5);
-001D0:  MOVLW  BD
-001D2:  MOVWF  FB1
-....................       return OK;
-001D4:  MOVLW  00
-001D6:  MOVWF  01
-001D8:  GOTO   0480 (RETURN)
-.................... }
-.................... /*********************************** Check module ************************************************************/
-.................... result CHECK_MODULE()
+....................      output_high(ALLMODULE_G);  
 *
-0002E:  BSF    24.0
-.................... {
-....................     int1 tt=1;
-....................       unsigned int8 n;
-....................       for(n=0;n<10;n++)
-00030:  CLRF   25
-00032:  MOVF   25,W
-00034:  SUBLW  09
-00036:  BNC   0060
-....................       {     output_bit(pin_d0,tt);
-00038:  BTFSC  24.0
-0003A:  BRA    0040
-0003C:  BCF    F8C.0
-0003E:  BRA    0042
-00040:  BSF    F8C.0
-00042:  BCF    F95.0
-....................             if(input(pin_d1) !=tt)break;
-00044:  BSF    F95.1
-00046:  MOVLW  00
-00048:  BTFSC  F83.1
-0004A:  MOVLW  01
-0004C:  MOVWF  27
-0004E:  MOVLW  00
-00050:  BTFSC  24.0
-00052:  MOVLW  01
-00054:  SUBWF  27,W
-00056:  BTFSS  FD8.2
-00058:  BRA    0060
-....................             tt=!tt;
-0005A:  BTG    24.0
-0005C:  INCF   25,F
-0005E:  BRA    0032
-....................       }
-....................       if(n<10) while(true)
-00060:  MOVF   25,W
-00062:  SUBLW  09
-00064:  BNC   0080
-....................       {    output_d(0xff);
-00066:  CLRF   F95
-00068:  SETF   F8C
-....................            output_b(0xff); delay_ms(10);
-0006A:  CLRF   F93
-0006C:  SETF   F8A
-0006E:  MOVLW  0A
-00070:  MOVWF  26
-00072:  RCALL  0004
-....................            output_b(0); delay_ms(10);
-00074:  CLRF   F93
-00076:  CLRF   F8A
-00078:  MOVLW  0A
-0007A:  MOVWF  26
-0007C:  RCALL  0004
-0007E:  BRA    0066
-....................       }
-....................       return OK;
-00080:  MOVLW  00
-00082:  MOVWF  01
-00084:  GOTO   01A0 (RETURN)
+0216:  BCF    F95.0
+0218:  BSF    F8C.0
+....................      set_tris_a(0xff);    set_tris_b(0x3c);                                                   
+021A:  MOVLW  FF
+021C:  MOVWF  F92
+021E:  MOVLW  3C
+0220:  MOVWF  F93
+....................      set_tris_c(0xf1);    set_tris_e(0x00);                                               
+0222:  MOVLW  F1
+0224:  MOVWF  F94
+0226:  MOVLW  00
+0228:  MOVWF  F96
+....................      set_tris_d(0x00);    output_d(0x00); 
+022A:  MOVWF  F95
+022C:  CLRF   F95
+022E:  CLRF   F8C
+....................      port_b_pullups(0xff); 
+0230:  BCF    FF1.7
+....................      private_write_buzzer_relay();
+0232:  BRA    0096
+....................      led32.ledx32=0;
+0234:  CLRF   11
+0236:  CLRF   10
+0238:  CLRF   0F
+023A:  CLRF   0E
+....................      led32_display();
+023C:  RCALL  00B2
+....................      d7seg_display();
+023E:  BRA    00D8
+....................      s7seg_display();
+0240:  BRA    0126
+....................      write_lcd20x4(0xff,0xff);
+0242:  SETF   26
+0244:  SETF   27
+0246:  BRA    01A2
+....................      write_glcd128x64(0xff,0xff);
+0248:  SETF   26
+024A:  SETF   27
+024C:  BRA    01B8
+....................      write_ledmatrix(0,0,0,0); 
+024E:  CLRF   27
+0250:  CLRF   26
+0252:  CLRF   29
+0254:  CLRF   28
+0256:  CLRF   2B
+0258:  CLRF   2A
+025A:  CLRF   2D
+025C:  CLRF   2C
+025E:  BRA    01CE
+....................      output_low(ALLMODULE_G);  
+0260:  BCF    F95.0
+0262:  BCF    F8C.0
+....................      setup_adc(adc_clock_div_32);        
+0264:  MOVF   FC0,W
+0266:  ANDLW  C0
+0268:  IORLW  02
+026A:  MOVWF  FC0
+026C:  BSF    FC0.7
+026E:  BSF    FC2.0
+....................      setup_adc_ports(an0_to_an2|vss_vdd);   
+0270:  MOVF   FC1,W
+0272:  ANDLW  C0
+0274:  IORLW  0C
+0276:  MOVWF  FC1
+....................      setup_timer_3(t3_internal|t3_div_by_8);
+0278:  MOVLW  B5
+027A:  MOVWF  FB1
+....................      return OK;
+027C:  MOVLW  00
+027E:  MOVWF  01
+0280:  GOTO   052E (RETURN)
+.................... }
+.................... void SSPI_WRITE(unsigned int8 x)
+.................... { 
+....................          if(x&0x80) ssdo=1; 
+*
+0004:  BTFSS  30.7
+0006:  GOTO   0010
+000A:  BSF    F84.2
+000C:  GOTO   0012
+....................          else       ssdo=0;
+0010:  BCF    F84.2
+....................          ssck=0;    ssck=1;   
+0012:  BCF    F84.0
+0014:  BSF    F84.0
+....................          if(x&0x40) ssdo=1; 
+0016:  BTFSS  30.6
+0018:  GOTO   0022
+001C:  BSF    F84.2
+001E:  GOTO   0024
+....................          else       ssdo=0;
+0022:  BCF    F84.2
+....................          ssck=0;    ssck=1;  
+0024:  BCF    F84.0
+0026:  BSF    F84.0
+....................          if(x&0x20) ssdo=1; 
+0028:  BTFSS  30.5
+002A:  GOTO   0034
+002E:  BSF    F84.2
+0030:  GOTO   0036
+....................          else       ssdo=0;
+0034:  BCF    F84.2
+....................          ssck=0;    ssck=1;  
+0036:  BCF    F84.0
+0038:  BSF    F84.0
+....................          if(x&0x10) ssdo=1; 
+003A:  BTFSS  30.4
+003C:  GOTO   0046
+0040:  BSF    F84.2
+0042:  GOTO   0048
+....................          else       ssdo=0;
+0046:  BCF    F84.2
+....................          ssck=0;    ssck=1;  
+0048:  BCF    F84.0
+004A:  BSF    F84.0
+....................          if(x&0x08) ssdo=1; 
+004C:  BTFSS  30.3
+004E:  GOTO   0058
+0052:  BSF    F84.2
+0054:  GOTO   005A
+....................          else       ssdo=0;
+0058:  BCF    F84.2
+....................          ssck=0;    ssck=1;  
+005A:  BCF    F84.0
+005C:  BSF    F84.0
+....................          if(x&0x04) ssdo=1; 
+005E:  BTFSS  30.2
+0060:  GOTO   006A
+0064:  BSF    F84.2
+0066:  GOTO   006C
+....................          else       ssdo=0;
+006A:  BCF    F84.2
+....................          ssck=0;    ssck=1;  
+006C:  BCF    F84.0
+006E:  BSF    F84.0
+....................          if(x&0x02) ssdo=1; 
+0070:  BTFSS  30.1
+0072:  GOTO   007C
+0076:  BSF    F84.2
+0078:  GOTO   007E
+....................          else       ssdo=0;
+007C:  BCF    F84.2
+....................          ssck=0;    ssck=1;  
+007E:  BCF    F84.0
+0080:  BSF    F84.0
+....................          if(x&0x01) ssdo=1; 
+0082:  BTFSS  30.0
+0084:  GOTO   008E
+0088:  BSF    F84.2
+008A:  GOTO   0090
+....................          else       ssdo=0;
+008E:  BCF    F84.2
+....................          ssck=0;    ssck=1;       
+0090:  BCF    F84.0
+0092:  BSF    F84.0
+0094:  RETURN 0
 .................... }
 .................... #endif
 .................... 
+....................  
+.................... #elif  BOARD ==  D503
+.................... #include <TV_D501_TH.C>
+.................... 
+.................... #else 
+.................... #include <TV_MOPHONG.C>
 .................... #warning"Day la file mo phong, SV khong duoc nap tren board that"
 .................... #endif
 .................... #include <TV_LOWLEVER.C>
@@ -2930,624 +3124,627 @@ CCS PCH C Compiler, Version 5.101, 43599               07-Feb-23 16:54
 .................... {
 ....................    if(j<10)
 *
-001DC:  MOVF   21,W
-001DE:  SUBLW  09
-001E0:  BNC   01FE
+0284:  MOVF   23,W
+0286:  SUBLW  09
+0288:  BNC   02A6
 ....................    {
 ....................       led32.ledx32=~led32.ledx32;
-001E2:  COMF   08,F
-001E4:  COMF   09,F
-001E6:  COMF   0A,F
-001E8:  COMF   0B,F
+028A:  COMF   0E,F
+028C:  COMF   0F,F
+028E:  COMF   10,F
+0290:  COMF   11,F
 ....................       led32_display();
-001EA:  RCALL  0088
+0292:  RCALL  00B2
 ....................       delay_ms(500);
-001EC:  MOVLW  02
-001EE:  MOVWF  24
-001F0:  MOVLW  FA
-001F2:  MOVWF  26
-001F4:  RCALL  0004
-001F6:  DECFSZ 24,F
-001F8:  BRA    01F0
+0294:  MOVLW  02
+0296:  MOVWF  26
+0298:  MOVLW  FA
+029A:  MOVWF  28
+029C:  RCALL  0100
+029E:  DECFSZ 26,F
+02A0:  BRA    0298
 ....................       j++;
-001FA:  INCF   21,F
+02A2:  INCF   23,F
 ....................    }
-001FC:  BRA    0202
+02A4:  BRA    02AA
 ....................    else
 ....................    {
 ....................       j=0;
-001FE:  CLRF   21
+02A6:  CLRF   23
 ....................       hu++;
-00200:  INCF   23,F
+02A8:  INCF   25,F
 ....................    }
-00202:  RETURN 0
+02AA:  RETURN 0
 .................... }
 .................... void sang_dan_pst()
 .................... {
 ....................    if(i<=32)
-00204:  MOVF   22,W
-00206:  SUBLW  20
-00208:  BNC   024A
+02AC:  MOVF   24,W
+02AE:  SUBLW  20
+02B0:  BNC   02F2
 ....................    {
 ....................       led32.ledx32=~(0xffffffff<<i);
-0020A:  SETF   03
-0020C:  SETF   02
-0020E:  SETF   01
-00210:  SETF   00
-00212:  MOVF   22,W
-00214:  MOVWF  24
-00216:  BZ    0226
-00218:  BCF    FD8.0
-0021A:  RLCF   00,F
-0021C:  RLCF   01,F
-0021E:  RLCF   02,F
-00220:  RLCF   03,F
-00222:  DECFSZ 24,F
-00224:  BRA    0218
-00226:  MOVF   00,W
-00228:  MOVWF  08
-0022A:  COMF   08,F
-0022C:  MOVF   01,W
-0022E:  MOVWF  09
-00230:  COMF   09,F
-00232:  MOVF   02,W
-00234:  MOVWF  0A
-00236:  COMF   0A,F
-00238:  MOVF   03,W
-0023A:  MOVWF  0B
-0023C:  COMF   0B,F
+02B2:  SETF   03
+02B4:  SETF   02
+02B6:  SETF   01
+02B8:  SETF   00
+02BA:  MOVF   24,W
+02BC:  MOVWF  26
+02BE:  BZ    02CE
+02C0:  BCF    FD8.0
+02C2:  RLCF   00,F
+02C4:  RLCF   01,F
+02C6:  RLCF   02,F
+02C8:  RLCF   03,F
+02CA:  DECFSZ 26,F
+02CC:  BRA    02C0
+02CE:  MOVF   00,W
+02D0:  MOVWF  0E
+02D2:  COMF   0E,F
+02D4:  MOVF   01,W
+02D6:  MOVWF  0F
+02D8:  COMF   0F,F
+02DA:  MOVF   02,W
+02DC:  MOVWF  10
+02DE:  COMF   10,F
+02E0:  MOVF   03,W
+02E2:  MOVWF  11
+02E4:  COMF   11,F
 ....................       led32_display();
-0023E:  RCALL  0088
+02E6:  RCALL  00B2
 ....................       delay_ms(200);
-00240:  MOVLW  C8
-00242:  MOVWF  26
-00244:  RCALL  0004
+02E8:  MOVLW  C8
+02EA:  MOVWF  28
+02EC:  RCALL  0100
 ....................       i++;
-00246:  INCF   22,F
+02EE:  INCF   24,F
 ....................    }
-00248:  BRA    024E
+02F0:  BRA    02F6
 ....................    else
 ....................    {
 ....................       i=0;
-0024A:  CLRF   22
+02F2:  CLRF   24
 ....................       hu++;
-0024C:  INCF   23,F
+02F4:  INCF   25,F
 ....................    }
-0024E:  RETURN 0
+02F6:  RETURN 0
 .................... }
 .................... void tat_dan_pst()
 .................... {
 ....................    if(i<=32)
-00250:  MOVF   22,W
-00252:  SUBLW  20
-00254:  BNC   027E
+02F8:  MOVF   24,W
+02FA:  SUBLW  20
+02FC:  BNC   0326
 ....................    {
 ....................       led32.ledx32=0xffffffff<<i;
-00256:  SETF   0B
-00258:  SETF   0A
-0025A:  SETF   09
-0025C:  SETF   08
-0025E:  MOVF   22,W
-00260:  MOVWF  24
-00262:  BZ    0272
-00264:  BCF    FD8.0
-00266:  RLCF   08,F
-00268:  RLCF   09,F
-0026A:  RLCF   0A,F
-0026C:  RLCF   0B,F
-0026E:  DECFSZ 24,F
-00270:  BRA    0264
+02FE:  SETF   11
+0300:  SETF   10
+0302:  SETF   0F
+0304:  SETF   0E
+0306:  MOVF   24,W
+0308:  MOVWF  26
+030A:  BZ    031A
+030C:  BCF    FD8.0
+030E:  RLCF   0E,F
+0310:  RLCF   0F,F
+0312:  RLCF   10,F
+0314:  RLCF   11,F
+0316:  DECFSZ 26,F
+0318:  BRA    030C
 ....................       led32_display();
-00272:  RCALL  0088
+031A:  RCALL  00B2
 ....................       delay_ms(200);
-00274:  MOVLW  C8
-00276:  MOVWF  26
-00278:  RCALL  0004
+031C:  MOVLW  C8
+031E:  MOVWF  28
+0320:  RCALL  0100
 ....................       i++;
-0027A:  INCF   22,F
+0322:  INCF   24,F
 ....................    }
-0027C:  BRA    0282
+0324:  BRA    032A
 ....................    else
 ....................    {
 ....................       i=0;
-0027E:  CLRF   22
+0326:  CLRF   24
 ....................       hu++;
-00280:  INCF   23,F
+0328:  INCF   25,F
 ....................    }
-00282:  RETURN 0
+032A:  RETURN 0
 .................... }
 .................... void sang_dan_tsp()
 .................... {
 ....................    if(i<=32)
-00284:  MOVF   22,W
-00286:  SUBLW  20
-00288:  BNC   02CA
+032C:  MOVF   24,W
+032E:  SUBLW  20
+0330:  BNC   0372
 ....................    {
 ....................       led32.ledx32=~(0xffffffff>>i);
-0028A:  SETF   03
-0028C:  SETF   02
-0028E:  SETF   01
-00290:  SETF   00
-00292:  MOVF   22,W
-00294:  MOVWF  24
-00296:  BZ    02A6
-00298:  BCF    FD8.0
-0029A:  RRCF   03,F
-0029C:  RRCF   02,F
-0029E:  RRCF   01,F
-002A0:  RRCF   00,F
-002A2:  DECFSZ 24,F
-002A4:  BRA    0298
-002A6:  MOVF   00,W
-002A8:  MOVWF  08
-002AA:  COMF   08,F
-002AC:  MOVF   01,W
-002AE:  MOVWF  09
-002B0:  COMF   09,F
-002B2:  MOVF   02,W
-002B4:  MOVWF  0A
-002B6:  COMF   0A,F
-002B8:  MOVF   03,W
-002BA:  MOVWF  0B
-002BC:  COMF   0B,F
+0332:  SETF   03
+0334:  SETF   02
+0336:  SETF   01
+0338:  SETF   00
+033A:  MOVF   24,W
+033C:  MOVWF  26
+033E:  BZ    034E
+0340:  BCF    FD8.0
+0342:  RRCF   03,F
+0344:  RRCF   02,F
+0346:  RRCF   01,F
+0348:  RRCF   00,F
+034A:  DECFSZ 26,F
+034C:  BRA    0340
+034E:  MOVF   00,W
+0350:  MOVWF  0E
+0352:  COMF   0E,F
+0354:  MOVF   01,W
+0356:  MOVWF  0F
+0358:  COMF   0F,F
+035A:  MOVF   02,W
+035C:  MOVWF  10
+035E:  COMF   10,F
+0360:  MOVF   03,W
+0362:  MOVWF  11
+0364:  COMF   11,F
 ....................       led32_display();
-002BE:  RCALL  0088
+0366:  RCALL  00B2
 ....................       delay_ms(200);
-002C0:  MOVLW  C8
-002C2:  MOVWF  26
-002C4:  RCALL  0004
+0368:  MOVLW  C8
+036A:  MOVWF  28
+036C:  RCALL  0100
 ....................       i++;
-002C6:  INCF   22,F
+036E:  INCF   24,F
 ....................    }
-002C8:  BRA    02CE
+0370:  BRA    0376
 ....................    else
 ....................    {
 ....................       i=0;
-002CA:  CLRF   22
+0372:  CLRF   24
 ....................       hu++;
-002CC:  INCF   23,F
+0374:  INCF   25,F
 ....................    }
-002CE:  RETURN 0
+0376:  RETURN 0
 .................... }
 .................... void tat_dan_tsp()
 .................... {
 ....................    if(i<=32)
-002D0:  MOVF   22,W
-002D2:  SUBLW  20
-002D4:  BNC   02FE
+0378:  MOVF   24,W
+037A:  SUBLW  20
+037C:  BNC   03A6
 ....................    {
 ....................       led32.ledx32=0xffffffff>>i;
-002D6:  SETF   0B
-002D8:  SETF   0A
-002DA:  SETF   09
-002DC:  SETF   08
-002DE:  MOVF   22,W
-002E0:  MOVWF  24
-002E2:  BZ    02F2
-002E4:  BCF    FD8.0
-002E6:  RRCF   0B,F
-002E8:  RRCF   0A,F
-002EA:  RRCF   09,F
-002EC:  RRCF   08,F
-002EE:  DECFSZ 24,F
-002F0:  BRA    02E4
+037E:  SETF   11
+0380:  SETF   10
+0382:  SETF   0F
+0384:  SETF   0E
+0386:  MOVF   24,W
+0388:  MOVWF  26
+038A:  BZ    039A
+038C:  BCF    FD8.0
+038E:  RRCF   11,F
+0390:  RRCF   10,F
+0392:  RRCF   0F,F
+0394:  RRCF   0E,F
+0396:  DECFSZ 26,F
+0398:  BRA    038C
 ....................       led32_display();
-002F2:  RCALL  0088
+039A:  RCALL  00B2
 ....................       delay_ms(200);
-002F4:  MOVLW  C8
-002F6:  MOVWF  26
-002F8:  RCALL  0004
+039C:  MOVLW  C8
+039E:  MOVWF  28
+03A0:  RCALL  0100
 ....................       i++;
-002FA:  INCF   22,F
+03A2:  INCF   24,F
 ....................    }
-002FC:  BRA    0302
+03A4:  BRA    03AA
 ....................    else
 ....................    {
 ....................       i=0;
-002FE:  CLRF   22
+03A6:  CLRF   24
 ....................       hu++;
-00300:  INCF   23,F
+03A8:  INCF   25,F
 ....................    }
-00302:  RETURN 0
+03AA:  RETURN 0
 .................... }
 .................... void sang_dan_ngoai_vao()
 .................... {
 ....................    if(i<=16)
-00304:  MOVF   22,W
-00306:  SUBLW  10
-00308:  BNC   0356
+03AC:  MOVF   24,W
+03AE:  SUBLW  10
+03B0:  BNC   03FE
 ....................    {
 ....................       led32.ledx16[1]=~(0xffff>>i);
-0030A:  SETF   03
-0030C:  SETF   02
-0030E:  MOVF   22,W
-00310:  MOVWF  00
-00312:  BZ    031E
-00314:  BCF    FD8.0
-00316:  RRCF   03,F
-00318:  RRCF   02,F
-0031A:  DECFSZ 00,F
-0031C:  BRA    0314
-0031E:  MOVF   02,W
-00320:  XORLW  FF
-00322:  MOVWF  0A
-00324:  MOVLW  FF
-00326:  XORWF  03,W
-00328:  MOVWF  0B
+03B2:  SETF   03
+03B4:  SETF   02
+03B6:  MOVF   24,W
+03B8:  MOVWF  00
+03BA:  BZ    03C6
+03BC:  BCF    FD8.0
+03BE:  RRCF   03,F
+03C0:  RRCF   02,F
+03C2:  DECFSZ 00,F
+03C4:  BRA    03BC
+03C6:  MOVF   02,W
+03C8:  XORLW  FF
+03CA:  MOVWF  10
+03CC:  MOVLW  FF
+03CE:  XORWF  03,W
+03D0:  MOVWF  11
 ....................       led32.ledx16[0]=~(0xffff<<i);
-0032A:  SETF   03
-0032C:  SETF   02
-0032E:  MOVF   22,W
-00330:  MOVWF  00
-00332:  BZ    033E
-00334:  BCF    FD8.0
-00336:  RLCF   02,F
-00338:  RLCF   03,F
-0033A:  DECFSZ 00,F
-0033C:  BRA    0334
-0033E:  MOVF   02,W
-00340:  XORLW  FF
-00342:  MOVWF  08
-00344:  MOVLW  FF
-00346:  XORWF  03,W
-00348:  MOVWF  09
+03D2:  SETF   03
+03D4:  SETF   02
+03D6:  MOVF   24,W
+03D8:  MOVWF  00
+03DA:  BZ    03E6
+03DC:  BCF    FD8.0
+03DE:  RLCF   02,F
+03E0:  RLCF   03,F
+03E2:  DECFSZ 00,F
+03E4:  BRA    03DC
+03E6:  MOVF   02,W
+03E8:  XORLW  FF
+03EA:  MOVWF  0E
+03EC:  MOVLW  FF
+03EE:  XORWF  03,W
+03F0:  MOVWF  0F
 ....................       led32_display();
-0034A:  RCALL  0088
+03F2:  RCALL  00B2
 ....................       delay_ms(200);
-0034C:  MOVLW  C8
-0034E:  MOVWF  26
-00350:  RCALL  0004
+03F4:  MOVLW  C8
+03F6:  MOVWF  28
+03F8:  RCALL  0100
 ....................       i++;
-00352:  INCF   22,F
+03FA:  INCF   24,F
 ....................    }
-00354:  BRA    035A
+03FC:  BRA    0402
 ....................    else
 ....................    {
 ....................       i=0;
-00356:  CLRF   22
+03FE:  CLRF   24
 ....................       hu++;
-00358:  INCF   23,F
+0400:  INCF   25,F
 ....................    }
-0035A:  RETURN 0
+0402:  RETURN 0
 .................... }
 .................... void tat_dan_ngoai_vao()
 .................... {
 ....................    if(i<=16)
-0035C:  MOVF   22,W
-0035E:  SUBLW  10
-00360:  BNC   0396
+0404:  MOVF   24,W
+0406:  SUBLW  10
+0408:  BNC   043E
 ....................    {
 ....................       led32.ledx16[1]=0xffff>>i;
-00362:  SETF   0B
-00364:  SETF   0A
-00366:  MOVF   22,W
-00368:  MOVWF  00
-0036A:  BZ    0376
-0036C:  BCF    FD8.0
-0036E:  RRCF   0B,F
-00370:  RRCF   0A,F
-00372:  DECFSZ 00,F
-00374:  BRA    036C
+040A:  SETF   11
+040C:  SETF   10
+040E:  MOVF   24,W
+0410:  MOVWF  00
+0412:  BZ    041E
+0414:  BCF    FD8.0
+0416:  RRCF   11,F
+0418:  RRCF   10,F
+041A:  DECFSZ 00,F
+041C:  BRA    0414
 ....................       led32.ledx16[0]=0xffff<<i;
-00376:  SETF   09
-00378:  SETF   08
-0037A:  MOVF   22,W
-0037C:  MOVWF  00
-0037E:  BZ    038A
-00380:  BCF    FD8.0
-00382:  RLCF   08,F
-00384:  RLCF   09,F
-00386:  DECFSZ 00,F
-00388:  BRA    0380
+041E:  SETF   0F
+0420:  SETF   0E
+0422:  MOVF   24,W
+0424:  MOVWF  00
+0426:  BZ    0432
+0428:  BCF    FD8.0
+042A:  RLCF   0E,F
+042C:  RLCF   0F,F
+042E:  DECFSZ 00,F
+0430:  BRA    0428
 ....................       led32_display();
-0038A:  RCALL  0088
+0432:  RCALL  00B2
 ....................       delay_ms(200);
-0038C:  MOVLW  C8
-0038E:  MOVWF  26
-00390:  RCALL  0004
+0434:  MOVLW  C8
+0436:  MOVWF  28
+0438:  RCALL  0100
 ....................       i++;
-00392:  INCF   22,F
+043A:  INCF   24,F
 ....................    }
-00394:  BRA    039A
+043C:  BRA    0442
 ....................    else
 ....................    {
 ....................       i=0;
-00396:  CLRF   22
+043E:  CLRF   24
 ....................       hu++;
-00398:  INCF   23,F
+0440:  INCF   25,F
 ....................    }
-0039A:  RETURN 0
+0442:  RETURN 0
 .................... }
 .................... void sang_dan_trong_ra()
 .................... {
 ....................    if(i<=16)
-0039C:  MOVF   22,W
-0039E:  SUBLW  10
-003A0:  BNC   03EE
+0444:  MOVF   24,W
+0446:  SUBLW  10
+0448:  BNC   0496
 ....................    {
 ....................       led32.ledx16[1]=~(0xffff<<i);
-003A2:  SETF   03
-003A4:  SETF   02
-003A6:  MOVF   22,W
-003A8:  MOVWF  00
-003AA:  BZ    03B6
-003AC:  BCF    FD8.0
-003AE:  RLCF   02,F
-003B0:  RLCF   03,F
-003B2:  DECFSZ 00,F
-003B4:  BRA    03AC
-003B6:  MOVF   02,W
-003B8:  XORLW  FF
-003BA:  MOVWF  0A
-003BC:  MOVLW  FF
-003BE:  XORWF  03,W
-003C0:  MOVWF  0B
+044A:  SETF   03
+044C:  SETF   02
+044E:  MOVF   24,W
+0450:  MOVWF  00
+0452:  BZ    045E
+0454:  BCF    FD8.0
+0456:  RLCF   02,F
+0458:  RLCF   03,F
+045A:  DECFSZ 00,F
+045C:  BRA    0454
+045E:  MOVF   02,W
+0460:  XORLW  FF
+0462:  MOVWF  10
+0464:  MOVLW  FF
+0466:  XORWF  03,W
+0468:  MOVWF  11
 ....................       led32.ledx16[0]=~(0xffff>>i);
-003C2:  SETF   03
-003C4:  SETF   02
-003C6:  MOVF   22,W
-003C8:  MOVWF  00
-003CA:  BZ    03D6
-003CC:  BCF    FD8.0
-003CE:  RRCF   03,F
-003D0:  RRCF   02,F
-003D2:  DECFSZ 00,F
-003D4:  BRA    03CC
-003D6:  MOVF   02,W
-003D8:  XORLW  FF
-003DA:  MOVWF  08
-003DC:  MOVLW  FF
-003DE:  XORWF  03,W
-003E0:  MOVWF  09
+046A:  SETF   03
+046C:  SETF   02
+046E:  MOVF   24,W
+0470:  MOVWF  00
+0472:  BZ    047E
+0474:  BCF    FD8.0
+0476:  RRCF   03,F
+0478:  RRCF   02,F
+047A:  DECFSZ 00,F
+047C:  BRA    0474
+047E:  MOVF   02,W
+0480:  XORLW  FF
+0482:  MOVWF  0E
+0484:  MOVLW  FF
+0486:  XORWF  03,W
+0488:  MOVWF  0F
 ....................       led32_display();
-003E2:  RCALL  0088
+048A:  RCALL  00B2
 ....................       delay_ms(200);
-003E4:  MOVLW  C8
-003E6:  MOVWF  26
-003E8:  RCALL  0004
+048C:  MOVLW  C8
+048E:  MOVWF  28
+0490:  RCALL  0100
 ....................       i++;
-003EA:  INCF   22,F
+0492:  INCF   24,F
 ....................    }
-003EC:  BRA    03F2
+0494:  BRA    049A
 ....................    else
 ....................    {
 ....................       i=0;
-003EE:  CLRF   22
+0496:  CLRF   24
 ....................       hu++;
-003F0:  INCF   23,F
+0498:  INCF   25,F
 ....................    }
-003F2:  RETURN 0
+049A:  RETURN 0
 .................... }
 .................... void tat_dan_trong_ra()
 .................... {
 ....................    if(i<=16)
-003F4:  MOVF   22,W
-003F6:  SUBLW  10
-003F8:  BNC   042E
+049C:  MOVF   24,W
+049E:  SUBLW  10
+04A0:  BNC   04D6
 ....................    {
 ....................       led32.ledx16[1]=0xffff<<i;
-003FA:  SETF   0B
-003FC:  SETF   0A
-003FE:  MOVF   22,W
-00400:  MOVWF  00
-00402:  BZ    040E
-00404:  BCF    FD8.0
-00406:  RLCF   0A,F
-00408:  RLCF   0B,F
-0040A:  DECFSZ 00,F
-0040C:  BRA    0404
+04A2:  SETF   11
+04A4:  SETF   10
+04A6:  MOVF   24,W
+04A8:  MOVWF  00
+04AA:  BZ    04B6
+04AC:  BCF    FD8.0
+04AE:  RLCF   10,F
+04B0:  RLCF   11,F
+04B2:  DECFSZ 00,F
+04B4:  BRA    04AC
 ....................       led32.ledx16[0]=0xffff>>i;
-0040E:  SETF   09
-00410:  SETF   08
-00412:  MOVF   22,W
-00414:  MOVWF  00
-00416:  BZ    0422
-00418:  BCF    FD8.0
-0041A:  RRCF   09,F
-0041C:  RRCF   08,F
-0041E:  DECFSZ 00,F
-00420:  BRA    0418
+04B6:  SETF   0F
+04B8:  SETF   0E
+04BA:  MOVF   24,W
+04BC:  MOVWF  00
+04BE:  BZ    04CA
+04C0:  BCF    FD8.0
+04C2:  RRCF   0F,F
+04C4:  RRCF   0E,F
+04C6:  DECFSZ 00,F
+04C8:  BRA    04C0
 ....................       led32_display();
-00422:  RCALL  0088
+04CA:  RCALL  00B2
 ....................       delay_ms(200);
-00424:  MOVLW  C8
-00426:  MOVWF  26
-00428:  RCALL  0004
+04CC:  MOVLW  C8
+04CE:  MOVWF  28
+04D0:  RCALL  0100
 ....................       i++;
-0042A:  INCF   22,F
+04D2:  INCF   24,F
 ....................    }
-0042C:  BRA    0432
+04D4:  BRA    04DA
 ....................    else
 ....................    {
 ....................       i=0;
-0042E:  CLRF   22
+04D6:  CLRF   24
 ....................       hu++;
-00430:  INCF   23,F
+04D8:  INCF   25,F
 ....................    }
-00432:  RETURN 0
+04DA:  RETURN 0
 .................... }
 .................... void main()
-00434:  CLRF   FF8
-00436:  BCF    FD0.7
-00438:  BCF    F63.5
-0043A:  MOVLW  00
-0043C:  MOVWF  F64
-0043E:  MOVLW  20
-00440:  MOVWF  F63
-00442:  BCF    F95.4
-00444:  BSF    F95.5
-00446:  BCF    F95.6
-00448:  MOVF   FC1,W
-0044A:  ANDLW  C0
-0044C:  IORLW  0F
-0044E:  MOVWF  FC1
-00450:  MOVLW  07
-00452:  MOVWF  FB4
-00454:  SETF   0C
-00456:  SETF   0D
-00458:  SETF   0E
-0045A:  SETF   0F
-0045C:  SETF   10
-0045E:  SETF   11
-00460:  SETF   12
-00462:  SETF   13
-00464:  SETF   14
-00466:  SETF   15
-00468:  SETF   16
-0046A:  SETF   17
-0046C:  SETF   18
-0046E:  SETF   19
-00470:  SETF   1A
-00472:  SETF   1B
-00474:  SETF   1C
-00476:  SETF   1D
-00478:  CLRF   1E
-0047A:  CLRF   1F
-0047C:  CLRF   20
+04DC:  CLRF   FF8
+04DE:  BCF    FD0.7
+04E0:  BSF    FB8.3
+04E2:  MOVLW  08
+04E4:  MOVWF  FAF
+04E6:  MOVLW  02
+04E8:  MOVWF  FB0
+04EA:  MOVLW  A6
+04EC:  MOVWF  FAC
+04EE:  MOVLW  90
+04F0:  MOVWF  FAB
+04F2:  MOVF   FC1,W
+04F4:  ANDLW  C0
+04F6:  IORLW  0F
+04F8:  MOVWF  FC1
+04FA:  MOVLW  07
+04FC:  MOVWF  FB4
+04FE:  CLRF   04
+0500:  CLRF   05
+0502:  CLRF   06
+0504:  CLRF   07
+0506:  CLRF   08
+0508:  CLRF   09
+050A:  SETF   12
+050C:  SETF   13
+050E:  SETF   14
+0510:  SETF   15
+0512:  SETF   16
+0514:  SETF   17
+0516:  SETF   18
+0518:  SETF   19
+051A:  SETF   1A
+051C:  SETF   1B
+051E:  SETF   1C
+0520:  SETF   1D
+0522:  SETF   1E
+0524:  SETF   1F
+0526:  CLRF   20
+0528:  CLRF   21
+052A:  CLRF   22
 .................... {
 ....................       system_init();
-0047E:  BRA    019E
+052C:  BRA    0216
 ....................       j=0;
-00480:  CLRF   21
+052E:  CLRF   23
 ....................       i=0;
-00482:  CLRF   22
+0530:  CLRF   24
 ....................       hu=0;
-00484:  CLRF   23
+0532:  CLRF   25
 ....................       while(true)
 ....................       {
 ....................          if(hu==0) chop_tat_5_lan();
-00486:  MOVF   23,F
-00488:  BNZ   048E
-0048A:  RCALL  01DC
-0048C:  BRA    0552
+0534:  MOVF   25,F
+0536:  BNZ   053C
+0538:  RCALL  0284
+053A:  BRA    0600
 ....................          else if(hu==1) sang_dan_pst();
-0048E:  DECFSZ 23,W
-00490:  BRA    0496
-00492:  RCALL  0204
-00494:  BRA    0552
+053C:  DECFSZ 25,W
+053E:  BRA    0544
+0540:  RCALL  02AC
+0542:  BRA    0600
 ....................          else if(hu==2) tat_dan_pst();
-00496:  MOVF   23,W
-00498:  SUBLW  02
-0049A:  BNZ   04A0
-0049C:  RCALL  0250
-0049E:  BRA    0552
+0544:  MOVF   25,W
+0546:  SUBLW  02
+0548:  BNZ   054E
+054A:  RCALL  02F8
+054C:  BRA    0600
 ....................          else if(hu==3) sang_dan_pst();
-004A0:  MOVF   23,W
-004A2:  SUBLW  03
-004A4:  BNZ   04AA
-004A6:  RCALL  0204
-004A8:  BRA    0552
+054E:  MOVF   25,W
+0550:  SUBLW  03
+0552:  BNZ   0558
+0554:  RCALL  02AC
+0556:  BRA    0600
 ....................          else if(hu==4) tat_dan_pst();
-004AA:  MOVF   23,W
-004AC:  SUBLW  04
-004AE:  BNZ   04B4
-004B0:  RCALL  0250
-004B2:  BRA    0552
+0558:  MOVF   25,W
+055A:  SUBLW  04
+055C:  BNZ   0562
+055E:  RCALL  02F8
+0560:  BRA    0600
 ....................          else if(hu==5) chop_tat_5_lan();
-004B4:  MOVF   23,W
-004B6:  SUBLW  05
-004B8:  BNZ   04BE
-004BA:  RCALL  01DC
-004BC:  BRA    0552
+0562:  MOVF   25,W
+0564:  SUBLW  05
+0566:  BNZ   056C
+0568:  RCALL  0284
+056A:  BRA    0600
 ....................          else if(hu==6) sang_dan_tsp();
-004BE:  MOVF   23,W
-004C0:  SUBLW  06
-004C2:  BNZ   04C8
-004C4:  RCALL  0284
-004C6:  BRA    0552
+056C:  MOVF   25,W
+056E:  SUBLW  06
+0570:  BNZ   0576
+0572:  RCALL  032C
+0574:  BRA    0600
 ....................          else if(hu==7) tat_dan_tsp();
-004C8:  MOVF   23,W
-004CA:  SUBLW  07
-004CC:  BNZ   04D2
-004CE:  RCALL  02D0
-004D0:  BRA    0552
+0576:  MOVF   25,W
+0578:  SUBLW  07
+057A:  BNZ   0580
+057C:  RCALL  0378
+057E:  BRA    0600
 ....................          else if(hu==8) sang_dan_tsp();
-004D2:  MOVF   23,W
-004D4:  SUBLW  08
-004D6:  BNZ   04DC
-004D8:  RCALL  0284
-004DA:  BRA    0552
+0580:  MOVF   25,W
+0582:  SUBLW  08
+0584:  BNZ   058A
+0586:  RCALL  032C
+0588:  BRA    0600
 ....................          else if(hu==9) tat_dan_tsp();
-004DC:  MOVF   23,W
-004DE:  SUBLW  09
-004E0:  BNZ   04E6
-004E2:  RCALL  02D0
-004E4:  BRA    0552
+058A:  MOVF   25,W
+058C:  SUBLW  09
+058E:  BNZ   0594
+0590:  RCALL  0378
+0592:  BRA    0600
 ....................          else if(hu==10) chop_tat_5_lan();
-004E6:  MOVF   23,W
-004E8:  SUBLW  0A
-004EA:  BNZ   04F0
-004EC:  RCALL  01DC
-004EE:  BRA    0552
+0594:  MOVF   25,W
+0596:  SUBLW  0A
+0598:  BNZ   059E
+059A:  RCALL  0284
+059C:  BRA    0600
 ....................          else if(hu==11) sang_dan_ngoai_vao();
-004F0:  MOVF   23,W
-004F2:  SUBLW  0B
-004F4:  BNZ   04FA
-004F6:  RCALL  0304
-004F8:  BRA    0552
+059E:  MOVF   25,W
+05A0:  SUBLW  0B
+05A2:  BNZ   05A8
+05A4:  RCALL  03AC
+05A6:  BRA    0600
 ....................          else if(hu==12) tat_dan_ngoai_vao();
-004FA:  MOVF   23,W
-004FC:  SUBLW  0C
-004FE:  BNZ   0504
-00500:  RCALL  035C
-00502:  BRA    0552
+05A8:  MOVF   25,W
+05AA:  SUBLW  0C
+05AC:  BNZ   05B2
+05AE:  RCALL  0404
+05B0:  BRA    0600
 ....................          else if(hu==13) sang_dan_ngoai_vao();
-00504:  MOVF   23,W
-00506:  SUBLW  0D
-00508:  BNZ   050E
-0050A:  RCALL  0304
-0050C:  BRA    0552
+05B2:  MOVF   25,W
+05B4:  SUBLW  0D
+05B6:  BNZ   05BC
+05B8:  RCALL  03AC
+05BA:  BRA    0600
 ....................          else if(hu==14) tat_dan_ngoai_vao();
-0050E:  MOVF   23,W
-00510:  SUBLW  0E
-00512:  BNZ   0518
-00514:  RCALL  035C
-00516:  BRA    0552
+05BC:  MOVF   25,W
+05BE:  SUBLW  0E
+05C0:  BNZ   05C6
+05C2:  RCALL  0404
+05C4:  BRA    0600
 ....................          else if(hu==15) chop_tat_5_lan();
-00518:  MOVF   23,W
-0051A:  SUBLW  0F
-0051C:  BNZ   0522
-0051E:  RCALL  01DC
-00520:  BRA    0552
+05C6:  MOVF   25,W
+05C8:  SUBLW  0F
+05CA:  BNZ   05D0
+05CC:  RCALL  0284
+05CE:  BRA    0600
 ....................          else if(hu==16) sang_dan_trong_ra();
-00522:  MOVF   23,W
-00524:  SUBLW  10
-00526:  BNZ   052C
-00528:  RCALL  039C
-0052A:  BRA    0552
+05D0:  MOVF   25,W
+05D2:  SUBLW  10
+05D4:  BNZ   05DA
+05D6:  RCALL  0444
+05D8:  BRA    0600
 ....................          else if(hu==17) tat_dan_trong_ra();
-0052C:  MOVF   23,W
-0052E:  SUBLW  11
-00530:  BNZ   0536
-00532:  RCALL  03F4
-00534:  BRA    0552
+05DA:  MOVF   25,W
+05DC:  SUBLW  11
+05DE:  BNZ   05E4
+05E0:  RCALL  049C
+05E2:  BRA    0600
 ....................          else if(hu==18) sang_dan_trong_ra();
-00536:  MOVF   23,W
-00538:  SUBLW  12
-0053A:  BNZ   0540
-0053C:  RCALL  039C
-0053E:  BRA    0552
+05E4:  MOVF   25,W
+05E6:  SUBLW  12
+05E8:  BNZ   05EE
+05EA:  RCALL  0444
+05EC:  BRA    0600
 ....................          else if(hu==19) tat_dan_trong_ra();
-00540:  MOVF   23,W
-00542:  SUBLW  13
-00544:  BNZ   054A
-00546:  RCALL  03F4
-00548:  BRA    0552
+05EE:  MOVF   25,W
+05F0:  SUBLW  13
+05F2:  BNZ   05F8
+05F4:  RCALL  049C
+05F6:  BRA    0600
 ....................          else if(hu==20) hu=0;
-0054A:  MOVF   23,W
-0054C:  SUBLW  14
-0054E:  BNZ   0552
-00550:  CLRF   23
-00552:  BRA    0486
+05F8:  MOVF   25,W
+05FA:  SUBLW  14
+05FC:  BNZ   0600
+05FE:  CLRF   25
+0600:  BRA    0534
 ....................       }
 .................... }
-00554:  SLEEP 
+0602:  SLEEP 
 
 Configuration Fuses:
-   Word  1: C200   HS FCMEN IESO
-   Word  2: 1E1E   PUT BROWNOUT BORV21 NOWDT WDT32768
-   Word  3: 85F3   CCP2C1 LPT1OSC MCLR
-   Word  4: 00B1   STVREN NOLVP NOXINST NODEBUG
-   Word  5: C0FF   NOPROTECT NOCPB NOCPD
-   Word  6: E0FF   NOWRT NOWRTC NOWRTB NOWRTD
-   Word  7: 40FF   NOEBTR NOEBTRB
+   Word  1: CC27   PLL12 CPUDIV1 USBDIV HS FCMEN IESO
+   Word  2: 1E3E   PUT BROWNOUT BORV21 VREGEN NOWDT WDT32768
+   Word  3: 8700   CCP2C1 PBADEN LPT1OSC MCLR
+   Word  4: 00A1   STVREN NOLVP ICSP2 NOXINST NODEBUG
+   Word  5: C00F   NOPROTECT NOCPB NOCPD
+   Word  6: E00F   NOWRT NOWRTC NOWRTB NOWRTD
+   Word  7: 400F   NOEBTR NOEBTRB

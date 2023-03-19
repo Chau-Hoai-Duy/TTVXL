@@ -1,0 +1,48 @@
+[PROJECT]
+Target=BAI_645_LCD_TIMER_3FONT.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=BAI_645_LCD_TIMER_3FONT.c
+[BAI_645_LCD_TIMER_3FONT.c]
+Type=4
+[mru-list]
+1=BAI_645_LCD_TIMER_3FONT.c
+
+[defines]
+buildcount=5
+
+[ProjectLog]
+Days=2
+D1=14-03-2023
+D1_L=3
+D1_L1=[60164]Started Editing.
+D1_L2=[60816]Stopped Editing.
+TotalEdit=11
+TotalDebug=0
+D1_E=11
+D1_D=0
+D1_L3=[60816]Project Closed.
+D2=16-03-2023
+D2_L=5
+D2_L1=[30787]Project Opened.
+D2_L2=[30788]Project Closed.
+D2_L3=[30788]Project Opened.
+D2_L4=[31059]Started Editing.
+D2_L5=[31190]Project Closed.
+
+[Opened Files]
+1=BAI_635_LCD_APPLE.c
+t1=9
+2=BAI_645_LCD_TIMER_3FONT.c
+t2=9
+3=BAI_614_LCD_CHINH_GIO_PHUT_GIAY.c
+t3=1
+Count=3
+[Units]
+Count=1
+1=BAI_645_LCD_TIMER_3FONT (main)
+
+[fileformats]
+forcecoff=0

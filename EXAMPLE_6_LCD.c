@@ -47,7 +47,7 @@
    ta phai delay_ms(2); de tranh LCD bo qua tac vu tiep theo     
    
 *********************************** Chuong trinh **************************************/
-//#define   BOARD     D401 
+//#define   BOARD     D501 
 #include<tv_boards.c> 
 #include<tv_lcd.c>
 unsigned int8 dem=0;

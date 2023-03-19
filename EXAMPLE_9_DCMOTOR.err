@@ -1,0 +1,5 @@
+Compiling C:\TTVXL\TTVXL\Thuc Hanh\EXAMPLE_9_DCMOTOR on 07-Mar-23 at 15:50
+>>> Warning 224 "C:\TTVXL\TTVXL\Thuc Hanh\TV_DCMOTOR.h" Line 20(9,132): #warning   "Khi goi ham "dcmotor_read_speed" TIMER1 duoc cau hinh chuc nang COUTNER => Chu y cac ung dung truoc do da su dung TIMER1"
+      Memory usage:   ROM=23%      RAM=53% - 56%
+      0 Errors,  1 Warnings.
+Build Successful.

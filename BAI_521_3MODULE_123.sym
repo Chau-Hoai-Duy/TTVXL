@@ -1,0 +1,223 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016     @INTERRUPT_AREA
+017     @INTERRUPT_AREA
+018     @INTERRUPT_AREA
+019     @INTERRUPT_AREA
+01A     @INTERRUPT_AREA
+01B-01E delay
+01F-022 led32
+023-02A d7seg
+02B-032 s7seg
+033-034 inputcd.oldpin
+035-036 inputcd.t
+037     inputcd.step
+038     key4x4
+039     key4x4_read.step
+03A-03B key4x4_read.t
+03C     cd
+03D     cdold
+03E     i
+03F     T0
+040     T0old
+041-042 j
+043-044 k
+045     gio
+046     phut
+047     giay
+048     bdn
+049     cdo
+04A     m
+04B     l
+04C-04D d7seg_xoa0VN.d
+04C     s7seg_display.n
+04C-04F atan2.y
+04C-04D inputcd.pin
+04C.0   CHECK_MODULE.tt
+04C     KEYREAD.cot
+04C-04F @SPI_XFER_1_32.P1
+04C     key4x4_read.@SCRATCH1
+04C     kiemtra_xuli_nutnhan.@SCRATCH1
+04C     sang_tat_dan_pst.@SCRATCH1
+04C     sang_tat_dan_tsp.@SCRATCH1
+04C     sang_tat_dan_ngoai_vao.@SCRATCH1
+04C     sang_tat_dan_trong_ra.@SCRATCH1
+04C     MAIN.@SCRATCH1
+04D     CHECK_MODULE.n
+04D     @DIV88.P1
+04D     s7seg_display.@SCRATCH1
+04D     KEYREAD.@SCRATCH1
+04D     key4x4_read.@SCRATCH2
+04D     sang_tat_dan_pst.@SCRATCH2
+04D     sang_tat_dan_tsp.@SCRATCH2
+04D     sang_tat_dan_ngoai_vao.@SCRATCH2
+04D     sang_tat_dan_trong_ra.@SCRATCH2
+04E     d7seg_xoa0VN.n
+04E     @WRITEBITA.P1
+04E     @READBITA.P2
+04E     @DIV88.P3
+04E-04F delay_stop.t
+04E     CHECK_MODULE.@SCRATCH1
+04E     inputcd.@SCRATCH1
+04E     sang_tat_dan_pst.@SCRATCH3
+04E     sang_tat_dan_tsp.@SCRATCH3
+04F     @WRITEBITA.P1
+04F-050 @READBITA.P2
+04F     @delay_ms1.P3
+04F     CHECK_MODULE.@SCRATCH2
+04F     inputcd.@SCRATCH2
+04F     d7seg_xoa0VN.@SCRATCH1
+04F     sang_tat_dan_pst.@SCRATCH4
+04F     sang_tat_dan_tsp.@SCRATCH4
+04F     @DIV88.@SCRATCH1
+050-051 delay_stop.tam
+050-053 atan2.x
+050-051 @WRITEBITA.P1
+050     d7seg_xoa0VN.@SCRATCH2
+050     sang_tat_dan_pst.@SCRATCH5
+050     sang_tat_dan_tsp.@SCRATCH5
+051-052 @DIV1616.P1
+051     d7seg_xoa0VN.@SCRATCH3
+052-055 @DIV3232.P1
+052     delay_stop.@SCRATCH1
+052     d7seg_xoa0VN.@SCRATCH4
+053-054 @DIV1616.P1
+053     delay_stop.@SCRATCH2
+054-057 atan2.z
+055     @DIV1616.@SCRATCH1
+056-059 @DIV3232.P1
+058.0   atan2.sign
+059     atan2.quad
+05A     @DIV3232.@SCRATCH1
+05B     @DIV3232.@SCRATCH2
+05C     @DIV3232.@SCRATCH3
+05D     @DIV3232.@SCRATCH4
+05E     @DIV3232.@SCRATCH5
+F71     CCP_5
+F71     CCP_5_LOW
+F72     CCP_5_HIGH
+F74     CCP_4
+F74     CCP_4_LOW
+F75     CCP_4_HIGH
+F83     PSP_DATA
+FA1.1   TIM3IF
+FB4.6   C1OUT
+FB4.7   C2OUT
+FB8     CCP_3
+FB8     CCP_3_LOW
+FB9     CCP_3_HIGH
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P3
+FE9-FEA @READ_PACKED_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+0000BE  m7d.call
+0000D2  m7d.data
+0000E2  mq.call
+0000F6  mq.data
+0000FA  ngat_timer1
+00010C  @delay_ms1
+000132  CHECK_MODULE
+00018C  led32_display
+0001C2  d7seg_display
+000226  s7seg_display
+000286  buzzer_off
+000292  triac_2_off
+00029E  system_init
+0002DC  @DIV1616
+00031E  d7seg_xoa0VN
+000392  KEYREAD
+00043A  @DIV3232
+0004C8  delay_start
+00051A  delay_stop
+0005AC  key4x4_read
+000686  @goto55765
+0006AE  @WRITEBITA
+0006EC  @READBITA
+00071E  inputcd
+0008AC  @goto55720
+0008D4  kiemtra_xuli_nutnhan
+000998  chop_tat_led
+0009C2  sang_tat_dan_pst
+000A22  sang_tat_dan_tsp
+000A82  sang_tat_dan_ngoai_vao
+000AE8  sang_tat_dan_trong_ra
+000B4E  @DIV88
+000B76  @cinit1
+000B76  MAIN
+000BAC  @cinit2
+
+Project Directory:
+    C:\TTVXL\TTVXL\Thuc Hanh\
+
+Project Files:
+    BAI_521_3MODULE_123.c                                   [06-Mar-23 21:35  CRC=6050E28D]
+    tv_boards.c                                             [25-Aug-22 14:39  CRC=BADBB360]
+    TV_MOPHONG.C                                            [13-Jan-23 10:01  CRC=BC0C87F3]
+    TV_MOPHONG.h                                            [25-Aug-22 14:03  CRC=D88B226F]
+    ..\..\..\Program Files (x86)\PICC\Devices\18f6722.h     [21-Jan-21 11:39  CRC=97E248DF]
+    ..\..\..\Program Files (x86)\PICC\Drivers\math.h        [05-May-20 12:57  CRC=02232397]
+    TV_LOWLEVER.C                                           [12-Oct-22 15:49  CRC=97B0DA2C]
+    TV_LOWLEVER.H                                           [19-Nov-22 07:33  CRC=D872A938]
+    tv_key4x4.c                                             [07-Jun-22 20:08  CRC=53A906E2]
+    tv_key4x4.h                                             [29-Apr-22 14:10  CRC=D872A938]
+
+Source signature=BE7B897B
+Program memory checksum=0000
+Hex file CRC=C0E5
+
+Units:
+    C:\TTVXL\TTVXL\Thuc Hanh\BAI_521_3MODULE_123 (main)
+
+Compiler Settings:
+    Processor:      PIC18F6722
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   BAI_521_3MODULE_123.xsym
+    Errors:      BAI_521_3MODULE_123.err
+    Ext Symbols: BAI_521_3MODULE_123.esym
+    INHX32:      BAI_521_3MODULE_123.hex
+    Symbols:     BAI_521_3MODULE_123.sym
+    List:        BAI_521_3MODULE_123.lst
+    Debug/COFF:  BAI_521_3MODULE_123.cof
+    Project:     BAI_521_3MODULE_123.ccspjt
+    Call Tree:   BAI_521_3MODULE_123.tre
+    Statistics:  BAI_521_3MODULE_123.STA

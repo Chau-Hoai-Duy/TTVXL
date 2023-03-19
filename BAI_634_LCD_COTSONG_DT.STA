@@ -1,0 +1,74 @@
+
+ROM used:   1292/32768 (4%)
+            1292/32768 (4%) including unused fragments
+
+            0.3 Average locations per line
+            2.2 Average locations per statement
+
+RAM used:   40/2048 (2%) at main() level
+            59/2048 (3%) worst case
+
+Stack used: 0 worst case (0 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   47    26   4  BAI_634_LCD_COTSONG_DT.c
+   26     0   0  tv_boards.c
+  239   186  32  TV_D501_TH.C
+  135     0   0  TV_D501_TH.h
+  876     0   0  ..\..\..\Program Files (x86)\PICC\Devices\18f4550.h
+ 2228   258  44  ..\..\..\Program Files (x86)\PICC\Drivers\math.h
+  179    80  14  TV_LOWLEVER.C
+    7     0   0  TV_LOWLEVER.H
+   57    35   6  tv_lcd.c
+   58     0   0  TV_LCD.h
+----- -----
+ 3852   585 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     38   1    1             @delay_ms1
+0     26   1    1             @delay_us1
+0     40   2    0    221  2.6  led32_display
+0     40   2    0    221  2.6  d7seg_display
+0     86   3    3    355  6.1  s7seg_display
+0     38   1    0    172  2.1  private_write_glcd_lcd
+0     20   1    2    120  3.4  write_lcd20x4
+0     22   1    2    120  3.4  write_glcd128x64
+0     72   3   10    362  3.3  write_ledmatrix
+0     28   1    0    151  2.5  private_write_buzzer_relay
+0    110   4    0    561  3.8  system_init
+0    114   4    1   1186  3.3  SSPI_WRITE
+0     80   3    0    293  6.5  @const1043
+0     30   1    1     98  2.0  lcd_command
+0     32   1    1     98  2.0  lcd_data
+0     86   3    2    332  4.1  lcd_setup
+0     20   1    0   1333  6.9  @const1050
+0     20   1    3    155  3.8  lcd_goto
+0     80   3    0   1333  6.9  @const1061
+0    254  10    1    778  6.6  MAIN
+0     16   1    0   1333  6.9  @const1068
+0     32   1    2             @PSTRINGC_1021
+0      4   0    0     80  3.0  @const1073
+ Inline         0    952  8.6  @cinit1
+
+Program metrics:
+    Functions               21
+    Statements              585
+    Comments                456
+    Volume (V)              17097
+    Difficulty (D)          91.9
+    Effort to implement (E) 1571227
+    Time to implement (T)   24 hours, 15 minutes
+    Est Delivered Bugs (B)  5
+    Cyclomatic Complexity   26
+    Maintainability (MI)    122
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  1288  31476  
+
+
+

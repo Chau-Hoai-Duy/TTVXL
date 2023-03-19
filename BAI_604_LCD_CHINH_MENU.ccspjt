@@ -1,0 +1,41 @@
+[PROJECT]
+Target=BAI_604_LCD_CHINH_MENU.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=BAI_604_LCD_CHINH_MENU.c
+[BAI_604_LCD_CHINH_MENU.c]
+Type=4
+[mru-list]
+1=BAI_604_LCD_CHINH_MENU.c
+
+[defines]
+buildcount=2
+
+[ProjectLog]
+Days=1
+D1=28-02-2023
+D1_L=5
+D1_L1=[54888]Stopped Editing.
+TotalEdit=15
+TotalDebug=0
+D1_E=15
+D1_D=0
+D1_L2=[54888]Project Closed.
+D1_L3=[55122]Project Opened.
+D1_L4=[55131]Started Editing.
+D1_L5=[55262]Project Closed.
+
+[fileformats]
+forcecoff=0
+
+[Opened Files]
+1=BAI_601_LCD_HIENTHI_4HANG.c
+t1=1
+2=BAI_604_LCD_CHINH_MENU.c
+t2=1
+Count=2
+[Units]
+Count=1
+1=BAI_604_LCD_CHINH_MENU (main)

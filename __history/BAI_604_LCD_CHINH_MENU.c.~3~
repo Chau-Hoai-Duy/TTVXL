@@ -1,0 +1,50 @@
+#DEFINE BOARD D501
+#include<tv_boards.c>
+#include<tv_lcd.c>
+unsigned int8 giay;
+unsigned int1 chieu=0;
+void hienthi_muiten()
+{
+   if(chieu==0)
+   {
+      lcd_goto(0,1);
+      lcd_data(0x7e);
+      lcd_goto(0,2);
+      lcd_data(" ");
+   }
+   else
+   {
+      lcd_goto(0,1);
+      lcd_data(" ");
+      lcd_goto(0,2);
+      lcd_data(0x7e);
+   }
+}
+void kt_nutnhan()
+{
+   if(inputcd(inv)==0)
+   {
+      chieu=~chieu;
+      hienthi_muiten();
+   }
+}
+void main()
+{
+   system_init();
+   lcd_setup();
+   lcd_goto(0,0);
+   lcd_data("BAI TAP CHINH MENU");
+   lcd_goto(1,1);
+   lcd_data("DEM LEN");
+   lcd_goto(1,2);
+   lcd_data("DEM XUONG");
+   
+   while(true)
+   { 
+      lcd_goto(9,3);
+      printf(lcd_data,"%02u",giay);
+      giay++;
+      giay%=60;
+      delay_ms(1000);
+   }
+}

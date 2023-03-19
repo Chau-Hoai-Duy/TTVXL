@@ -31,7 +31,7 @@
      . Lenh nay phai duoc thuc thi lien tuc de cap nhat gia tri dem moi, nen phai dat trong while (true)
                
 *********************************** Chuong trinh *************************************************************/
-//#define   BOARD     D503
+#define   BOARD     D501
 #include<tv_boards.c> 
 unsigned int8 T0;
 int1 mode=0;

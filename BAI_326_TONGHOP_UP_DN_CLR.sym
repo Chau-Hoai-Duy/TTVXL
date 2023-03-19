@@ -121,7 +121,7 @@ ROM Allocation:
 000382  delay_start
 0003D4  delay_stop
 000466  inputcd
-0005F4  @goto25399
+0005F4  @goto34267
 000616  kiemtra_xuli_nutnhan
 00067E  chop_tat_led
 0006A8  sang_tat_dan_pst

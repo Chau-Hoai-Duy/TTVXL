@@ -1,0 +1,168 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016     @INTERRUPT_AREA
+017     @INTERRUPT_AREA
+018     @INTERRUPT_AREA
+019-01E system_var
+01F-022 delay
+023-026 led32
+027-02A d7seg
+02B-032 s7seg
+033-034 inputcd.oldpin
+035-036 inputcd.t
+037     inputcd.step
+038     bdn
+039     giay
+03A     phut
+03B     gio
+03C     @WRITEBITA.P1
+03C-03D write_ledmatrix.mahang
+03C     @READBITA.P1
+03C     @PRINTF_U_1021.P2
+03C     lcd_goto.colum_0_19
+03C     write_glcd128x64.glcd_signal
+03C     s7seg_display.i
+03C     lcd_setup.n
+03C-03F atan2.y
+03C-03D inputcd.pin
+03D     lcd_goto.row_0_3
+03D     @PRINTF_U_1021.P1
+03D     s7seg_display.n
+03D     write_glcd128x64.glcd_ins_hthi
+03D     @WRITEBITA.P1
+03D-03E @READBITA.P2
+03D     lcd_setup.@SCRATCH1
+03E     @delay_ms1.P1
+03E-03F @WRITEBITA.P2
+03E-03F write_ledmatrix.macot1
+03E     lcd_data.data
+03E     @DIV88.P1
+03E     s7seg_display.@SCRATCH1
+03E     lcd_goto.@SCRATCH1
+03F     lcd_command.command
+03F     @DIV88.P1
+040     @delay_us1.P1
+040-043 atan2.x
+040-041 write_ledmatrix.macot2
+040     write_lcd20x4.lcd_signal
+040     @DIV88.@SCRATCH1
+041     write_lcd20x4.lcd_ins_hthi
+042-043 write_ledmatrix.macot3
+044-047 atan2.z
+044     write_ledmatrix.@SCRATCH1
+045     write_ledmatrix.@SCRATCH2
+046     SSPI_WRITE.x
+048.0   atan2.sign
+049     atan2.quad
+F83     PSP_DATA
+F84.0   SSCK
+F84.2   SSDO
+FA1.1   TIM3IF
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P3
+FE9-FEA @WRITE_PACKED_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+0000AE  LCD_MA_8DOAN.call
+0000BE  LCD_MA_8DOAN.data
+0000FE  dc.call
+00010E  dc.data
+000112  ngat_timer1
+000124  SSPI_WRITE
+000196  private_write_buzzer_relay
+0001B2  led32_display
+0001DA  d7seg_display
+000202  @delay_ms1
+000228  s7seg_display
+00027E  private_write_glcd_lcd
+0002A4  write_lcd20x4
+0002B8  write_glcd128x64
+0002CE  write_ledmatrix
+000316  system_init
+000384  @delay_us1
+00039E  lcd_command
+0003BC  lcd_data
+0003DC  lcd_setup
+000432  lcd_goto
+000448  @DIV88
+000470  @PRINTF_U_1021
+0004D6  @cinit1
+0004D6  MAIN
+000502  @cinit2
+
+Project Directory:
+    C:\TTVXL\TTVXL\Thuc Hanh\
+
+Project Files:
+    BAI_613_LCD_DEM_GIO_PHUT_GIAY.c                         [07-Mar-23 13:25  CRC=7B241C39]
+    tv_boards.c                                             [25-Aug-22 14:39  CRC=BADBB360]
+    TV_D501_TH.C                                            [25-Aug-22 14:04  CRC=1FD863A8]
+    TV_D501_TH.h                                            [25-Aug-22 14:02  CRC=79282120]
+    ..\..\..\Program Files (x86)\PICC\Devices\18f4550.h     [21-Jan-21 11:37  CRC=71B7866C]
+    ..\..\..\Program Files (x86)\PICC\Drivers\math.h        [05-May-20 12:57  CRC=02232397]
+    TV_LOWLEVER.C                                           [12-Oct-22 15:49  CRC=97B0DA2C]
+    TV_LOWLEVER.H                                           [19-Nov-22 07:33  CRC=D872A938]
+    tv_lcd.c                                                [12-Oct-22 16:17  CRC=9BCD177E]
+    TV_LCD.h                                                [29-Apr-22 15:59  CRC=93256EA5]
+
+Source signature=75167690
+Program memory checksum=0000
+Hex file CRC=3397
+
+Units:
+    C:\TTVXL\TTVXL\Thuc Hanh\BAI_613_LCD_DEM_GIO_PHUT_GIAY (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   BAI_613_LCD_DEM_GIO_PHUT_GIAY.xsym
+    Errors:      BAI_613_LCD_DEM_GIO_PHUT_GIAY.err
+    Ext Symbols: BAI_613_LCD_DEM_GIO_PHUT_GIAY.esym
+    INHX32:      BAI_613_LCD_DEM_GIO_PHUT_GIAY.hex
+    Symbols:     BAI_613_LCD_DEM_GIO_PHUT_GIAY.sym
+    List:        BAI_613_LCD_DEM_GIO_PHUT_GIAY.lst
+    Debug/COFF:  BAI_613_LCD_DEM_GIO_PHUT_GIAY.cof
+    Project:     BAI_613_LCD_DEM_GIO_PHUT_GIAY.ccspjt
+    Call Tree:   BAI_613_LCD_DEM_GIO_PHUT_GIAY.tre
+    Statistics:  BAI_613_LCD_DEM_GIO_PHUT_GIAY.STA

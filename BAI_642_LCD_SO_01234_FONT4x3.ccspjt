@@ -1,0 +1,23 @@
+[PROJECT]
+Target=BAI_642_LCD_SO_01234_FONT4x3.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=BAI_642_LCD_SO_01234_FONT4x3.c
+[BAI_642_LCD_SO_01234_FONT4x3.c]
+Type=4
+[mru-list]
+1=BAI_642_LCD_SO_01234_FONT4x3.c
+[Units]
+Count=1
+1=BAI_642_LCD_SO_01234_FONT4x3 (main)
+
+[defines]
+buildcount=1
+
+[ProjectLog]
+Days=1
+D1=14-03-2023
+D1_L=1
+D1_L1=[58686]Project Closed.

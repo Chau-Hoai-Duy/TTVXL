@@ -1,0 +1,31 @@
+[PROJECT]
+Target=BAI_601_LCD_HIENTHI_4HANG.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.101
+Compiler=PCH
+[Target Data]
+FileList=BAI_601_LCD_HIENTHI_4HANG.c
+[BAI_601_LCD_HIENTHI_4HANG.c]
+Type=4
+[mru-list]
+1=BAI_601_LCD_HIENTHI_4HANG.c
+[Units]
+Count=1
+1=BAI_601_LCD_HIENTHI_4HANG (main)
+
+[defines]
+buildcount=1
+
+[ProjectLog]
+Days=2
+D1=28-02-2023
+D1_L=2
+D1_L1=[52713]Started Editing.
+D1_L2=[52732]Project Closed.
+D2=05-03-2023
+D2_L=2
+D2_L1=[82836]Project Opened.
+D2_L2=[82837]Project Closed.
+
+[fileformats]
+forcecoff=0
